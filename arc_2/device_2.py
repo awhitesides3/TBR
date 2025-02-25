@@ -1,8 +1,8 @@
 import numpy as np
 import openmc
-from arc_nonproliferation.components import *
-from arc_nonproliferation.materials import *
-from arc_nonproliferation.constants import neutrons_per_MJ
+from arc_2.components_2 import *
+from arc_2.materials_2 import *
+from arc_2.constants_2 import neutrons_per_MJ
 import shutil
 
 """
@@ -161,8 +161,8 @@ def generate_device(dopant, dopant_mass, Li6_enrichment=7.5, vv_file='arc_vv.txt
     vv_inner_edge = pfc_polygon.offset(0.3) #PFC
     vv_channel_inner = vv_inner_edge.offset(1.0) #VV
     channel_outer = vv_channel_inner.offset(2.0) #FLiBe channels
-    vv_channel_outer = channel_outer.offset(3.0) #Channel shell
-    multiplier_outer = vv_channel_outer.offset(1.3) #[*]Be multiplier 
+    vv_channel_outer = channel_outer.offset(3.0) #Channel shell #3
+    multiplier_outer = vv_channel_outer.offset(1.0) #[*]Be multiplier 
 
     """ Blanket and Outer Blanket Tank """
 
@@ -170,7 +170,7 @@ def generate_device(dopant, dopant_mass, Li6_enrichment=7.5, vv_file='arc_vv.txt
 
     blanket_inner = openmc.model.Polygon(blanket_points, basis='rz')
     gap = blanket_inner.offset(1.0)
-    blanket_outer = gap.offset(2.0) #Blanket tank outer
+    blanket_outer = gap.offset(2) #Blanket tank outer #2
 
     regions = openmc.model.subdivide([pfc_polygon,
                                     vv_inner_edge, vv_channel_inner,

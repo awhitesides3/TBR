@@ -103,7 +103,7 @@ def create_arc(Li6_enrichment):
     
     # set run parameters
     device.settings.threads = 10
-    device.settings.particles = int(1e4)
+    device.settings.particles = int(1e3)
     device.settings.batches = 10  
     device.settings.inactive = 1  
 

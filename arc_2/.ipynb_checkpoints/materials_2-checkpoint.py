@@ -1,6 +1,6 @@
 import openmc
 from scipy.constants import Avogadro
-import arc_2.constants_2
+from arc_2.constants_2 import *
 
 """
 This module contains all material definitions and useful functions
@@ -63,7 +63,7 @@ vcrti.add_element('Ni',13/1e6,percent_type='wo')
 vcrti.add_element('Cu',4/1e6,percent_type='wo')
 vcrti.add_element('V',1-0.04-0.04-(56+181+103+7+17+0.5+119+280+0.5+80+13+4)/1e6,percent_type='wo')
 vcrti.set_density('g/cm3',6.05) #This density value is sus and needs a good source
-'''
+
 """ Uranium tetrafluroide """
 uf4 = openmc.Material()
 uf4.add_elements_from_formula('UF4')
@@ -73,7 +73,7 @@ uf4.set_density('g/cm3', 6.7)
 thf4 = openmc.Material()
 thf4.add_elements_from_formula('ThF4')
 thf4.set_density('g/cm3', 6.3)
-'''
+
 """ Beryllium """
 beryllium = openmc.Material()
 beryllium.add_element("Be", 1.0)
