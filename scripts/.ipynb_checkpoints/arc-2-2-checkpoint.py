@@ -12,7 +12,7 @@ import pandas as pd
 # Geometry
 # ==============================================================================
 def create_arc(Li6_enrichment):
-    device = anp.generate_device("U", 0, Li6_enrichment = Li6_enrichment)
+    device = anp.generate_device("Li4SiO4", 200, Li6_enrichment = Li6_enrichment)
     
     # Plotting
     plot = openmc.Plot()

@@ -38,27 +38,31 @@
     <density units="g/cm3" value="1.85"/>
     <nuclide ao="1.0" name="Be9"/>
   </material>
-  <material depletable="true" id="55" name="doped flibe channels" volume="4688229.0">
-    <density units="g/cm3" value="1.9399999999999995"/>
-    <nuclide ao="0.0" name="U234"/>
-    <nuclide ao="0.0" name="U235"/>
-    <nuclide ao="0.0" name="U238"/>
-    <nuclide ao="0.5714285714285714" name="F19"/>
-    <nuclide ao="0.28568571428571427" name="Li6"/>
-    <nuclide ao="2.857142857145714e-05" name="Li7"/>
-    <nuclide ao="0.14285714285714285" name="Be9"/>
+  <material depletable="true" id="56" name="doped flibe channels" volume="4688229.0">
+    <density units="g/cm3" value="2.0057040998217466"/>
+    <nuclide ao="0.233566178930491" name="Li6"/>
+    <nuclide ao="0.08501694645840253" name="Li7"/>
+    <nuclide ao="0.021186472819939437" name="Si28"/>
+    <nuclide ao="0.001075788640396753" name="Si29"/>
+    <nuclide ao="0.0007091646792096017" name="Si30"/>
+    <nuclide ao="0.09166707171275743" name="O16"/>
+    <nuclide ao="3.482468202755142e-05" name="O17"/>
+    <nuclide ao="0.45339484166142063" name="F19"/>
+    <nuclide ao="0.11334871041535516" name="Be9"/>
   </material>
-  <material depletable="true" id="56" name="doped flibe blanket" volume="336962565.3333333">
-    <density units="g/cm3" value="1.9399999999999995"/>
-    <nuclide ao="0.0" name="U234"/>
-    <nuclide ao="0.0" name="U235"/>
-    <nuclide ao="0.0" name="U238"/>
-    <nuclide ao="0.5714285714285714" name="F19"/>
-    <nuclide ao="0.28568571428571427" name="Li6"/>
-    <nuclide ao="2.857142857145714e-05" name="Li7"/>
-    <nuclide ao="0.14285714285714285" name="Be9"/>
+  <material depletable="true" id="57" name="doped flibe blanket" volume="336962565.3333333">
+    <density units="g/cm3" value="2.0057040998217466"/>
+    <nuclide ao="0.233566178930491" name="Li6"/>
+    <nuclide ao="0.08501694645840253" name="Li7"/>
+    <nuclide ao="0.021186472819939437" name="Si28"/>
+    <nuclide ao="0.001075788640396753" name="Si29"/>
+    <nuclide ao="0.0007091646792096017" name="Si30"/>
+    <nuclide ao="0.09166707171275743" name="O16"/>
+    <nuclide ao="3.482468202755142e-05" name="O17"/>
+    <nuclide ao="0.45339484166142063" name="F19"/>
+    <nuclide ao="0.11334871041535516" name="Be9"/>
   </material>
-  <material id="57" name="tank outer">
+  <material id="58" name="tank outer">
     <density units="g/cm3" value="6.05"/>
     <nuclide name="Cr50" wo="0.0016694746490873253"/>
     <nuclide name="Cr52" wo="0.03347974494053836"/>
@@ -99,7 +103,7 @@
     <nuclide name="V50" wo="0.0022529966034759924"/>
     <nuclide name="V51" wo="0.9168860033965239"/>
   </material>
-  <material id="58" name="VV">
+  <material id="59" name="VV">
     <density units="g/cm3" value="6.05"/>
     <nuclide name="Cr50" wo="0.0016694746490873253"/>
     <nuclide name="Cr52" wo="0.03347974494053836"/>
@@ -140,7 +144,7 @@
     <nuclide name="V50" wo="0.0022529966034759924"/>
     <nuclide name="V51" wo="0.9168860033965239"/>
   </material>
-  <material id="59" name="tank inner">
+  <material id="60" name="tank inner">
     <density units="g/cm3" value="6.05"/>
     <nuclide name="Cr50" wo="0.0016694746490873253"/>
     <nuclide name="Cr52" wo="0.03347974494053836"/>
