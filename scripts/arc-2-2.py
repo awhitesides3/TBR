@@ -6,6 +6,7 @@ import sys
 import xml.etree.ElementTree as ET
 import matplotlib.pyplot as plt
 import subprocess
+import pandas as pd
 
 # ==============================================================================
 # Geometry
@@ -76,14 +77,14 @@ def create_arc(Li6_enrichment):
     
     # tbr_filter3 = openmc.MaterialFilter(device.doped_flibe_channels)
     tbr_filter3 = openmc.CellFilter(device.get_cell(name = 'channel'))
-    device.add_tally('Tbr Channel Tally ', ['(n,Xt)'], nuclides = ['Li6', 'Li7'], filters = [tbr_filter3])
+    device.add_tally('TBR Channel Tally', ['(n,Xt)'], nuclides = ['Li6', 'Li7'], filters = [tbr_filter3])
     
     # tbr_filter4 = openmc.MaterialFilter(device.vcrti_BI)
     # device.add_tally('Tbr Tank Inner Tally ', ['(n,Xt)', 'fission', 'kappa-fission', 'fission-q-prompt', 'fission-q-recoverable', 'heating', 'heating-local'], filters=[tbr_filter4])
 
     tbr_filter5 = openmc.CellFilter(device.get_cell(name = 'blanket'))
     # tbr_filter5 = openmc.MaterialFilter(device.doped_flibe_blanket) #device.doped_flibe, initially wanted 'doped_mat' which doesn't exist
-    device.add_tally('Tbr Blanket Tally', ['(n,Xt)'], nuclides = ['Li6', 'Li7'], filters = [tbr_filter5])
+    device.add_tally('TBR Blanket Tally', ['(n,Xt)'], nuclides = ['Li6', 'Li7'], filters = [tbr_filter5])
     
     # tbr_filter6 = openmc.MaterialFilter(device.vcrti_BO)
     # device.add_tally('Tbr Tank Outer Tally ', ['(n,Xt)', 'fission', 'kappa-fission', 'fission-q-prompt', 'fission-q-recoverable', 'heating', 'heating-local'], filters=[tbr_filter6])
@@ -134,13 +135,17 @@ def make_materials_geometry_tallies(Li6_enrichment):
     # OPEN OUPUT FILE
     sp = openmc.StatePoint(sp_filename)
 
-    tbr_tally = sp.get_tally(name='Tbr Blanket Tally')
+    tbr_tally = sp.get_tally(name='TBR Blanket Tally')
+    tbr_tally_2 = sp.get_tally(name='TBR Channel Tally')
 
     df = tbr_tally.get_pandas_dataframe()
+    df2 = tbr_tally_2.get_pandas_dataframe()
     print(df)
-    df.to_csv(f'dataframe{device.Li6_enrichment}.csv')
-    tbr_tally_result = df['mean'].sum()
-    tbr_tally_std_dev = df['std. dev.'].sum()
+    print(df2)
+    combined_df = pd.concat([df, df2], ignore_index = True)
+    combined_df.to_csv(f'dataframe{device.Li6_enrichment}.csv', index = False)
+    tbr_tally_result = df['mean'].sum() + df2['mean'].sum()
+    tbr_tally_std_dev = df['std. dev.'].sum() + df2['mean'].sum()
 
     # command = ["openmc-plot-mesh-tally", sp_filename]
     # # Run the command
@@ -163,6 +168,7 @@ plt.plot(x, y)
 plt.title="TBR as a function of Li6 enrichment",
 plt.xtitle="Li6 enrichment (%)",
 plt.ytitle="TBR"
+plt.grid()
 plt.show()
 # ================================================================================
 try:
