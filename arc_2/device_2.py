@@ -161,8 +161,8 @@ def generate_device(dopant, dopant_mass, Li6_enrichment=7.5, vv_file='arc_vv.txt
     vv_inner_edge = pfc_polygon.offset(0.3) #PFC
     vv_channel_inner = vv_inner_edge.offset(1.0) #VV
     channel_outer = vv_channel_inner.offset(2.0) #FLiBe channels
-    vv_channel_outer = channel_outer.offset(3.0) #Channel shell #3
-    multiplier_outer = vv_channel_outer.offset(1.0) #[*]Be multiplier 
+    multiplier_outer = channel_outer.offset(1.0) #[*]Be multiplier
+    vv_channel_outer = multiplier_outer.offset(3.0) #Channel shell #3 
 
     """ Blanket and Outer Blanket Tank """
 
@@ -174,10 +174,10 @@ def generate_device(dopant, dopant_mass, Li6_enrichment=7.5, vv_file='arc_vv.txt
 
     regions = openmc.model.subdivide([pfc_polygon,
                                     vv_inner_edge, vv_channel_inner,
-                                    channel_outer, vv_channel_outer, multiplier_outer, 
+                                    channel_outer, multiplier_outer, vv_channel_outer, 
                                     blanket_inner, blanket_outer]) #[*]
 
-    plasma, pfc, vv, channel, tank_inner, multiplier, salt, tank_outer, outside = regions #[*]
+    plasma, pfc, vv, channel, multiplier, tank_inner, salt, tank_outer, outside = regions #[*]
 
     # Read volume calc file
     vol_calc_load = openmc.VolumeCalculation.from_hdf5('/home/awhitesides3/openmc/build/bin/fusion/FLIBE/data/arc-1_volumes.h5')
@@ -227,8 +227,8 @@ def generate_device(dopant, dopant_mass, Li6_enrichment=7.5, vv_file='arc_vv.txt
     device.pfc = openmc.Cell(region=pfc, fill=tungsten, name='PFC')
     device.vv = openmc.Cell(region=vv, fill=vcrti_VV, name='VV')
     device.channel = openmc.Cell(region=channel, fill=doped_flibe_channels, name='channel')
-    device.tank_inner = openmc.Cell(region=tank_inner, fill=vcrti_BI, name='tank inner')
     device.multiplier = openmc.Cell(region = multiplier, fill = beryllium, name = 'multiplier')
+    device.tank_inner = openmc.Cell(region=tank_inner, fill=vcrti_BI, name='tank inner')
     device.blanket = openmc.Cell(region=salt, fill=doped_flibe_blanket, name='blanket')
     device.tank_outer = openmc.Cell(region=tank_outer, fill=vcrti_BO, name='tank outer')
     device.domain.region = device.domain.region & outside
