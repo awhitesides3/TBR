@@ -12,7 +12,7 @@ import pandas as pd
 # Geometry
 # ==============================================================================
 def create_arc(Li6_enrichment):
-    device = anp.generate_device("U", 0, Li6_enrichment = Li6_enrichment)
+    device = anp.generate_device("Li4SiO4", 0, Li6_enrichment = Li6_enrichment)
     
     # Plotting
     plot = openmc.Plot()
@@ -104,7 +104,7 @@ def create_arc(Li6_enrichment):
     
     # set run parameters
     device.settings.threads = 10
-    device.settings.particles = int(1e6)
+    device.settings.particles = int(1e3)
     device.settings.batches = 10  
     device.settings.inactive = 1  
 
@@ -130,7 +130,7 @@ def make_materials_geometry_tallies(Li6_enrichment):
     for file in os.listdir('.'):
         if file.endswith('.h5'):
             os.remove(file)
-    sp_filename = device.run(output = False)  # runs with reduced amount of output printing
+    sp_filename = device.run()  # runs with reduced amount of output printing
 
     # OPEN OUPUT FILE
     sp = openmc.StatePoint(sp_filename)
