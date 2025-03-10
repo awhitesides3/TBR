@@ -6,6 +6,7 @@ import sys
 import xml.etree.ElementTree as ET
 import matplotlib.pyplot as plt
 import subprocess
+import pandas as pd
 
 # ==============================================================================
 # Geometry
@@ -20,14 +21,16 @@ def create_arc(Li6_enrichment):
     plot.origin = (350, 0, 0)
     plot.width = (700, 800)
     plot.pixels = (plot.width[0]*10, plot.width[1]*10)
+    plot.color_by = 'cell'
+
+    # plot.cell_colors = { device._cells[0].id: 'beige', device._cells[1].id: 'lightcoral', device._cells[2].id: 'yellow', device._cells[3].id: 'orange', device._cells[4].id: 'lime', device._cells[5].id: 'navy', device._cells[6].id: 'lightcyan', device._cells[7].id: 'black'}
+    # color = ['beige', 'lightcoral', 'yellow', 'orange', 'lime', 'navy', 'lightcyan', 'black']
+    # color_dict = {cell.id: color[i] for i, cell in enumerate(device._cells)}
+    # plot.colors = color_dict
+    # for count, cell in enumerate(device._cells):
+    #     print(f'Device name: {cell.name} with color: {color[count]}')
     
-    color = ['beige', 'lightcoral', 'yellow', 'orange', 'lime', 'navy', 'lightcyan', 'black']
-    color_dict = {cell.id: color[i] for i, cell in enumerate(device._cells)}
-    plot.colors = color_dict
-    for count, cell in enumerate(device._cells):
-        print(f'Device name: {cell.name} with color: {color[count]}')
-    
-    #plot.highlight_domains(geometry=device.geometry, domains=device._cells)
+    # plot.highlight_domains(geometry=device.geometry, domains=device._cells)
     
     plots = openmc.Plots([plot])
     plots.export_to_xml()
@@ -72,15 +75,16 @@ def create_arc(Li6_enrichment):
     # tbr_filter2 = openmc.MaterialFilter(device.vcrti_VV)
     # device.add_tally('Tbr Vacuum Vessel Tally ', ['(n,Xt)', 'fission', 'kappa-fission', 'fission-q-prompt', 'fission-q-recoverable', 'heating', 'heating-local'], filters=[tbr_filter2])
     
-    tbr_filter3 = openmc.MaterialFilter(device.doped_flibe_channels)
-    device.add_tally('Tbr Channel Tally ', ['(n,Xt)'], nuclides = ['Li6', 'Li7'], filters = [tbr_filter3])
+    # tbr_filter3 = openmc.MaterialFilter(device.doped_flibe_channels)
+    tbr_filter3 = openmc.CellFilter(device.get_cell(name = 'channel'))
+    device.add_tally('TBR Channel Tally', ['(n,Xt)'], nuclides = ['Li6', 'Li7'], filters = [tbr_filter3])
     
     # tbr_filter4 = openmc.MaterialFilter(device.vcrti_BI)
     # device.add_tally('Tbr Tank Inner Tally ', ['(n,Xt)', 'fission', 'kappa-fission', 'fission-q-prompt', 'fission-q-recoverable', 'heating', 'heating-local'], filters=[tbr_filter4])
 
     tbr_filter5 = openmc.CellFilter(device.get_cell(name = 'blanket'))
     # tbr_filter5 = openmc.MaterialFilter(device.doped_flibe_blanket) #device.doped_flibe, initially wanted 'doped_mat' which doesn't exist
-    device.add_tally('Tbr Blanket Tally', ['(n,Xt)'], nuclides = ['Li6', 'Li7'], filters = [tbr_filter5])
+    device.add_tally('TBR Blanket Tally', ['(n,Xt)'], nuclides = ['Li6', 'Li7'], filters = [tbr_filter5])
     
     # tbr_filter6 = openmc.MaterialFilter(device.vcrti_BO)
     # device.add_tally('Tbr Tank Outer Tally ', ['(n,Xt)', 'fission', 'kappa-fission', 'fission-q-prompt', 'fission-q-recoverable', 'heating', 'heating-local'], filters=[tbr_filter6])
@@ -94,19 +98,16 @@ def create_arc(Li6_enrichment):
     device.build()
     device.export_to_xml(remove_surfs=True)
     
-    #openmc.plot_geometry()
+    geometry_plot = "geometry_plot.png"
+    if not os.path.exists(geometry_plot):
+         openmc.plot_geometry() #path_input = 'plots.xml'
     
     # set run parameters
     device.settings.threads = 10
-    device.settings.particles = int(1e3)
+    device.settings.particles = int(1e6)
     device.settings.batches = 10  
     device.settings.inactive = 1  
-    #remove old output files
-    # for file in os.listdir('.'):
-    #     if file.endswith('.h5'):
-    #         os.remove(file)
-    # # Run the simulation & set output file to a variable
-    # out_file = device.run()
+
     return device
 # ================================================================================
 # additional runs
@@ -134,13 +135,17 @@ def make_materials_geometry_tallies(Li6_enrichment):
     # OPEN OUPUT FILE
     sp = openmc.StatePoint(sp_filename)
 
-    tbr_tally = sp.get_tally(name='Tbr Blanket Tally')
+    tbr_tally = sp.get_tally(name='TBR Blanket Tally')
+    tbr_tally_2 = sp.get_tally(name='TBR Channel Tally')
 
     df = tbr_tally.get_pandas_dataframe()
+    df2 = tbr_tally_2.get_pandas_dataframe()
     print(df)
-    df.to_csv(f'dataframe{device.Li6_enrichment}.csv')
-    tbr_tally_result = df['mean'].sum()
-    tbr_tally_std_dev = df['std. dev.'].sum()
+    print(df2)
+    combined_df = pd.concat([df, df2], ignore_index = True)
+    combined_df.to_csv(f'Be_1cm_{device.Li6_enrichment}%.csv', index = False)
+    tbr_tally_result = df['mean'].sum() + df2['mean'].sum()
+    tbr_tally_std_dev = df['std. dev.'].sum() + df2['mean'].sum()
 
     # command = ["openmc-plot-mesh-tally", sp_filename]
     # # Run the command
@@ -163,6 +168,7 @@ plt.plot(x, y)
 plt.title="TBR as a function of Li6 enrichment",
 plt.xtitle="Li6 enrichment (%)",
 plt.ytitle="TBR"
+plt.grid()
 plt.show()
 # ================================================================================
 try:
@@ -185,11 +191,3 @@ except:
 # command = ["openmc-plot-mesh-tally", out_file]
 # # Run the command
 # subprocess.run(command)
-
-# # open the results file
-# sp = openmc.StatePoint(out_file)
-# # access the tally using pandas dataframes
-# tbr_tally = sp.get_tally(name='Tbr Blanket Tally')
-# df = tbr_tally.get_pandas_dataframe()
-# # prints the contents of the dataframe
-# print(df)
