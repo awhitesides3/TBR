@@ -94,6 +94,19 @@ uranium = openmc.Material()
 uranium.add_element("U", 1.0)
 uranium.set_density('g/cm3', 19.1)
 
+"""Lithium Orthosilicate"""
+Li4SiO4 = openmc.Material(name = "Li4SiO4")
+Li4SiO4.add_nuclide('Li6', 4.0*0.075, percent_type='ao')
+Li4SiO4.add_nuclide('Li7', 4.0*(1-0.075), percent_type='ao')
+Li4SiO4.add_nuclide('Si28', openmc.NATURAL_ABUNDANCE['Si28'], percent_type='ao')
+Li4SiO4.add_nuclide('Si29', openmc.NATURAL_ABUNDANCE['Si29'], percent_type='ao')
+Li4SiO4.add_nuclide('Si30', openmc.NATURAL_ABUNDANCE['Si30'], percent_type='ao')
+Li4SiO4.add_nuclide('O16', 4.0*openmc.NATURAL_ABUNDANCE['O16'], percent_type='ao')
+Li4SiO4.add_nuclide('O17', 4.0*openmc.NATURAL_ABUNDANCE['O17'], percent_type='ao')
+# Li4SiO4.add_nuclide('O18', 4.0*openmc.NATURAL_ABUNDANCE['O18'], percent_type='ao')
+Li4SiO4.set_density('g/cm3', 2.32)  # this would be lower than 2.32 but this would need calculating
+                        
+
 def get_tetrafluoride_mass(mass, dopant):
     """
     Computes mass of tetrafluroide from a given mass of pure dopant
@@ -122,14 +135,14 @@ def get_tetrafluoride_mass(mass, dopant):
 
     return tetrafluoride_mass
 
-def make_doped_flibe(dopant, dopant_mass, Li6_enrichment=7.5, name='doped_flibe', volume=None, dopant_mass_units="kg"):
+def make_doped_flibe(dopant, dopant_mass, Li6_enrichment=7.5, name='doped_flibe', volume=None, dopant_mass_units="wppm"):
     """
     Return openmc material doped with specified fertile material
 
     Parameters
     ----------
     dopant : str
-        "U" for U-238 -> Pu-239, "Th" for Th-232 -> U233
+        Li4SiO4 - 'Li4SiO4'
     dopant_mass : float
         mass of fertile material in kilograms
     Li6_enrichment : float
@@ -149,8 +162,8 @@ def make_doped_flibe(dopant, dopant_mass, Li6_enrichment=7.5, name='doped_flibe'
     flibe.set_density('g/cm3', 1.94)
     flibe.depletable = True
 
-    if dopant == 'U':
-        tetrafluoride = uf4
+    if dopant == 'Li4SiO4':
+        ceramic = Li4SiO4
     elif dopant == 'Th':
         tetrafluoride = thf4
     else:
@@ -165,12 +178,12 @@ def make_doped_flibe(dopant, dopant_mass, Li6_enrichment=7.5, name='doped_flibe'
             tetrafluoride_weight_percent = tetrafluoride_mass / (flibe_mass + tetrafluoride_mass)
             
     elif dopant_mass_units == "wppm":
-        tetrafluoride_weight_percent = dopant_mass/1e6
+        ceramic_weight_percent = dopant_mass/1e6
     
     else:
         raise ValueError("Invalid units given for dopant mass argument")
 
-    doped_mat = openmc.Material.mix_materials([tetrafluoride, flibe], [tetrafluoride_weight_percent, 1 - tetrafluoride_weight_percent], 'wo', name=name)
+    doped_mat = openmc.Material.mix_materials([ceramic, flibe], [ceramic_weight_percent, 1 - ceramic_weight_percent], 'wo', name=name)
     doped_mat.volume = volume
     doped_mat.depletable = True
     return doped_mat

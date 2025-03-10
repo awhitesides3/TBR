@@ -123,7 +123,7 @@ class Device(openmc.model.Model):
         print("WARNING: Cell with name:", name, "not found. returning None.")
         return None
 
-def generate_device(dopant, dopant_mass, Li6_enrichment=7.5, vv_file='arc_vv.txt', blanket_file="arc_blanket.txt", dopant_mass_units="kg"):
+def generate_device(dopant, dopant_mass, Li6_enrichment=7.5, vv_file='arc_vv.txt', blanket_file="arc_blanket.txt", dopant_mass_units="wppm"):
     """
     Generates a device object with specified fertile inventory and Li-6 enrichment.
 
@@ -158,41 +158,41 @@ def generate_device(dopant, dopant_mass, Li6_enrichment=7.5, vv_file='arc_vv.txt
     vv_points = np.loadtxt("/home/awhitesides3/openmc/build/bin/fusion/FLIBE/data/" + vv_file)
 
     pfc_polygon = openmc.model.Polygon(vv_points, basis='rz')
-    vv_inner_edge = pfc_polygon.offset(0.3) #PFC
-    vv_channel_inner = vv_inner_edge.offset(1.0) #VV
-    channel_outer = vv_channel_inner.offset(2.0) #FLiBe channels
-    multiplier_outer = channel_outer.offset(1.0) #[*]Be multiplier
-    vv_channel_outer = multiplier_outer.offset(3.0) #Channel shell #3 
+    vv_inner_edge = pfc_polygon.offset(0.3) #other lit says 0.1cm [PFC]
+    vv_channel_inner = vv_inner_edge.offset(1.0) #VV [STR1]
+    channel_outer = vv_channel_inner.offset(2.0) #FLiBe channels [FLiBe1]
+    multiplier_outer = channel_outer.offset(0) #[*]Be multiplier [Be]
+    vv_channel_outer = multiplier_outer.offset(3.0) #Channel shell [STR2]
 
     """ Blanket and Outer Blanket Tank """
 
-    blanket_points = np.loadtxt("/home/awhitesides3/openmc/build/bin/fusion/FLIBE/data/" + blanket_file)
+    blanket_points = np.loadtxt("/home/awhitesides3/openmc/build/bin/fusion/tbr/data/" + blanket_file)
 
     blanket_inner = openmc.model.Polygon(blanket_points, basis='rz')
     gap = blanket_inner.offset(1.0)
-    blanket_outer = gap.offset(2) #Blanket tank outer #2
+    blanket_outer = gap.offset(2.0) #Blanket tank outer [FLiBe2]
 
     regions = openmc.model.subdivide([pfc_polygon,
                                     vv_inner_edge, vv_channel_inner,
-                                    channel_outer, multiplier_outer, vv_channel_outer, 
+                                    channel_outer, multiplier_outer, vv_channel_outer,
                                     blanket_inner, blanket_outer]) #[*]
 
     plasma, pfc, vv, channel, multiplier, tank_inner, salt, tank_outer, outside = regions #[*]
 
     # Read volume calc file
-    vol_calc_load = openmc.VolumeCalculation.from_hdf5('/home/awhitesides3/openmc/build/bin/fusion/FLIBE/data/arc-1_volumes.h5')
+    vol_calc_load = openmc.VolumeCalculation.from_hdf5('/home/awhitesides3/openmc/build/bin/fusion/tbr/data/arc-1_volumes.h5')
     flibe_volume = vol_calc_load.volumes[8].n
     channels_volume = vol_calc_load.volumes[5].n
 
 
-    if dopant_mass_units == "kg":
+    if dopant_mass_units == "wppm": #units used to be kg (switched it)
         doped_flibe = make_doped_flibe(dopant, 
                                         dopant_mass, 
                                         volume=flibe_volume + channels_volume, 
                                         Li6_enrichment=Li6_enrichment, 
                                         name="doped flibe blanket")
         
-    elif dopant_mass_units == 'wppm':
+    elif dopant_mass_units == 'kg': #units used to be wppm (switched it)
         doped_flibe = make_impure_flibe(dopant_mass, 
                                         name="doped flibe blanket")
 
