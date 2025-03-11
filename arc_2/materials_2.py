@@ -105,6 +105,11 @@ Li4SiO4.add_nuclide('O16', 4.0*openmc.NATURAL_ABUNDANCE['O16'], percent_type='ao
 Li4SiO4.add_nuclide('O17', 4.0*openmc.NATURAL_ABUNDANCE['O17'], percent_type='ao')
 # Li4SiO4.add_nuclide('O18', 4.0*openmc.NATURAL_ABUNDANCE['O18'], percent_type='ao')
 Li4SiO4.set_density('g/cm3', 2.32)  # this would be lower than 2.32 but this would need calculating
+
+"""Lead"""
+lead = openmc.Material()
+lead.add_element("Pb", 1.0)
+lead.set_density('g/cm3', 11.342)
                         
 
 def get_tetrafluoride_mass(mass, dopant):
