@@ -13,8 +13,10 @@ openmc.config["cross_sections"] = '/home/hice1/awhitesides3/endfb-viii.0-hdf5/cr
 # ==============================================================================
 # Geometry
 # ==============================================================================
-def create_arc(Li6_enrichment):
-    device = anp.generate_device(Li6_enrichment = Li6_enrichment)
+def create_arc(Li6_enrichment, dopant, dopant_mass, multiplier_material, multiplier_thickness, reflector_material, reflector_thickness, channel_thickness, order):
+    device = anp.generate_device(Li6_enrichment = Li6_enrichment, dopant = dopant, dopant_mass = dopant_mass,
+                                multiplier_material = multiplier_material, multiplier_thickness = multiplier_thickness, reflector_material = reflector_material,
+                                reflector_thickness = reflector_thickness, channel_thickness = channel_thickness, order = order)
     
     # Plotting
     plot = openmc.Plot()
@@ -115,7 +117,9 @@ def create_arc(Li6_enrichment):
 # additional runs
 # ================================================================================
 
-def make_materials_geometry_tallies(Li6_enrichment):
+def make_materials_geometry_tallies(Li6_enrichment, dopant = str(sys.argv[1]), float(dopant_mass = sys.argv[2]),
+                                multiplier_material = sys.argv[3], multiplier_thickness = float(sys.argv[4]), reflector_material = sys.argv[5],
+                                reflector_thickness = float(sys.argv[6]), channel_thickness = float(sys.argv[7]), order = sys.argv[8]):
     """Makes a neutronics model of a blanket and simulates the TBR value.
 
     Arguments:
@@ -125,14 +129,14 @@ def make_materials_geometry_tallies(Li6_enrichment):
         resutsl (dict): simulation tally results for TBR along with the standard deviation and enrichment
     """
     # RUN OPENMC
-    device = create_arc(Li6_enrichment)
+    device = create_arc(Li6_enrichment, dopant, dopant_mass, multiplier_material, multiplier_thickness, reflector_material, reflector_thickness, channel_thickness, order)
     print(device.Li6_enrichment)
     
     #remove old output files
     for file in os.listdir('.'):
         if file.endswith('.h5'):
             os.remove(file)
-    sp_filename = device.run()  # runs with reduced amount of output printing
+    sp_filename = device.run(output = False)  # runs with reduced amount of output printing
 
     # OPEN OUPUT FILE
     sp = openmc.StatePoint(sp_filename)
@@ -159,7 +163,9 @@ def make_materials_geometry_tallies(Li6_enrichment):
 
 results = []
 for Li6_enrichment in [0.01, 7.5, 15, 25, 50, 75, 99.99]:  # percentage enrichment from 0% Li6 to 100% Li6
-    results.append(make_materials_geometry_tallies(Li6_enrichment))
+    results.append(make_materials_geometry_tallies(Li6_enrichment, str(sys.argv[1]), float(sys.argv[2]),
+                    sys.argv[3], float(sys.argv[4]), sys.argv[5],
+                    float(sys.argv[6]), float(sys.argv[7]), sys.argv[8]))
 print(results)
 #results.append(make_materials_geometry_tallies(7.5))
 # PLOTS RESULTS
@@ -173,6 +179,7 @@ plt.ytitle="TBR"
 plt.grid()
 plt.show()
 # ================================================================================
+'''
 try:
     if sys.argv[1] is not None:
         os.mkdir(str(sys.argv[1]))
@@ -181,7 +188,7 @@ try:
 
 except:
     print("No directory specified, using this one")
-
+'''
 # =============================================
 # tally plot
 # =============================================
