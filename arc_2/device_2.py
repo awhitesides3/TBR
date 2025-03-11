@@ -123,7 +123,7 @@ class Device(openmc.model.Model):
         print("WARNING: Cell with name:", name, "not found. returning None.")
         return None
 
-def generate_device(dopant, dopant_mass, Li6_enrichment=7.5, vv_file='arc_vv.txt', blanket_file="arc_blanket.txt", dopant_mass_units="wppm"):
+def generate_device(dopant, dopant_mass, Li6_enrichment=7.5, vv_file='arc_vv.txt', blanket_file="arc_blanket.txt", dopant_mass_units="wppm", ):
     """
     Generates a device object with specified fertile inventory and Li-6 enrichment.
 
@@ -155,7 +155,7 @@ def generate_device(dopant, dopant_mass, Li6_enrichment=7.5, vv_file='arc_vv.txt
 
     """ PFCs and Vacuum Vessel """
 
-    vv_points = np.loadtxt("/home/awhitesides3/openmc/build/bin/fusion/FLIBE/data/" + vv_file)
+    vv_points = np.loadtxt("/home/hice1/awhitesides3/TBR/data/" + vv_file)
 
     pfc_polygon = openmc.model.Polygon(vv_points, basis='rz')
     vv_inner_edge = pfc_polygon.offset(0.3) #other lit says 0.1cm [PFC]
@@ -166,7 +166,7 @@ def generate_device(dopant, dopant_mass, Li6_enrichment=7.5, vv_file='arc_vv.txt
 
     """ Blanket and Outer Blanket Tank """
 
-    blanket_points = np.loadtxt("/home/awhitesides3/openmc/build/bin/fusion/tbr/data/" + blanket_file)
+    blanket_points = np.loadtxt("/home/hice1/awhitesides3/TBR/data/" + blanket_file)
 
     blanket_inner = openmc.model.Polygon(blanket_points, basis='rz')
     gap = blanket_inner.offset(1.0)
@@ -180,7 +180,7 @@ def generate_device(dopant, dopant_mass, Li6_enrichment=7.5, vv_file='arc_vv.txt
     plasma, pfc, vv, channel, multiplier, tank_inner, salt, tank_outer, outside = regions #[*]
 
     # Read volume calc file
-    vol_calc_load = openmc.VolumeCalculation.from_hdf5('/home/awhitesides3/openmc/build/bin/fusion/tbr/data/arc-1_volumes.h5')
+    vol_calc_load = openmc.VolumeCalculation.from_hdf5('/home/hice1/awhitesides3/TBR/data/arc-1_volumes.h5')
     flibe_volume = vol_calc_load.volumes[8].n
     channels_volume = vol_calc_load.volumes[5].n
 

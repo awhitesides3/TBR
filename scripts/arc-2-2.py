@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 import subprocess
 import pandas as pd
 
+openmc.config["cross_sections"] = '/home/hice1/awhitesides3/endfb-viii.0-hdf5/cross_sections.xml'
 # ==============================================================================
 # Geometry
 # ==============================================================================
