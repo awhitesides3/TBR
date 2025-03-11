@@ -8,11 +8,13 @@ import matplotlib.pyplot as plt
 import subprocess
 import pandas as pd
 
+openmc.config["cross_sections"] = '/home/hice1/awhitesides3/endfb-viii.0-hdf5/cross_sections.xml'
+
 # ==============================================================================
 # Geometry
 # ==============================================================================
 def create_arc(Li6_enrichment):
-    device = anp.generate_device("U", 0, Li6_enrichment = Li6_enrichment)
+    device = anp.generate_device(Li6_enrichment = Li6_enrichment)
     
     # Plotting
     plot = openmc.Plot()
@@ -104,7 +106,7 @@ def create_arc(Li6_enrichment):
     
     # set run parameters
     device.settings.threads = 10
-    device.settings.particles = int(1e6)
+    device.settings.particles = int(1e3)
     device.settings.batches = 10  
     device.settings.inactive = 1  
 
@@ -130,7 +132,7 @@ def make_materials_geometry_tallies(Li6_enrichment):
     for file in os.listdir('.'):
         if file.endswith('.h5'):
             os.remove(file)
-    sp_filename = device.run(output = False)  # runs with reduced amount of output printing
+    sp_filename = device.run()  # runs with reduced amount of output printing
 
     # OPEN OUPUT FILE
     sp = openmc.StatePoint(sp_filename)
@@ -156,8 +158,8 @@ def make_materials_geometry_tallies(Li6_enrichment):
             'tbr_tally_std_dev': tbr_tally_std_dev}
 
 results = []
-for enrichment in [0.01, 7.5, 15, 25, 50, 75, 99.99]:  # percentage enrichment from 0% Li6 to 100% Li6
-    results.append(make_materials_geometry_tallies(enrichment))
+for Li6_enrichment in [0.01, 7.5, 15, 25, 50, 75, 99.99]:  # percentage enrichment from 0% Li6 to 100% Li6
+    results.append(make_materials_geometry_tallies(Li6_enrichment))
 print(results)
 #results.append(make_materials_geometry_tallies(7.5))
 # PLOTS RESULTS
