@@ -476,7 +476,7 @@
   </geometry>
   <settings>
     <run_mode>fixed source</run_mode>
-    <particles>1000</particles>
+    <particles>10</particles>
     <batches>10</batches>
     <inactive>1</inactive>
     <source particle="neutron" strength="1.0" type="independent">

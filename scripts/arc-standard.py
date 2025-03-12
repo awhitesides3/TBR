@@ -7,6 +7,7 @@ import xml.etree.ElementTree as ET
 import matplotlib.pyplot as plt
 import subprocess
 import pandas as pd
+import shutil
 
 openmc.config["cross_sections"] = '/home/hice1/awhitesides3/endfb-viii.0-hdf5/cross_sections.xml'
 
@@ -108,7 +109,7 @@ def create_arc(Li6_enrichment, dopant, dopant_mass, multiplier_material, multipl
     
     # set run parameters
     device.settings.threads = 10
-    device.settings.particles = int(1e3)
+    device.settings.particles = int(1e1)
     device.settings.batches = 10  
     device.settings.inactive = 1  
 
@@ -117,7 +118,7 @@ def create_arc(Li6_enrichment, dopant, dopant_mass, multiplier_material, multipl
 # additional runs
 # ================================================================================
 
-def make_materials_geometry_tallies(Li6_enrichment, dopant = str(sys.argv[1]), float(dopant_mass = sys.argv[2]),
+def make_materials_geometry_tallies(Li6_enrichment, dopant = str(sys.argv[1]), dopant_mass = float(sys.argv[2]),
                                 multiplier_material = sys.argv[3], multiplier_thickness = float(sys.argv[4]), reflector_material = sys.argv[5],
                                 reflector_thickness = float(sys.argv[6]), channel_thickness = float(sys.argv[7]), order = sys.argv[8]):
     """Makes a neutronics model of a blanket and simulates the TBR value.
@@ -162,7 +163,7 @@ def make_materials_geometry_tallies(Li6_enrichment, dopant = str(sys.argv[1]), f
             'tbr_tally_std_dev': tbr_tally_std_dev}
 
 results = []
-for Li6_enrichment in [0.01, 7.5, 15, 25, 50, 75, 99.99]:  # percentage enrichment from 0% Li6 to 100% Li6
+for Li6_enrichment in [0.01, 7.5, 15, 25, 50, 75, 99.99]:  # percentage enrichment from 0% Li6 to 100% Li6, 0.01, 7.5, 15, 25, 50, 75, 99.99
     results.append(make_materials_geometry_tallies(Li6_enrichment, str(sys.argv[1]), float(sys.argv[2]),
                     sys.argv[3], float(sys.argv[4]), sys.argv[5],
                     float(sys.argv[6]), float(sys.argv[7]), sys.argv[8]))
@@ -179,12 +180,47 @@ plt.ytitle="TBR"
 plt.grid()
 plt.show()
 # ================================================================================
+print(str(sys.argv[9]))
+
+def move_files(source_dir, target_dir):
+    # Check if the source directory exists
+    if not os.path.exists(source_dir):
+        print(f"Error: Source directory '{source_dir}' does not exist.")
+        return
+    
+    # Create the target directory if it doesn't exist
+    if not os.path.exists(target_dir):
+        os.makedirs(target_dir)
+    
+    # Loop through all files in the source directory
+    for filename in os.listdir(source_dir):
+        source_file = os.path.join(source_dir, filename)
+        
+        # Skip directories (we only want to move files)
+        if os.path.isdir(source_file):
+            continue
+        
+        if filename == 'arc-standard.py':
+            continue
+        # Create the full target file path
+        target_file = os.path.join(target_dir, filename)
+        
+        # Move the file
+        try:
+            shutil.move(source_file, target_file)
+            print(f"Moved '{filename}' to '{target_dir}'")
+        except Exception as e:
+            print(f"Error moving '{filename}': {e}")
+
+os.mkdir(str(sys.argv[9]))
+move_files('/home/hice1/awhitesides3/TBR/scripts', str(sys.argv[9]))
+print("OpenMC files moved to new directory:", str(sys.argv[9]))
 '''
 try:
-    if sys.argv[1] is not None:
-        os.mkdir(str(sys.argv[1]))
-        device.move_files(str(sys.argv[1]))
-        print("OpenMC files moved to new directory:", str(sys.argv[1]))
+    if sys.argv[9] is not None:
+        os.mkdir(str(sys.argv[9]))
+        device.move_files(str(sys.argv[9]))
+        print("OpenMC files moved to new directory:", str(sys.argv[9]))
 
 except:
     print("No directory specified, using this one")

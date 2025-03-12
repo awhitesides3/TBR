@@ -155,16 +155,16 @@ def generate_device(Li6_enrichment = 7.5, dopant = "Li4SiO4", dopant_mass = 0, m
     device.dopant = dopant
     device.Li6_enrichment = Li6_enrichment
 
-    print(Li6_enrichment)
-    print(dopant)
-    print(dopant_mass)
-    print(multiplier_material)
-    print(type(multiplier_material))
-    print(multiplier_thickness)
-    print(reflector_material)
-    print(reflector_thickness)
-    print(channel_thickness)
-    print(order)
+    # print(Li6_enrichment)
+    # print(dopant)
+    # print(dopant_mass)
+    # print(multiplier_material)
+    # print(type(multiplier_material))
+    # print(multiplier_thickness)
+    # print(reflector_material)
+    # print(reflector_thickness)
+    # print(channel_thickness)
+    # print(order)
     # ==============================================================================
     # Geometry
     # ==============================================================================
@@ -195,7 +195,6 @@ def generate_device(Li6_enrichment = 7.5, dopant = "Li4SiO4", dopant_mass = 0, m
                                         blanket_inner, reflector_outer, blanket_outer]) #[*]
 
         plasma, pfc, vv, channel, multiplier, tank_inner, salt, reflector, tank_outer, outside = regions #[*]
-
     # Read volume calc file
     vol_calc_load = openmc.VolumeCalculation.from_hdf5('/home/hice1/awhitesides3/TBR/data/arc-1_volumes.h5')
     flibe_volume = vol_calc_load.volumes[8].n
