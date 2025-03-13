@@ -110,6 +110,11 @@ Li4SiO4.set_density('g/cm3', 2.32)  # this would be lower than 2.32 but this wou
 lead = openmc.Material()
 lead.add_element("Pb", 1.0)
 lead.set_density('g/cm3', 11.342)
+
+"""Tellurium"""
+tellurium = openmc.Material()
+tellurium.add_element("Te", 1.0)
+tellurium.set_density('g/cm3', 6.24)
                         
 
 def get_tetrafluoride_mass(mass, dopant):
@@ -169,8 +174,10 @@ def make_doped_flibe(dopant, dopant_mass, Li6_enrichment=7.5, name='doped_flibe'
 
     if dopant == 'Li4SiO4':
         ceramic = Li4SiO4
-    elif dopant == 'Th':
-        tetrafluoride = thf4
+    elif dopant == 'lead':
+        ceramic = lead
+    elif dopant == 'tellurium':
+        ceramic = tellurium
     else:
         raise ValueError("Invalid dopant passed into blanket liquid function")
 
