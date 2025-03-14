@@ -108,8 +108,8 @@ def create_arc(Li6_enrichment, dopant, dopant_mass, multiplier_material, multipl
          openmc.plot_geometry() #path_input = 'plots.xml'
     
     # set run parameters
-    device.settings.threads = 10
-    device.settings.particles = int(1e1)
+    device.settings.threads = 24
+    device.settings.particles = int(1e5)
     device.settings.batches = 10  
     device.settings.inactive = 1  
 
@@ -137,7 +137,7 @@ def make_materials_geometry_tallies(Li6_enrichment, dopant = str(sys.argv[1]), d
     for file in os.listdir('.'):
         if file.endswith('.h5'):
             os.remove(file)
-    sp_filename = device.run(output = False)  # runs with reduced amount of output printing
+    sp_filename = device.run()  # runs with reduced amount of output printing, output = false
 
     # OPEN OUPUT FILE
     sp = openmc.StatePoint(sp_filename)
@@ -150,7 +150,7 @@ def make_materials_geometry_tallies(Li6_enrichment, dopant = str(sys.argv[1]), d
     print(df)
     print(df2)
     combined_df = pd.concat([df, df2], ignore_index = True)
-    combined_df.to_csv(f'Be_1cm_{device.Li6_enrichment}%.csv', index = False)
+    combined_df.to_csv(f'{device.Li6_enrichment}%.csv', index = False)
     tbr_tally_result = df['mean'].sum() + df2['mean'].sum()
     tbr_tally_std_dev = df['std. dev.'].sum() + df2['mean'].sum()
 
