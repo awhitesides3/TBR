@@ -108,7 +108,7 @@ def create_arc(Li6_enrichment, dopant, dopant_mass, multiplier_material, multipl
          openmc.plot_geometry() #path_input = 'plots.xml'
     
     # set run parameters
-    device.settings.threads = 24
+    # device.settings.threads = 24
     device.settings.particles = int(1e5)
     device.settings.batches = 10  
     device.settings.inactive = 1  
@@ -137,7 +137,7 @@ def make_materials_geometry_tallies(Li6_enrichment, dopant = str(sys.argv[1]), d
     for file in os.listdir('.'):
         if file.endswith('.h5'):
             os.remove(file)
-    sp_filename = device.run()  # runs with reduced amount of output printing, output = false
+    sp_filename = device.run(output = False)  # runs with reduced amount of output printing, output = false
 
     # OPEN OUPUT FILE
     sp = openmc.StatePoint(sp_filename)
@@ -201,6 +201,8 @@ def move_files(source_dir, target_dir):
             continue
         
         if filename == 'arc-standard.py':
+            continue
+        if filename == 'slurm_running.sh':
             continue
         # Create the full target file path
         target_file = os.path.join(target_dir, filename)

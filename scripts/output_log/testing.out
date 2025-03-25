@@ -1,0 +1,1089 @@
+---------------------------------------
+Begin Slurm Prolog: Mar-25-2025 09:05:34
+Job ID:    2373361
+User ID:   awhitesides3
+Account:   me
+Job name:  TBR_runs_3
+Partition: pace-cpu
+QOS:       coe-ice
+---------------------------------------
+
+CondaError: Run 'conda init' before 'conda deactivate'
+
+Obtaining file:///home/hice1/awhitesides3/TBR/scripts
+ERROR: file:///home/hice1/awhitesides3/TBR/scripts does not appear to be a Python project: neither 'setup.py' nor 'pyproject.toml' found.
+48
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+                                %%%%%%%%%%%%%%%
+                           %%%%%%%%%%%%%%%%%%%%%%%%
+                        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                                    %%%%%%%%%%%%%%%%%%%%%%%%
+                                     %%%%%%%%%%%%%%%%%%%%%%%%
+                 ###############      %%%%%%%%%%%%%%%%%%%%%%%%
+                ##################     %%%%%%%%%%%%%%%%%%%%%%%
+                ###################     %%%%%%%%%%%%%%%%%%%%%%%
+                ####################     %%%%%%%%%%%%%%%%%%%%%%
+                #####################     %%%%%%%%%%%%%%%%%%%%%
+                ######################     %%%%%%%%%%%%%%%%%%%%
+                #######################     %%%%%%%%%%%%%%%%%%
+                 #######################     %%%%%%%%%%%%%%%%%
+                 ######################     %%%%%%%%%%%%%%%%%
+                  ####################     %%%%%%%%%%%%%%%%%
+                    #################     %%%%%%%%%%%%%%%%%
+                     ###############     %%%%%%%%%%%%%%%%
+                       ############     %%%%%%%%%%%%%%%
+                          ########     %%%%%%%%%%%%%%
+                                      %%%%%%%%%%%
+
+                 | The OpenMC Monte Carlo Code
+       Copyright | 2011-2024 MIT, UChicago Argonne LLC, and contributors
+         License | https://docs.openmc.org/en/latest/license.html
+         Version | 0.15.0
+        Git SHA1 | 84fb85977f46e162fea8f5a20ea653a3ec62ac24
+       Date/Time | 2025-03-25 09:05:46
+   MPI Processes | 1
+  OpenMP Threads | 48
+
+ Reading settings XML file...
+ Reading materials XML file...
+ Reading geometry XML file...
+ Reading tallies XML file...
+ Preparing distributed cell instances...
+ Reading plot XML file...
+
+ =======================>     PLOTTING SUMMARY     <========================
+
+Plot ID: 1
+Plot file: geometry_plot.png
+Universe depth: -1
+Plot Type: Slice
+Origin: 350 0 0
+Width:  700  800
+Coloring: Cells
+Basis: XZ
+Pixels: 7000 8000
+
+ Processing plot 1: geometry_plot.png...
+0.01
+   cell nuclide   score     mean  std. dev.
+0    10     Li6  (n,Xt) 3.29e-01   3.93e-04
+1    10     Li7  (n,Xt) 7.45e-02   1.66e-04
+   cell nuclide   score     mean  std. dev.
+0     6     Li6  (n,Xt) 8.59e-04   1.13e-06
+1     6     Li7  (n,Xt) 2.04e-02   2.57e-05
+7.5
+   cell nuclide   score     mean  std. dev.
+0    20     Li6  (n,Xt) 1.06e+00   8.38e-04
+1    20     Li7  (n,Xt) 6.86e-02   1.58e-04
+   cell nuclide   score     mean  std. dev.
+0    17     Li6  (n,Xt) 9.03e-02   1.55e-04
+1    17     Li7  (n,Xt) 1.89e-02   2.23e-05
+15
+   cell nuclide   score     mean  std. dev.
+0    30     Li6  (n,Xt) 1.08e+00   1.21e-03
+1    30     Li7  (n,Xt) 6.27e-02   1.44e-04
+   cell nuclide   score     mean  std. dev.
+0    27     Li6  (n,Xt) 1.22e-01   1.64e-04
+1    27     Li7  (n,Xt) 1.74e-02   2.06e-05
+25
+   cell nuclide   score     mean  std. dev.
+0    40     Li6  (n,Xt) 1.08e+00   9.77e-04
+1    40     Li7  (n,Xt) 5.49e-02   1.26e-04
+   cell nuclide   score     mean  std. dev.
+0    37     Li6  (n,Xt) 1.51e-01   3.70e-04
+1    37     Li7  (n,Xt) 1.54e-02   1.63e-05
+50
+   cell nuclide   score     mean  std. dev.
+0    50     Li6  (n,Xt) 1.06e+00   1.19e-03
+1    50     Li7  (n,Xt) 3.60e-02   7.48e-05
+   cell nuclide   score     mean  std. dev.
+0    47     Li6  (n,Xt) 1.98e-01   3.86e-04
+1    47     Li7  (n,Xt) 1.03e-02   1.07e-05
+75
+   cell nuclide   score     mean  std. dev.
+0    60     Li6  (n,Xt) 1.05e+00   1.19e-03
+1    60     Li7  (n,Xt) 1.77e-02   4.04e-05
+   cell nuclide   score     mean  std. dev.
+0    57     Li6  (n,Xt) 2.31e-01   4.22e-04
+1    57     Li7  (n,Xt) 5.15e-03   4.95e-06
+99.99
+   cell nuclide   score     mean  std. dev.
+0    70     Li6  (n,Xt) 1.03e+00   1.45e-03
+1    70     Li7  (n,Xt) 6.95e-06   1.45e-08
+   cell nuclide   score     mean  std. dev.
+0    67     Li6  (n,Xt) 2.55e-01   5.21e-04
+1    67     Li7  (n,Xt) 2.07e-06   2.01e-09
+[{'enrichment': 0.01, 'tbr_tally_result': np.float64(0.4250847432750097), 'tbr_tally_std_dev': np.float64(0.021850150423123098)}, {'enrichment': 7.5, 'tbr_tally_result': np.float64(1.2396702177516865), 'tbr_tally_std_dev': np.float64(0.11020455480540646)}, {'enrichment': 15, 'tbr_tally_result': np.float64(1.2790084575041423), 'tbr_tally_std_dev': np.float64(0.14096470322985172)}, {'enrichment': 25, 'tbr_tally_result': np.float64(1.2974945207685977), 'tbr_tally_std_dev': np.float64(0.16708894970747068)}, {'enrichment': 50, 'tbr_tally_result': np.float64(1.306069090188274), 'tbr_tally_std_dev': np.float64(0.20976435168174143)}, {'enrichment': 75, 'tbr_tally_result': np.float64(1.301741521367346), 'tbr_tally_std_dev': np.float64(0.23716445467693897)}, {'enrichment': 99.99, 'tbr_tally_result': np.float64(1.2858857874711667), 'tbr_tally_std_dev': np.float64(0.2562438655055456)}]
+/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_2_ref_0
+Moved 'plots.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_2_ref_0'
+Moved 'settings.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_2_ref_0'
+Moved 'geometry.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_2_ref_0'
+Moved 'materials.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_2_ref_0'
+Moved 'tallies.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_2_ref_0'
+Moved 'geometry_plot.png' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_2_ref_0'
+Moved 'model.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_2_ref_0'
+Moved 'summary.h5' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_2_ref_0'
+Moved 'statepoint.10.h5' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_2_ref_0'
+Moved 'tallies.out' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_2_ref_0'
+Moved '0.01%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_2_ref_0'
+Moved '7.5%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_2_ref_0'
+Moved '15%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_2_ref_0'
+Moved '25%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_2_ref_0'
+Moved '50%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_2_ref_0'
+Moved '75%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_2_ref_0'
+Moved '99.99%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_2_ref_0'
+OpenMC files moved to new directory: /home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_2_ref_0
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+                                %%%%%%%%%%%%%%%
+                           %%%%%%%%%%%%%%%%%%%%%%%%
+                        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                                    %%%%%%%%%%%%%%%%%%%%%%%%
+                                     %%%%%%%%%%%%%%%%%%%%%%%%
+                 ###############      %%%%%%%%%%%%%%%%%%%%%%%%
+                ##################     %%%%%%%%%%%%%%%%%%%%%%%
+                ###################     %%%%%%%%%%%%%%%%%%%%%%%
+                ####################     %%%%%%%%%%%%%%%%%%%%%%
+                #####################     %%%%%%%%%%%%%%%%%%%%%
+                ######################     %%%%%%%%%%%%%%%%%%%%
+                #######################     %%%%%%%%%%%%%%%%%%
+                 #######################     %%%%%%%%%%%%%%%%%
+                 ######################     %%%%%%%%%%%%%%%%%
+                  ####################     %%%%%%%%%%%%%%%%%
+                    #################     %%%%%%%%%%%%%%%%%
+                     ###############     %%%%%%%%%%%%%%%%
+                       ############     %%%%%%%%%%%%%%%
+                          ########     %%%%%%%%%%%%%%
+                                      %%%%%%%%%%%
+
+                 | The OpenMC Monte Carlo Code
+       Copyright | 2011-2024 MIT, UChicago Argonne LLC, and contributors
+         License | https://docs.openmc.org/en/latest/license.html
+         Version | 0.15.0
+        Git SHA1 | 84fb85977f46e162fea8f5a20ea653a3ec62ac24
+       Date/Time | 2025-03-25 09:10:43
+   MPI Processes | 1
+  OpenMP Threads | 48
+
+ Reading settings XML file...
+ Reading materials XML file...
+ Reading geometry XML file...
+ Reading tallies XML file...
+ Preparing distributed cell instances...
+ Reading plot XML file...
+
+ =======================>     PLOTTING SUMMARY     <========================
+
+Plot ID: 1
+Plot file: geometry_plot.png
+Universe depth: -1
+Plot Type: Slice
+Origin: 350 0 0
+Width:  700  800
+Coloring: Cells
+Basis: XZ
+Pixels: 7000 8000
+
+ Processing plot 1: geometry_plot.png...
+0.01
+   cell nuclide   score     mean  std. dev.
+0    10     Li6  (n,Xt) 3.25e-01   3.38e-04
+1    10     Li7  (n,Xt) 7.92e-02   2.08e-04
+   cell nuclide   score     mean  std. dev.
+0     6     Li6  (n,Xt) 8.56e-04   2.51e-06
+1     6     Li7  (n,Xt) 2.05e-02   2.86e-05
+7.5
+   cell nuclide   score     mean  std. dev.
+0    20     Li6  (n,Xt) 1.05e+00   1.18e-03
+1    20     Li7  (n,Xt) 7.29e-02   1.83e-04
+   cell nuclide   score     mean  std. dev.
+0    17     Li6  (n,Xt) 8.69e-02   2.48e-04
+1    17     Li7  (n,Xt) 1.90e-02   2.40e-05
+15
+   cell nuclide   score     mean  std. dev.
+0    30     Li6  (n,Xt) 1.06e+00   1.51e-03
+1    30     Li7  (n,Xt) 6.67e-02   1.70e-04
+   cell nuclide   score     mean  std. dev.
+0    27     Li6  (n,Xt) 1.18e-01   3.26e-04
+1    27     Li7  (n,Xt) 1.75e-02   2.41e-05
+25
+   cell nuclide   score     mean  std. dev.
+0    40     Li6  (n,Xt) 1.06e+00   1.15e-03
+1    40     Li7  (n,Xt) 5.84e-02   1.41e-04
+   cell nuclide   score     mean  std. dev.
+0    37     Li6  (n,Xt) 1.44e-01   2.61e-04
+1    37     Li7  (n,Xt) 1.54e-02   1.98e-05
+50
+   cell nuclide   score     mean  std. dev.
+0    50     Li6  (n,Xt) 1.05e+00   1.19e-03
+1    50     Li7  (n,Xt) 3.82e-02   9.37e-05
+   cell nuclide   score     mean  std. dev.
+0    47     Li6  (n,Xt) 1.89e-01   3.39e-04
+1    47     Li7  (n,Xt) 1.03e-02   1.30e-05
+75
+   cell nuclide   score     mean  std. dev.
+0    60     Li6  (n,Xt) 1.04e+00   1.37e-03
+1    60     Li7  (n,Xt) 1.88e-02   4.80e-05
+   cell nuclide   score     mean  std. dev.
+0    57     Li6  (n,Xt) 2.19e-01   3.43e-04
+1    57     Li7  (n,Xt) 5.17e-03   6.86e-06
+99.99
+   cell nuclide   score     mean  std. dev.
+0    70     Li6  (n,Xt) 1.02e+00   8.59e-04
+1    70     Li7  (n,Xt) 7.39e-06   1.93e-08
+   cell nuclide   score     mean  std. dev.
+0    67     Li6  (n,Xt) 2.43e-01   2.93e-04
+1    67     Li7  (n,Xt) 2.07e-06   2.50e-09
+[{'enrichment': 0.01, 'tbr_tally_result': np.float64(0.42602045722666754), 'tbr_tally_std_dev': np.float64(0.02190933483477063)}, {'enrichment': 7.5, 'tbr_tally_result': np.float64(1.225996535577476), 'tbr_tally_std_dev': np.float64(0.10725913351799675)}, {'enrichment': 15, 'tbr_tally_result': np.float64(1.261328994796242), 'tbr_tally_std_dev': np.float64(0.1367176361501057)}, {'enrichment': 25, 'tbr_tally_result': np.float64(1.2821748817134249), 'tbr_tally_std_dev': np.float64(0.16106008211874387)}, {'enrichment': 50, 'tbr_tally_result': np.float64(1.2875606661375179), 'tbr_tally_std_dev': np.float64(0.20018909153985073)}, {'enrichment': 75, 'tbr_tally_result': np.float64(1.2793953768238864), 'tbr_tally_std_dev': np.float64(0.22553648362803072)}, {'enrichment': 99.99, 'tbr_tally_result': np.float64(1.2670839075939244), 'tbr_tally_std_dev': np.float64(0.24379537974642626)}]
+/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1.5_ref_0
+Moved 'plots.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1.5_ref_0'
+Moved 'settings.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1.5_ref_0'
+Moved 'geometry.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1.5_ref_0'
+Moved 'materials.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1.5_ref_0'
+Moved 'tallies.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1.5_ref_0'
+Moved 'geometry_plot.png' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1.5_ref_0'
+Moved 'model.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1.5_ref_0'
+Moved 'summary.h5' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1.5_ref_0'
+Moved 'statepoint.10.h5' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1.5_ref_0'
+Moved 'tallies.out' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1.5_ref_0'
+Moved '0.01%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1.5_ref_0'
+Moved '7.5%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1.5_ref_0'
+Moved '15%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1.5_ref_0'
+Moved '25%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1.5_ref_0'
+Moved '50%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1.5_ref_0'
+Moved '75%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1.5_ref_0'
+Moved '99.99%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1.5_ref_0'
+OpenMC files moved to new directory: /home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1.5_ref_0
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+                                %%%%%%%%%%%%%%%
+                           %%%%%%%%%%%%%%%%%%%%%%%%
+                        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                                    %%%%%%%%%%%%%%%%%%%%%%%%
+                                     %%%%%%%%%%%%%%%%%%%%%%%%
+                 ###############      %%%%%%%%%%%%%%%%%%%%%%%%
+                ##################     %%%%%%%%%%%%%%%%%%%%%%%
+                ###################     %%%%%%%%%%%%%%%%%%%%%%%
+                ####################     %%%%%%%%%%%%%%%%%%%%%%
+                #####################     %%%%%%%%%%%%%%%%%%%%%
+                ######################     %%%%%%%%%%%%%%%%%%%%
+                #######################     %%%%%%%%%%%%%%%%%%
+                 #######################     %%%%%%%%%%%%%%%%%
+                 ######################     %%%%%%%%%%%%%%%%%
+                  ####################     %%%%%%%%%%%%%%%%%
+                    #################     %%%%%%%%%%%%%%%%%
+                     ###############     %%%%%%%%%%%%%%%%
+                       ############     %%%%%%%%%%%%%%%
+                          ########     %%%%%%%%%%%%%%
+                                      %%%%%%%%%%%
+
+                 | The OpenMC Monte Carlo Code
+       Copyright | 2011-2024 MIT, UChicago Argonne LLC, and contributors
+         License | https://docs.openmc.org/en/latest/license.html
+         Version | 0.15.0
+        Git SHA1 | 84fb85977f46e162fea8f5a20ea653a3ec62ac24
+       Date/Time | 2025-03-25 09:15:27
+   MPI Processes | 1
+  OpenMP Threads | 48
+
+ Reading settings XML file...
+ Reading materials XML file...
+ Reading geometry XML file...
+ Reading tallies XML file...
+ Preparing distributed cell instances...
+ Reading plot XML file...
+
+ =======================>     PLOTTING SUMMARY     <========================
+
+Plot ID: 1
+Plot file: geometry_plot.png
+Universe depth: -1
+Plot Type: Slice
+Origin: 350 0 0
+Width:  700  800
+Coloring: Cells
+Basis: XZ
+Pixels: 7000 8000
+
+ Processing plot 1: geometry_plot.png...
+0.01
+   cell nuclide   score     mean  std. dev.
+0    10     Li6  (n,Xt) 3.22e-01   4.09e-04
+1    10     Li7  (n,Xt) 8.39e-02   2.21e-04
+   cell nuclide   score     mean  std. dev.
+0     6     Li6  (n,Xt) 8.51e-04   2.15e-06
+1     6     Li7  (n,Xt) 2.06e-02   3.01e-05
+7.5
+   cell nuclide   score     mean  std. dev.
+0    20     Li6  (n,Xt) 1.03e+00   1.47e-03
+1    20     Li7  (n,Xt) 7.72e-02   2.16e-04
+   cell nuclide   score     mean  std. dev.
+0    17     Li6  (n,Xt) 8.41e-02   2.28e-04
+1    17     Li7  (n,Xt) 1.91e-02   2.58e-05
+15
+   cell nuclide   score     mean  std. dev.
+0    30     Li6  (n,Xt) 1.05e+00   6.60e-04
+1    30     Li7  (n,Xt) 7.06e-02   1.90e-04
+   cell nuclide   score     mean  std. dev.
+0    27     Li6  (n,Xt) 1.13e-01   2.55e-04
+1    27     Li7  (n,Xt) 1.75e-02   2.50e-05
+25
+   cell nuclide   score     mean  std. dev.
+0    40     Li6  (n,Xt) 1.05e+00   1.06e-03
+1    40     Li7  (n,Xt) 6.18e-02   1.55e-04
+   cell nuclide   score     mean  std. dev.
+0    37     Li6  (n,Xt) 1.38e-01   3.47e-04
+1    37     Li7  (n,Xt) 1.55e-02   2.05e-05
+50
+   cell nuclide   score     mean  std. dev.
+0    50     Li6  (n,Xt) 1.04e+00   1.38e-03
+1    50     Li7  (n,Xt) 4.05e-02   1.02e-04
+   cell nuclide   score     mean  std. dev.
+0    47     Li6  (n,Xt) 1.79e-01   5.29e-04
+1    47     Li7  (n,Xt) 1.03e-02   1.33e-05
+75
+   cell nuclide   score     mean  std. dev.
+0    60     Li6  (n,Xt) 1.03e+00   7.86e-04
+1    60     Li7  (n,Xt) 1.99e-02   4.80e-05
+   cell nuclide   score     mean  std. dev.
+0    57     Li6  (n,Xt) 2.08e-01   3.00e-04
+1    57     Li7  (n,Xt) 5.19e-03   7.38e-06
+99.99
+   cell nuclide   score     mean  std. dev.
+0    70     Li6  (n,Xt) 1.01e+00   1.35e-03
+1    70     Li7  (n,Xt) 7.83e-06   1.84e-08
+   cell nuclide   score     mean  std. dev.
+0    67     Li6  (n,Xt) 2.30e-01   3.39e-04
+1    67     Li7  (n,Xt) 2.08e-06   2.65e-09
+[{'enrichment': 0.01, 'tbr_tally_result': np.float64(0.42702171535155353), 'tbr_tally_std_dev': np.float64(0.022076380957190264)}, {'enrichment': 7.5, 'tbr_tally_result': np.float64(1.20979356974964), 'tbr_tally_std_dev': np.float64(0.10481221707210168)}, {'enrichment': 15, 'tbr_tally_result': np.float64(1.2461527669713812), 'tbr_tally_std_dev': np.float64(0.1309231173832196)}, {'enrichment': 25, 'tbr_tally_result': np.float64(1.2636637266667643), 'tbr_tally_std_dev': np.float64(0.15440616460749285)}, {'enrichment': 50, 'tbr_tally_result': np.float64(1.2692424102871436), 'tbr_tally_std_dev': np.float64(0.1910835348032557)}, {'enrichment': 75, 'tbr_tally_result': np.float64(1.259351273212158), 'tbr_tally_std_dev': np.float64(0.21397509549126523)}, {'enrichment': 99.99, 'tbr_tally_result': np.float64(1.2427504749941032), 'tbr_tally_std_dev': np.float64(0.23157124630383197)}]
+/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1_ref_0
+Moved 'plots.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1_ref_0'
+Moved 'settings.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1_ref_0'
+Moved 'geometry.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1_ref_0'
+Moved 'materials.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1_ref_0'
+Moved 'tallies.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1_ref_0'
+Moved 'geometry_plot.png' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1_ref_0'
+Moved 'model.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1_ref_0'
+Moved 'summary.h5' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1_ref_0'
+Moved 'statepoint.10.h5' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1_ref_0'
+Moved 'tallies.out' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1_ref_0'
+Moved '0.01%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1_ref_0'
+Moved '7.5%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1_ref_0'
+Moved '15%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1_ref_0'
+Moved '25%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1_ref_0'
+Moved '50%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1_ref_0'
+Moved '75%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1_ref_0'
+Moved '99.99%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1_ref_0'
+OpenMC files moved to new directory: /home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_1_ref_0
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+                                %%%%%%%%%%%%%%%
+                           %%%%%%%%%%%%%%%%%%%%%%%%
+                        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                                    %%%%%%%%%%%%%%%%%%%%%%%%
+                                     %%%%%%%%%%%%%%%%%%%%%%%%
+                 ###############      %%%%%%%%%%%%%%%%%%%%%%%%
+                ##################     %%%%%%%%%%%%%%%%%%%%%%%
+                ###################     %%%%%%%%%%%%%%%%%%%%%%%
+                ####################     %%%%%%%%%%%%%%%%%%%%%%
+                #####################     %%%%%%%%%%%%%%%%%%%%%
+                ######################     %%%%%%%%%%%%%%%%%%%%
+                #######################     %%%%%%%%%%%%%%%%%%
+                 #######################     %%%%%%%%%%%%%%%%%
+                 ######################     %%%%%%%%%%%%%%%%%
+                  ####################     %%%%%%%%%%%%%%%%%
+                    #################     %%%%%%%%%%%%%%%%%
+                     ###############     %%%%%%%%%%%%%%%%
+                       ############     %%%%%%%%%%%%%%%
+                          ########     %%%%%%%%%%%%%%
+                                      %%%%%%%%%%%
+
+                 | The OpenMC Monte Carlo Code
+       Copyright | 2011-2024 MIT, UChicago Argonne LLC, and contributors
+         License | https://docs.openmc.org/en/latest/license.html
+         Version | 0.15.0
+        Git SHA1 | 84fb85977f46e162fea8f5a20ea653a3ec62ac24
+       Date/Time | 2025-03-25 09:20:04
+   MPI Processes | 1
+  OpenMP Threads | 48
+
+ Reading settings XML file...
+ Reading materials XML file...
+ Reading geometry XML file...
+ Reading tallies XML file...
+ Preparing distributed cell instances...
+ Reading plot XML file...
+
+ =======================>     PLOTTING SUMMARY     <========================
+
+Plot ID: 1
+Plot file: geometry_plot.png
+Universe depth: -1
+Plot Type: Slice
+Origin: 350 0 0
+Width:  700  800
+Coloring: Cells
+Basis: XZ
+Pixels: 7000 8000
+
+ Processing plot 1: geometry_plot.png...
+0.01
+   cell nuclide   score     mean  std. dev.
+0    10     Li6  (n,Xt) 3.18e-01   4.22e-04
+1    10     Li7  (n,Xt) 8.90e-02   2.04e-04
+   cell nuclide   score     mean  std. dev.
+0     6     Li6  (n,Xt) 8.52e-04   1.23e-06
+1     6     Li7  (n,Xt) 2.07e-02   2.95e-05
+7.5
+   cell nuclide   score     mean  std. dev.
+0    20     Li6  (n,Xt) 1.01e+00   1.24e-03
+1    20     Li7  (n,Xt) 8.19e-02   2.00e-04
+   cell nuclide   score     mean  std. dev.
+0    17     Li6  (n,Xt) 8.04e-02   1.26e-04
+1    17     Li7  (n,Xt) 1.91e-02   2.74e-05
+15
+   cell nuclide   score     mean  std. dev.
+0    30     Li6  (n,Xt) 1.03e+00   1.62e-03
+1    30     Li7  (n,Xt) 7.49e-02   1.61e-04
+   cell nuclide   score     mean  std. dev.
+0    27     Li6  (n,Xt) 1.07e-01   1.89e-04
+1    27     Li7  (n,Xt) 1.76e-02   2.44e-05
+25
+   cell nuclide   score     mean  std. dev.
+0    40     Li6  (n,Xt) 1.03e+00   1.20e-03
+1    40     Li7  (n,Xt) 6.56e-02   1.39e-04
+   cell nuclide   score     mean  std. dev.
+0    37     Li6  (n,Xt) 1.31e-01   1.97e-04
+1    37     Li7  (n,Xt) 1.55e-02   1.90e-05
+50
+   cell nuclide   score     mean  std. dev.
+0    50     Li6  (n,Xt) 1.02e+00   1.41e-03
+1    50     Li7  (n,Xt) 4.30e-02   9.19e-05
+   cell nuclide   score     mean  std. dev.
+0    47     Li6  (n,Xt) 1.70e-01   2.25e-04
+1    47     Li7  (n,Xt) 1.04e-02   1.32e-05
+75
+   cell nuclide   score     mean  std. dev.
+0    60     Li6  (n,Xt) 1.01e+00   1.53e-03
+1    60     Li7  (n,Xt) 2.11e-02   4.09e-05
+   cell nuclide   score     mean  std. dev.
+0    57     Li6  (n,Xt) 1.96e-01   2.47e-04
+1    57     Li7  (n,Xt) 5.21e-03   6.90e-06
+99.99
+   cell nuclide   score     mean  std. dev.
+0    70     Li6  (n,Xt) 9.99e-01   1.65e-03
+1    70     Li7  (n,Xt) 8.31e-06   1.73e-08
+   cell nuclide   score     mean  std. dev.
+0    67     Li6  (n,Xt) 2.17e-01   1.71e-04
+1    67     Li7  (n,Xt) 2.09e-06   2.58e-09
+[{'enrichment': 0.01, 'tbr_tally_result': np.float64(0.42807228730562796), 'tbr_tally_std_dev': np.float64(0.022157479271188236)}, {'enrichment': 7.5, 'tbr_tally_result': np.float64(1.1947553981804029), 'tbr_tally_std_dev': np.float64(0.10093561313983339)}, {'enrichment': 15, 'tbr_tally_result': np.float64(1.2288226998746525), 'tbr_tally_std_dev': np.float64(0.12656707800951073)}, {'enrichment': 25, 'tbr_tally_result': np.float64(1.2449696843042077), 'tbr_tally_std_dev': np.float64(0.14792888661697534)}, {'enrichment': 50, 'tbr_tally_result': np.float64(1.2467380849595264), 'tbr_tally_std_dev': np.float64(0.18162651607591448)}, {'enrichment': 75, 'tbr_tally_result': np.float64(1.2351082030878522), 'tbr_tally_std_dev': np.float64(0.2031245959737051)}, {'enrichment': 99.99, 'tbr_tally_result': np.float64(1.2161553146900834), 'tbr_tally_std_dev': np.float64(0.21843229770484465)}]
+/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_0.5_ref_0
+Moved 'plots.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_0.5_ref_0'
+Moved 'settings.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_0.5_ref_0'
+Moved 'geometry.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_0.5_ref_0'
+Moved 'materials.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_0.5_ref_0'
+Moved 'tallies.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_0.5_ref_0'
+Moved 'geometry_plot.png' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_0.5_ref_0'
+Moved 'model.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_0.5_ref_0'
+Moved 'summary.h5' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_0.5_ref_0'
+Moved 'statepoint.10.h5' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_0.5_ref_0'
+Moved 'tallies.out' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_0.5_ref_0'
+Moved '0.01%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_0.5_ref_0'
+Moved '7.5%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_0.5_ref_0'
+Moved '15%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_0.5_ref_0'
+Moved '25%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_0.5_ref_0'
+Moved '50%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_0.5_ref_0'
+Moved '75%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_0.5_ref_0'
+Moved '99.99%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_0.5_ref_0'
+OpenMC files moved to new directory: /home/hice1/awhitesides3/TBR/scripts/mlt_Pb/6_slry_0_mlt_0.5_ref_0
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+                                %%%%%%%%%%%%%%%
+                           %%%%%%%%%%%%%%%%%%%%%%%%
+                        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                                    %%%%%%%%%%%%%%%%%%%%%%%%
+                                     %%%%%%%%%%%%%%%%%%%%%%%%
+                 ###############      %%%%%%%%%%%%%%%%%%%%%%%%
+                ##################     %%%%%%%%%%%%%%%%%%%%%%%
+                ###################     %%%%%%%%%%%%%%%%%%%%%%%
+                ####################     %%%%%%%%%%%%%%%%%%%%%%
+                #####################     %%%%%%%%%%%%%%%%%%%%%
+                ######################     %%%%%%%%%%%%%%%%%%%%
+                #######################     %%%%%%%%%%%%%%%%%%
+                 #######################     %%%%%%%%%%%%%%%%%
+                 ######################     %%%%%%%%%%%%%%%%%
+                  ####################     %%%%%%%%%%%%%%%%%
+                    #################     %%%%%%%%%%%%%%%%%
+                     ###############     %%%%%%%%%%%%%%%%
+                       ############     %%%%%%%%%%%%%%%
+                          ########     %%%%%%%%%%%%%%
+                                      %%%%%%%%%%%
+
+                 | The OpenMC Monte Carlo Code
+       Copyright | 2011-2024 MIT, UChicago Argonne LLC, and contributors
+         License | https://docs.openmc.org/en/latest/license.html
+         Version | 0.15.0
+        Git SHA1 | 84fb85977f46e162fea8f5a20ea653a3ec62ac24
+       Date/Time | 2025-03-25 09:24:28
+   MPI Processes | 1
+  OpenMP Threads | 48
+
+ Reading settings XML file...
+ Reading materials XML file...
+ Reading geometry XML file...
+ Reading tallies XML file...
+ Preparing distributed cell instances...
+ Reading plot XML file...
+
+ =======================>     PLOTTING SUMMARY     <========================
+
+Plot ID: 1
+Plot file: geometry_plot.png
+Universe depth: -1
+Plot Type: Slice
+Origin: 350 0 0
+Width:  700  800
+Coloring: Cells
+Basis: XZ
+Pixels: 7000 8000
+
+ Processing plot 1: geometry_plot.png...
+0.01
+   cell nuclide   score     mean  std. dev.
+0    10     Li6  (n,Xt) 3.24e-01   4.25e-04
+1    10     Li7  (n,Xt) 8.39e-02   2.18e-04
+   cell nuclide   score     mean  std. dev.
+0     6     Li6  (n,Xt) 8.51e-04   2.27e-06
+1     6     Li7  (n,Xt) 2.06e-02   3.04e-05
+7.5
+   cell nuclide   score     mean  std. dev.
+0    20     Li6  (n,Xt) 1.03e+00   1.48e-03
+1    20     Li7  (n,Xt) 7.72e-02   2.15e-04
+   cell nuclide   score     mean  std. dev.
+0    17     Li6  (n,Xt) 8.41e-02   2.28e-04
+1    17     Li7  (n,Xt) 1.91e-02   2.58e-05
+15
+   cell nuclide   score     mean  std. dev.
+0    30     Li6  (n,Xt) 1.05e+00   6.51e-04
+1    30     Li7  (n,Xt) 7.06e-02   1.89e-04
+   cell nuclide   score     mean  std. dev.
+0    27     Li6  (n,Xt) 1.13e-01   2.54e-04
+1    27     Li7  (n,Xt) 1.75e-02   2.50e-05
+25
+   cell nuclide   score     mean  std. dev.
+0    40     Li6  (n,Xt) 1.05e+00   1.06e-03
+1    40     Li7  (n,Xt) 6.18e-02   1.55e-04
+   cell nuclide   score     mean  std. dev.
+0    37     Li6  (n,Xt) 1.38e-01   3.46e-04
+1    37     Li7  (n,Xt) 1.55e-02   2.05e-05
+50
+   cell nuclide   score     mean  std. dev.
+0    50     Li6  (n,Xt) 1.04e+00   1.38e-03
+1    50     Li7  (n,Xt) 4.05e-02   1.02e-04
+   cell nuclide   score     mean  std. dev.
+0    47     Li6  (n,Xt) 1.79e-01   5.28e-04
+1    47     Li7  (n,Xt) 1.03e-02   1.33e-05
+75
+   cell nuclide   score     mean  std. dev.
+0    60     Li6  (n,Xt) 1.03e+00   7.89e-04
+1    60     Li7  (n,Xt) 1.99e-02   4.81e-05
+   cell nuclide   score     mean  std. dev.
+0    57     Li6  (n,Xt) 2.08e-01   3.00e-04
+1    57     Li7  (n,Xt) 5.19e-03   7.38e-06
+99.99
+   cell nuclide   score     mean  std. dev.
+0    70     Li6  (n,Xt) 1.01e+00   1.37e-03
+1    70     Li7  (n,Xt) 7.83e-06   1.85e-08
+   cell nuclide   score     mean  std. dev.
+0    67     Li6  (n,Xt) 2.30e-01   3.38e-04
+1    67     Li7  (n,Xt) 2.08e-06   2.64e-09
+[{'enrichment': 0.01, 'tbr_tally_result': np.float64(0.4296560961904385), 'tbr_tally_std_dev': np.float64(0.02208886311749489)}, {'enrichment': 7.5, 'tbr_tally_result': np.float64(1.2099171819533243), 'tbr_tally_std_dev': np.float64(0.10482989395407151)}, {'enrichment': 15, 'tbr_tally_result': np.float64(1.2462777519333603), 'tbr_tally_std_dev': np.float64(0.13091141188315034)}, {'enrichment': 25, 'tbr_tally_result': np.float64(1.263704469210462), 'tbr_tally_std_dev': np.float64(0.15440633206205287)}, {'enrichment': 50, 'tbr_tally_result': np.float64(1.269316419468602), 'tbr_tally_std_dev': np.float64(0.191088699074617)}, {'enrichment': 75, 'tbr_tally_result': np.float64(1.259307655533745), 'tbr_tally_std_dev': np.float64(0.2139818839246055)}, {'enrichment': 99.99, 'tbr_tally_result': np.float64(1.2427328203525994), 'tbr_tally_std_dev': np.float64(0.23158771143022827)}]
+/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_2
+Moved 'plots.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_2'
+Moved 'settings.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_2'
+Moved 'geometry.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_2'
+Moved 'materials.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_2'
+Moved 'tallies.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_2'
+Moved 'geometry_plot.png' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_2'
+Moved 'model.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_2'
+Moved 'summary.h5' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_2'
+Moved 'statepoint.10.h5' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_2'
+Moved 'tallies.out' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_2'
+Moved '0.01%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_2'
+Moved '7.5%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_2'
+Moved '15%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_2'
+Moved '25%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_2'
+Moved '50%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_2'
+Moved '75%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_2'
+Moved '99.99%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_2'
+OpenMC files moved to new directory: /home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_2
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+                                %%%%%%%%%%%%%%%
+                           %%%%%%%%%%%%%%%%%%%%%%%%
+                        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                                    %%%%%%%%%%%%%%%%%%%%%%%%
+                                     %%%%%%%%%%%%%%%%%%%%%%%%
+                 ###############      %%%%%%%%%%%%%%%%%%%%%%%%
+                ##################     %%%%%%%%%%%%%%%%%%%%%%%
+                ###################     %%%%%%%%%%%%%%%%%%%%%%%
+                ####################     %%%%%%%%%%%%%%%%%%%%%%
+                #####################     %%%%%%%%%%%%%%%%%%%%%
+                ######################     %%%%%%%%%%%%%%%%%%%%
+                #######################     %%%%%%%%%%%%%%%%%%
+                 #######################     %%%%%%%%%%%%%%%%%
+                 ######################     %%%%%%%%%%%%%%%%%
+                  ####################     %%%%%%%%%%%%%%%%%
+                    #################     %%%%%%%%%%%%%%%%%
+                     ###############     %%%%%%%%%%%%%%%%
+                       ############     %%%%%%%%%%%%%%%
+                          ########     %%%%%%%%%%%%%%
+                                      %%%%%%%%%%%
+
+                 | The OpenMC Monte Carlo Code
+       Copyright | 2011-2024 MIT, UChicago Argonne LLC, and contributors
+         License | https://docs.openmc.org/en/latest/license.html
+         Version | 0.15.0
+        Git SHA1 | 84fb85977f46e162fea8f5a20ea653a3ec62ac24
+       Date/Time | 2025-03-25 09:29:05
+   MPI Processes | 1
+  OpenMP Threads | 48
+
+ Reading settings XML file...
+ Reading materials XML file...
+ Reading geometry XML file...
+ Reading tallies XML file...
+ Preparing distributed cell instances...
+ Reading plot XML file...
+
+ =======================>     PLOTTING SUMMARY     <========================
+
+Plot ID: 1
+Plot file: geometry_plot.png
+Universe depth: -1
+Plot Type: Slice
+Origin: 350 0 0
+Width:  700  800
+Coloring: Cells
+Basis: XZ
+Pixels: 7000 8000
+
+ Processing plot 1: geometry_plot.png...
+0.01
+   cell nuclide   score     mean  std. dev.
+0    10     Li6  (n,Xt) 3.24e-01   4.22e-04
+1    10     Li7  (n,Xt) 8.39e-02   2.17e-04
+   cell nuclide   score     mean  std. dev.
+0     6     Li6  (n,Xt) 8.51e-04   2.20e-06
+1     6     Li7  (n,Xt) 2.06e-02   3.02e-05
+7.5
+   cell nuclide   score     mean  std. dev.
+0    20     Li6  (n,Xt) 1.03e+00   1.47e-03
+1    20     Li7  (n,Xt) 7.72e-02   2.15e-04
+   cell nuclide   score     mean  std. dev.
+0    17     Li6  (n,Xt) 8.41e-02   2.28e-04
+1    17     Li7  (n,Xt) 1.91e-02   2.58e-05
+15
+   cell nuclide   score     mean  std. dev.
+0    30     Li6  (n,Xt) 1.05e+00   6.50e-04
+1    30     Li7  (n,Xt) 7.06e-02   1.90e-04
+   cell nuclide   score     mean  std. dev.
+0    27     Li6  (n,Xt) 1.13e-01   2.54e-04
+1    27     Li7  (n,Xt) 1.75e-02   2.50e-05
+25
+   cell nuclide   score     mean  std. dev.
+0    40     Li6  (n,Xt) 1.05e+00   1.06e-03
+1    40     Li7  (n,Xt) 6.18e-02   1.55e-04
+   cell nuclide   score     mean  std. dev.
+0    37     Li6  (n,Xt) 1.38e-01   3.46e-04
+1    37     Li7  (n,Xt) 1.55e-02   2.05e-05
+50
+   cell nuclide   score     mean  std. dev.
+0    50     Li6  (n,Xt) 1.04e+00   1.38e-03
+1    50     Li7  (n,Xt) 4.05e-02   1.02e-04
+   cell nuclide   score     mean  std. dev.
+0    47     Li6  (n,Xt) 1.79e-01   5.28e-04
+1    47     Li7  (n,Xt) 1.03e-02   1.33e-05
+75
+   cell nuclide   score     mean  std. dev.
+0    60     Li6  (n,Xt) 1.03e+00   7.94e-04
+1    60     Li7  (n,Xt) 1.99e-02   4.81e-05
+   cell nuclide   score     mean  std. dev.
+0    57     Li6  (n,Xt) 2.08e-01   3.00e-04
+1    57     Li7  (n,Xt) 5.19e-03   7.38e-06
+99.99
+   cell nuclide   score     mean  std. dev.
+0    70     Li6  (n,Xt) 1.01e+00   1.38e-03
+1    70     Li7  (n,Xt) 7.83e-06   1.85e-08
+   cell nuclide   score     mean  std. dev.
+0    67     Li6  (n,Xt) 2.30e-01   3.38e-04
+1    67     Li7  (n,Xt) 2.08e-06   2.64e-09
+[{'enrichment': 0.01, 'tbr_tally_result': np.float64(0.42912152450073504), 'tbr_tally_std_dev': np.float64(0.022084366013288347)}, {'enrichment': 7.5, 'tbr_tally_result': np.float64(1.2099042591769238), 'tbr_tally_std_dev': np.float64(0.10482107164945957)}, {'enrichment': 15, 'tbr_tally_result': np.float64(1.2462401108931667), 'tbr_tally_std_dev': np.float64(0.13091227276207812)}, {'enrichment': 25, 'tbr_tally_result': np.float64(1.2637106283753674), 'tbr_tally_std_dev': np.float64(0.15441149384952824)}, {'enrichment': 50, 'tbr_tally_result': np.float64(1.2692886001026757), 'tbr_tally_std_dev': np.float64(0.19108869862228894)}, {'enrichment': 75, 'tbr_tally_result': np.float64(1.2592675751211408), 'tbr_tally_std_dev': np.float64(0.21398326515163232)}, {'enrichment': 99.99, 'tbr_tally_result': np.float64(1.2426987494214248), 'tbr_tally_std_dev': np.float64(0.23159225300940653)}]
+/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1.5
+Moved 'plots.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1.5'
+Moved 'settings.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1.5'
+Moved 'geometry.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1.5'
+Moved 'materials.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1.5'
+Moved 'tallies.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1.5'
+Moved 'geometry_plot.png' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1.5'
+Moved 'model.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1.5'
+Moved 'summary.h5' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1.5'
+Moved 'statepoint.10.h5' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1.5'
+Moved 'tallies.out' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1.5'
+Moved '0.01%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1.5'
+Moved '7.5%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1.5'
+Moved '15%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1.5'
+Moved '25%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1.5'
+Moved '50%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1.5'
+Moved '75%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1.5'
+Moved '99.99%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1.5'
+OpenMC files moved to new directory: /home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1.5
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+                                %%%%%%%%%%%%%%%
+                           %%%%%%%%%%%%%%%%%%%%%%%%
+                        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                                    %%%%%%%%%%%%%%%%%%%%%%%%
+                                     %%%%%%%%%%%%%%%%%%%%%%%%
+                 ###############      %%%%%%%%%%%%%%%%%%%%%%%%
+                ##################     %%%%%%%%%%%%%%%%%%%%%%%
+                ###################     %%%%%%%%%%%%%%%%%%%%%%%
+                ####################     %%%%%%%%%%%%%%%%%%%%%%
+                #####################     %%%%%%%%%%%%%%%%%%%%%
+                ######################     %%%%%%%%%%%%%%%%%%%%
+                #######################     %%%%%%%%%%%%%%%%%%
+                 #######################     %%%%%%%%%%%%%%%%%
+                 ######################     %%%%%%%%%%%%%%%%%
+                  ####################     %%%%%%%%%%%%%%%%%
+                    #################     %%%%%%%%%%%%%%%%%
+                     ###############     %%%%%%%%%%%%%%%%
+                       ############     %%%%%%%%%%%%%%%
+                          ########     %%%%%%%%%%%%%%
+                                      %%%%%%%%%%%
+
+                 | The OpenMC Monte Carlo Code
+       Copyright | 2011-2024 MIT, UChicago Argonne LLC, and contributors
+         License | https://docs.openmc.org/en/latest/license.html
+         Version | 0.15.0
+        Git SHA1 | 84fb85977f46e162fea8f5a20ea653a3ec62ac24
+       Date/Time | 2025-03-25 09:33:40
+   MPI Processes | 1
+  OpenMP Threads | 48
+
+ Reading settings XML file...
+ Reading materials XML file...
+ Reading geometry XML file...
+ Reading tallies XML file...
+ Preparing distributed cell instances...
+ Reading plot XML file...
+
+ =======================>     PLOTTING SUMMARY     <========================
+
+Plot ID: 1
+Plot file: geometry_plot.png
+Universe depth: -1
+Plot Type: Slice
+Origin: 350 0 0
+Width:  700  800
+Coloring: Cells
+Basis: XZ
+Pixels: 7000 8000
+
+ Processing plot 1: geometry_plot.png...
+0.01
+   cell nuclide   score     mean  std. dev.
+0    10     Li6  (n,Xt) 3.23e-01   4.25e-04
+1    10     Li7  (n,Xt) 8.39e-02   2.18e-04
+   cell nuclide   score     mean  std. dev.
+0     6     Li6  (n,Xt) 8.51e-04   2.26e-06
+1     6     Li7  (n,Xt) 2.06e-02   3.00e-05
+7.5
+   cell nuclide   score     mean  std. dev.
+0    20     Li6  (n,Xt) 1.03e+00   1.46e-03
+1    20     Li7  (n,Xt) 7.72e-02   2.15e-04
+   cell nuclide   score     mean  std. dev.
+0    17     Li6  (n,Xt) 8.41e-02   2.29e-04
+1    17     Li7  (n,Xt) 1.91e-02   2.58e-05
+15
+   cell nuclide   score     mean  std. dev.
+0    30     Li6  (n,Xt) 1.05e+00   6.38e-04
+1    30     Li7  (n,Xt) 7.06e-02   1.89e-04
+   cell nuclide   score     mean  std. dev.
+0    27     Li6  (n,Xt) 1.13e-01   2.55e-04
+1    27     Li7  (n,Xt) 1.75e-02   2.50e-05
+25
+   cell nuclide   score     mean  std. dev.
+0    40     Li6  (n,Xt) 1.05e+00   1.06e-03
+1    40     Li7  (n,Xt) 6.18e-02   1.55e-04
+   cell nuclide   score     mean  std. dev.
+0    37     Li6  (n,Xt) 1.38e-01   3.45e-04
+1    37     Li7  (n,Xt) 1.55e-02   2.05e-05
+50
+   cell nuclide   score     mean  std. dev.
+0    50     Li6  (n,Xt) 1.04e+00   1.38e-03
+1    50     Li7  (n,Xt) 4.05e-02   1.02e-04
+   cell nuclide   score     mean  std. dev.
+0    47     Li6  (n,Xt) 1.79e-01   5.28e-04
+1    47     Li7  (n,Xt) 1.03e-02   1.33e-05
+75
+   cell nuclide   score     mean  std. dev.
+0    60     Li6  (n,Xt) 1.03e+00   7.91e-04
+1    60     Li7  (n,Xt) 1.99e-02   4.82e-05
+   cell nuclide   score     mean  std. dev.
+0    57     Li6  (n,Xt) 2.08e-01   3.00e-04
+1    57     Li7  (n,Xt) 5.19e-03   7.38e-06
+99.99
+   cell nuclide   score     mean  std. dev.
+0    70     Li6  (n,Xt) 1.01e+00   1.37e-03
+1    70     Li7  (n,Xt) 7.83e-06   1.85e-08
+   cell nuclide   score     mean  std. dev.
+0    67     Li6  (n,Xt) 2.30e-01   3.37e-04
+1    67     Li7  (n,Xt) 2.08e-06   2.64e-09
+[{'enrichment': 0.01, 'tbr_tally_result': np.float64(0.4283102516333405), 'tbr_tally_std_dev': np.float64(0.02208858057593059)}, {'enrichment': 7.5, 'tbr_tally_result': np.float64(1.2099919212323484), 'tbr_tally_std_dev': np.float64(0.10480851308724239)}, {'enrichment': 15, 'tbr_tally_result': np.float64(1.2462269897134273), 'tbr_tally_std_dev': np.float64(0.1308972953336355)}, {'enrichment': 25, 'tbr_tally_result': np.float64(1.2636925801328338), 'tbr_tally_std_dev': np.float64(0.15440991567011597)}, {'enrichment': 50, 'tbr_tally_result': np.float64(1.269313708485601), 'tbr_tally_std_dev': np.float64(0.19109149487654511)}, {'enrichment': 75, 'tbr_tally_result': np.float64(1.2592920664616976), 'tbr_tally_std_dev': np.float64(0.21398600497604575)}, {'enrichment': 99.99, 'tbr_tally_result': np.float64(1.2427193970992974), 'tbr_tally_std_dev': np.float64(0.23158525339473696)}]
+/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1
+Moved 'plots.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1'
+Moved 'settings.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1'
+Moved 'geometry.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1'
+Moved 'materials.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1'
+Moved 'tallies.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1'
+Moved 'geometry_plot.png' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1'
+Moved 'model.xml' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1'
+Moved 'summary.h5' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1'
+Moved 'statepoint.10.h5' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1'
+Moved 'tallies.out' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1'
+Moved '0.01%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1'
+Moved '7.5%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1'
+Moved '15%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1'
+Moved '25%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1'
+Moved '50%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1'
+Moved '75%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1'
+Moved '99.99%.csv' to '/home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1'
+OpenMC files moved to new directory: /home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb/7_slry_0_mlt_1_ref_1
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
