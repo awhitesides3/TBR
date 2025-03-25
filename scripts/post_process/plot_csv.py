@@ -2,8 +2,17 @@ import os
 import pandas as pd
 import math
 import matplotlib.pyplot as plt
+import sys
 
-def consolidate_csv_files(input_directory):
+def consolidate_csv_files(input_dir = str(sys.argv[1])):
+    try:
+        if sys.argv[2] is not None:
+            keyword = f'_{str(sys.argv[2])}_'
+    except:
+        keyword = '_'
+
+    input_directory = f'{input_dir}'
+
     mean_data = pd.DataFrame()
     stddev_data = pd.DataFrame()
     mean_data['enrichment'] = [0.01, 7.5, 15, 25, 50, 75, 99.99]
@@ -31,8 +40,8 @@ def consolidate_csv_files(input_directory):
         mean_data[f'{file}'] = df['mean']
         stddev_data[f'{file}'] = df['std. dev.']
 
-    mean_data.to_csv(f'{input_directory}/{input_directory[-7:]}_mean_data.csv', index=False)
-    stddev_data.to_csv(f'{input_directory}/{input_directory[-7:]}_stddev_data.csv', index=False)
+    mean_data.to_csv(f'{input_directory}/{os.path.basename(os.path.normpath(input_directory))}_mean_data.csv', index=False)
+    stddev_data.to_csv(f'{input_directory}/{os.path.basename(os.path.normpath(input_directory))}_stddev_data.csv', index=False)
 
     # Plot each column (except the first one) as a separate data series
     stddev_list = []
@@ -46,11 +55,17 @@ def consolidate_csv_files(input_directory):
     # Add labels and title
     plt.xlabel('Li6-enrichment')
     plt.ylabel('TBR')
-    plt.title(f'TBR as a function of Li-6 enrichment for the {input_directory[-7:]} case')
-    
+    plt.title(f'TBR as a function of Li-6 enrichment for the {os.path.basename(os.path.normpath(input_directory))} case')
     # Show legend
     plt.legend()
     # Show the plot
     plt.grid(True)
-    plt.savefig(f'{input_directory}/{input_directory[-7:]}_plot.png', dpi=300)
-consolidate_csv_files(r'/home/hice1/awhitesides3/TBR/scripts/slry_Li4SiO4')
+    plt.savefig(f'{input_directory}/{os.path.basename(os.path.normpath(input_directory))}{keyword}plot.png', dpi=300)
+# consolidate_csv_files(r'/home/hice1/awhitesides3/TBR/scripts/mlt_Be_ref_Pb')
+consolidate_csv_files(str(sys.argv[1]))
+
+# arg examples:
+# arg1 (file path): /home/hice1/awhitesides3/TBR/scripts/mlt_Be_ref_Pb
+# arg2 (optional) (keyword): if needing to specfiy for a fixed multiplier value - 'mlt_0.2'
+# cmd line example: 
+# python3 plot_csv.py /home/hice1/awhitesides3/TBR/scripts/mlt_Be_ref_Pb mlt_0.2

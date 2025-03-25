@@ -2,8 +2,12 @@ import os
 import pandas as pd
 import math
 import matplotlib.pyplot as plt
+import sys
 
-def consolidate_csv_files(input_directory, output_path, keyword):
+def consolidate_csv_files(input_dir = str(sys.argv[1]), keyword = str(sys.argv[2])):
+    input_directory = f'{input_dir}'
+    output_path = f'{input_dir}.csv'
+
     consolidated_data = pd.DataFrame()
     tbr_mean = []
     tbr_stddev = []
@@ -62,6 +66,14 @@ def consolidate_csv_files(input_directory, output_path, keyword):
     plt.savefig(f'{output_path[:-4]}.png', dpi=300)
     # print(f"consolidated csv files into {output_path}")
 
-consolidate_csv_files(r'/home/hice1/awhitesides3/TBR/scripts/slry_Li4SiO4/3a_slry_1000_mlt_0_ref_0',
-                      r'/home/hice1/awhitesides3/TBR/scripts/slry_Li4SiO4/3a_slry_1000_mlt_0_ref_0.csv',
-                      '1000wppm Li4SiO4 dopant')
+# consolidate_csv_files(r'/home/hice1/awhitesides3/TBR/scripts/mlt_Be_ref_Pb/5_slry_0_mlt_0.8_ref_2',
+#                       r'/home/hice1/awhitesides3/TBR/scripts/mlt_Be_ref_Pb/5_slry_0_mlt_0.8_ref_2.csv',
+#                       'mlt_Be_ref_Pb')
+
+consolidate_csv_files(str(sys.argv[1]), str(sys.argv[2])) 
+
+# arg examples:
+# arg1: /home/hice1/awhitesides3/TBR/scripts/mlt_Be_ref_Pb/5_slry_0_mlt_0.8_ref_2
+# arg2: mlt_Be_ref_Pb
+# cmd line example:
+# python3 csv_scripts.py /home/hice1/awhitesides3/TBR/scripts/mlt_Be_ref_Pb/5_slry_0_mlt_0.8_ref_2 mlt_Be_ref_Pb
