@@ -33,8 +33,9 @@ def consolidate_csv_files(input_dir = str(sys.argv[1])):
                         0.001036591,
                         ]
     pp_csv_files = [f for f in os.listdir(input_directory) if f.endswith('pp.csv')]
-
+    pp_csv_files.sort()
     for file in pp_csv_files:
+        print(file)
         file_path = os.path.join(input_directory, file)
         df = pd.read_csv(file_path)
         mean_data[f'{file}'] = df['mean']

@@ -4,7 +4,7 @@ import math
 import matplotlib.pyplot as plt
 import sys
 
-def consolidate_csv_files(input_dir = str(sys.argv[1]), keyword = str(sys.argv[2])):
+def consolidate_csv_files(input_dir, keyword):
     input_directory = f'{input_dir}'
     output_path = f'{input_dir}.csv'
 
@@ -70,10 +70,21 @@ def consolidate_csv_files(input_dir = str(sys.argv[1]), keyword = str(sys.argv[2
 #                       r'/home/hice1/awhitesides3/TBR/scripts/mlt_Be_ref_Pb/5_slry_0_mlt_0.8_ref_2.csv',
 #                       'mlt_Be_ref_Pb')
 
-consolidate_csv_files(str(sys.argv[1]), str(sys.argv[2])) 
+# consolidate_csv_files(str(sys.argv[1]), str(sys.argv[2])) 
 
 # arg examples:
 # arg1: /home/hice1/awhitesides3/TBR/scripts/mlt_Be_ref_Pb/5_slry_0_mlt_0.8_ref_2
 # arg2: mlt_Be_ref_Pb
 # cmd line example:
 # python3 csv_scripts.py /home/hice1/awhitesides3/TBR/scripts/mlt_Be_ref_Pb/5_slry_0_mlt_0.8_ref_2 mlt_Be_ref_Pb
+
+directory_path = f'{str(sys.argv[1])}'
+
+for folder_name in os.listdir(directory_path):
+    folder_path = os.path.join(directory_path, folder_name)
+
+    if os.path.isdir(folder_path):
+        print(f"Folder: {folder_name}")
+        print(f"Path: {folder_path}")
+        plt.clf() #to stop overwriting plots
+        consolidate_csv_files(folder_path, folder_name) 
