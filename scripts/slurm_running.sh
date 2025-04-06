@@ -26,19 +26,19 @@ echo $OMP_NUM_THREADS
 # python3 arc-standard.py lead beryllium 4 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Be_final_mesh/mlt_4
 # python3 arc-standard.py lead beryllium 4.5 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Be_final_mesh/mlt_4.5
 # python3 arc-standard.py lead beryllium 5 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Be_final_mesh/mlt_5
-python3 arc-standard.py lead beryllium 5.5 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Be_final_mesh/mlt_5.5
-python3 arc-standard.py lead beryllium 6 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Be_final_mesh/mlt_6
-python3 arc-standard.py lead beryllium 6.5 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Be_final_mesh/mlt_6.5
-python3 arc-standard.py lead beryllium 7 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Be_final_mesh/mlt_7
-python3 arc-standard.py lead beryllium 7.5 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Be_final_mesh/mlt_7.5
-python3 arc-standard.py lead beryllium 8 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Be_final_mesh/mlt_8
-python3 arc-standard.py lead beryllium 8.5 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Be_final_mesh/mlt_8.5
-python3 arc-standard.py lead beryllium 9 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Be_final_mesh/mlt_9
-python3 arc-standard.py lead beryllium 9.5 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Be_final_mesh/mlt_9.5
-python3 arc-standard.py lead beryllium 10 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Be_final_mesh/mlt_10
-python3 arc-standard.py lead beryllium 10.5 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Be_final_mesh/mlt_10.5
-python3 arc-standard.py lead beryllium 11 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Be_final_mesh/mlt_11
-python3 arc-standard.py lead beryllium 11.5 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Be_final_mesh/mlt_11.5
-python3 arc-standard.py lead beryllium 12 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Be_final_mesh/mlt_12
+# python3 arc-standard.py lead beryllium 5.5 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Be_final_mesh/mlt_5.5
+# python3 arc-standard.py lead beryllium 6 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Be_final_mesh/mlt_6
+# python3 arc-standard.py lead beryllium 6.5 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Be_final_mesh/mlt_6.5
+# python3 arc-standard.py lead beryllium 7 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Be_final_mesh/mlt_7
+# python3 arc-standard.py lead beryllium 7.5 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Be_final_mesh/mlt_7.5
+# python3 arc-standard.py lead beryllium 8 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Be_final_mesh/mlt_8
+# python3 arc-standard.py lead beryllium 8.5 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Be_final_mesh/mlt_8.5
+# python3 arc-standard.py lead beryllium 9 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Be_final_mesh/mlt_9
+# python3 arc-standard.py lead beryllium 9.5 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Be_final_mesh/mlt_9.5
+# python3 arc-standard.py lead beryllium 10 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Be_final_mesh/mlt_10
+# python3 arc-standard.py lead beryllium 10.5 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Be_final_mesh/mlt_10.5
+# python3 arc-standard.py lead beryllium 11 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Be_final_mesh/mlt_11
+# python3 arc-standard.py lead beryllium 11.5 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Be_final_mesh/mlt_11.5
+# python3 arc-standard.py lead beryllium 12 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Be_final_mesh/mlt_12
 # ... other test cases to run
 date
