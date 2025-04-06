@@ -11,19 +11,19 @@ def consolidate_csv_files(input_dir, keyword):
     consolidated_data = pd.DataFrame()
     tbr_mean = []
     tbr_stddev = []
-    enrichment = []
+    wppm = []
     csv_files = [f for f in os.listdir(input_directory) if f.endswith('.csv')]
 
     for file in csv_files:
         file_path = os.path.join(input_directory, file)
         df = pd.read_csv(file_path)
-        df['enrichment'] = file
+        df['wppm'] = file
 
-        file_column_values = df.loc[:, 'enrichment']
+        file_column_values = df.loc[:, 'wppm']
         for index, value in enumerate(file_column_values):
-            df.loc[index, 'enrichment'] = float(value.replace('%.csv', ''))
+            df.loc[index, 'wppm'] = float(value.replace('wppm.csv', ''))
         
-        enrichment.append(df.loc[0, 'enrichment'])
+        wppm.append(df.loc[0, 'wppm'])
         tbr_mean.append(sum(df.loc[:, 'mean']))
 
         # sqrt(sum(x^2))
@@ -31,22 +31,22 @@ def consolidate_csv_files(input_dir, keyword):
         tbr_stddev.append(math.sqrt(sum(sq_stddev)))
 
         consolidated_data = pd.concat([consolidated_data, df], ignore_index=True)
-    consolidated_data = consolidated_data.sort_values(by = 'enrichment')
+    consolidated_data = consolidated_data.sort_values(by = 'wppm')
     
     # Pair the lists together using zip
-    paired_lists = list(zip(enrichment, tbr_mean, tbr_stddev))
+    paired_lists = list(zip(wppm, tbr_mean, tbr_stddev))
     # Sort the paired lists based on the first list (list1)
     paired_lists.sort(key=lambda x: x[0])
     # Separate the lists after sorting
     sorted_list1, sorted_list2, sorted_list3 = zip(*paired_lists)
-    enrichment = list(sorted_list1)
+    wppm = list(sorted_list1)
     tbr_mean = list(sorted_list2)
     tbr_stddev = list(sorted_list3)
 
     consolidated_data.to_csv(output_path, index=False)
 
     pp_data = pd.DataFrame()
-    pp_data['enrichment'] = enrichment
+    pp_data['wppm'] = wppm
     pp_data['mean'] = tbr_mean
     pp_data['std. dev.'] = tbr_stddev
 
@@ -55,12 +55,12 @@ def consolidate_csv_files(input_dir, keyword):
 
     #plot data from the data_pp
     y = pp_data.loc[:, 'mean']
-    x = pp_data.loc[:, 'enrichment']
+    x = pp_data.loc[:, 'wppm']
     err = pp_data.loc[:, 'std. dev.']
     plt.errorbar(x, y, yerr=err, fmt='-o', label=f'{keyword}', capsize=5)
-    plt.xlabel('Li6 enrichment')
+    plt.xlabel('wppm')
     plt.ylabel('TBR')    
-    plt.title(f'TBR as a function of Li-6 enrichment for the {keyword} case')
+    plt.title(f'TBR as a function of wppm for the {keyword} case')
     plt.grid(True)
     plt.legend()
     plt.savefig(f'{output_path[:-4]}.png', dpi=300)

@@ -115,7 +115,11 @@ lead.set_density('g/cm3', 11.342)
 tellurium = openmc.Material()
 tellurium.add_element("Te", 1.0)
 tellurium.set_density('g/cm3', 6.24)
-                        
+
+"""Zirconium"""
+zirconium = openmc.Material()
+zirconium.add_element("Zr", 1.0)
+zirconium.set_density('g/cm3', 6.511)
 
 def get_tetrafluoride_mass(mass, dopant):
     """

@@ -147,24 +147,35 @@ def generate_device(Li6_enrichment = 7.5, dopant = "Li4SiO4", dopant_mass = 0, m
     #inputs
     if multiplier_material == 'beryllium':
         multiplier_material = beryllium
-    else:
+    elif multiplier_material == 'lead':
         multiplier_material = lead
-    reflector_material = lead
+    elif multiplier_material == 'zirconium':
+        multiplier_material = zirconium
+    elif multiplier_material == 'tellurium':
+        multiplier_material = tellurium
+
+    if reflector_material == 'beryllium':
+        reflector_material = beryllium
+    elif reflector_material == 'lead':
+        reflector_material = lead
+    elif reflector_material == 'zirconium':
+        reflector_material = zirconium
+    elif reflector_material == 'tellurium':
+        reflector_material = tellurium
 
     device = Device()
     device.dopant = dopant
     device.Li6_enrichment = Li6_enrichment
 
-    # print(Li6_enrichment)
-    # print(dopant)
-    # print(dopant_mass)
-    # print(multiplier_material)
-    # print(type(multiplier_material))
-    # print(multiplier_thickness)
-    # print(reflector_material)
-    # print(reflector_thickness)
-    # print(channel_thickness)
-    # print(order)
+    print(Li6_enrichment)
+    print(dopant)
+    print(dopant_mass)
+    print(multiplier_material)
+    print(multiplier_thickness)
+    print(reflector_material)
+    print(reflector_thickness)
+    print(channel_thickness)
+    print(order)
     # ==============================================================================
     # Geometry
     # ==============================================================================

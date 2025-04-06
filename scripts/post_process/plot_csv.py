@@ -15,23 +15,23 @@ def consolidate_csv_files(input_dir = str(sys.argv[1])):
 
     mean_data = pd.DataFrame()
     stddev_data = pd.DataFrame()
-    mean_data['enrichment'] = [0.01, 7.5, 15, 25, 50, 75, 99.99]
-    stddev_data['enrichment'] = [0.01, 7.5, 15, 25, 50, 75, 99.99]
-    mean_data['bare'] = [0.428365167,
-                        1.176862447,
-                        1.209729528,
-                        1.223575556,
-                        1.220874813,
-                        1.206134367,
-                        1.189121384]
-    stddev_data['bare'] = [0.000474573,
-                        0.000587528,
-                        0.001251596,
-                        0.001272486,
-                        0.001310144,
-                        0.00113424,
-                        0.001036591,
-                        ]
+    # mean_data['enrichment'] = [0.01, 7.5, 15, 25, 50, 75, 99.99]
+    # stddev_data['enrichment'] = [0.01, 7.5, 15, 25, 50, 75, 99.99]
+    # mean_data['bare'] = [0.428365167,
+    #                     1.176862447,
+    #                     1.209729528,
+    #                     1.223575556,
+    #                     1.220874813,
+    #                     1.206134367,
+    #                     1.189121384]
+    # stddev_data['bare'] = [0.000474573,
+    #                     0.000587528,
+    #                     0.001251596,
+    #                     0.001272486,
+    #                     0.001310144,
+    #                     0.00113424,
+    #                     0.001036591,
+    #                     ]
     pp_csv_files = [f for f in os.listdir(input_directory) if f.endswith('pp.csv')]
     pp_csv_files.sort()
     for file in pp_csv_files:

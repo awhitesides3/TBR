@@ -15,9 +15,9 @@ openmc.config["cross_sections"] = '/home/hice1/awhitesides3/endfb-viii.0-hdf5/cr
 # Geometry
 # ==============================================================================
 def create_arc(Li6_enrichment, dopant, dopant_mass, multiplier_material, multiplier_thickness, reflector_material, reflector_thickness, channel_thickness, order):
-    device = anp.generate_device(Li6_enrichment = Li6_enrichment, dopant = dopant, dopant_mass = dopant_mass,
-                                multiplier_material = multiplier_material, multiplier_thickness = multiplier_thickness, reflector_material = reflector_material,
-                                reflector_thickness = reflector_thickness, channel_thickness = channel_thickness, order = order)
+    device = anp.generate_device(Li6_enrichment, dopant, dopant_mass,
+                                multiplier_material, multiplier_thickness, reflector_material,
+                                reflector_thickness, channel_thickness, order)
     
     # Plotting
     plot = openmc.Plot()
@@ -118,9 +118,9 @@ def create_arc(Li6_enrichment, dopant, dopant_mass, multiplier_material, multipl
 # additional runs
 # ================================================================================
 
-def make_materials_geometry_tallies(Li6_enrichment, dopant = str(sys.argv[1]), dopant_mass = float(sys.argv[2]),
-                                multiplier_material = sys.argv[3], multiplier_thickness = float(sys.argv[4]), reflector_material = sys.argv[5],
-                                reflector_thickness = float(sys.argv[6]), channel_thickness = float(sys.argv[7]), order = sys.argv[8]):
+def make_materials_geometry_tallies(Li6_enrichment, dopant, dopant_mass,
+                                multiplier_material, multiplier_thickness, reflector_material,
+                                reflector_thickness, channel_thickness, order):
     """Makes a neutronics model of a blanket and simulates the TBR value.
 
     Arguments:
@@ -131,8 +131,6 @@ def make_materials_geometry_tallies(Li6_enrichment, dopant = str(sys.argv[1]), d
     """
     # RUN OPENMC
     device = create_arc(Li6_enrichment, dopant, dopant_mass, multiplier_material, multiplier_thickness, reflector_material, reflector_thickness, channel_thickness, order)
-    print(device.Li6_enrichment)
-    
     #remove old output files
     for file in os.listdir('.'):
         if file.endswith('.h5'):
@@ -142,45 +140,35 @@ def make_materials_geometry_tallies(Li6_enrichment, dopant = str(sys.argv[1]), d
     # OPEN OUPUT FILE
     sp = openmc.StatePoint(sp_filename)
 
-    tbr_tally = sp.get_tally(name='TBR Blanket Tally')
-    tbr_tally_2 = sp.get_tally(name='TBR Channel Tally')
+    tbr_tally_blanket = sp.get_tally(name='TBR Blanket Tally')
+    tbr_tally_channel = sp.get_tally(name='TBR Channel Tally')
 
-    df = tbr_tally.get_pandas_dataframe()
-    df2 = tbr_tally_2.get_pandas_dataframe()
-    print(df)
-    print(df2)
-    combined_df = pd.concat([df, df2], ignore_index = True)
-    combined_df.to_csv(f'{device.Li6_enrichment}%.csv', index = False)
-    tbr_tally_result = df['mean'].sum() + df2['mean'].sum()
-    tbr_tally_std_dev = df['std. dev.'].sum() + df2['mean'].sum()
+    df_blanket = tbr_tally_blanket.get_pandas_dataframe()
+    df_channel = tbr_tally_channel.get_pandas_dataframe()
+    print(df_blanket)
+    print(df_channel)
+    combined_df = pd.concat([df_blanket, df_channel], ignore_index = True)
+    combined_df.to_csv(f'{dopant_mass}wppm.csv', index = False)
+    tbr_tally_result = df_blanket['mean'].sum() + df_channel['mean'].sum()
+    tbr_tally_std_dev = df_blanket['std. dev.'].sum() + df_channel['mean'].sum()
 
     # command = ["openmc-plot-mesh-tally", sp_filename]
     # # Run the command
     # subprocess.run(command)
     
-    return {'enrichment': device.Li6_enrichment,
+    return {'dopant mass': dopant_mass,
             'tbr_tally_result': tbr_tally_result,
             'tbr_tally_std_dev': tbr_tally_std_dev}
 
 results = []
-for Li6_enrichment in [0.01, 7.5, 15, 25, 50, 75, 99.99]:  # percentage enrichment from 0% Li6 to 100% Li6, 0.01, 7.5, 15, 25, 50, 75, 99.99
-    results.append(make_materials_geometry_tallies(Li6_enrichment, str(sys.argv[1]), float(sys.argv[2]),
-                    sys.argv[3], float(sys.argv[4]), sys.argv[5],
-                    float(sys.argv[6]), float(sys.argv[7]), sys.argv[8]))
+for dopant_wppm in np.arange(0, 950, 50):  # dopant wppm; start at 0wppm, end at 900wppm, step of 50wppm
+    print(dopant_wppm)
+    results.append(make_materials_geometry_tallies(7.5, str(sys.argv[1]), dopant_wppm, 
+                    sys.argv[2], float(sys.argv[3]), sys.argv[4],
+                    float(sys.argv[5]), float(sys.argv[6]), sys.argv[7]))
 print(results)
-#results.append(make_materials_geometry_tallies(7.5))
-# PLOTS RESULTS
-x = [entry['enrichment'] for entry in results]
-y = [entry['tbr_tally_result'] for entry in results]
-#error_y = {'array': [entry['tbr_tally_std_dev'] for entry in results]}
-plt.plot(x, y)
-plt.title="TBR as a function of Li6 enrichment",
-plt.xtitle="Li6 enrichment (%)",
-plt.ytitle="TBR"
-plt.grid()
-plt.show()
 # ================================================================================
-print(str(sys.argv[9]))
+print(str(sys.argv[8]))
 
 def move_files(source_dir, target_dir):
     # Check if the source directory exists
@@ -202,6 +190,8 @@ def move_files(source_dir, target_dir):
         
         if filename == 'arc-standard.py':
             continue
+        if filename == 'backup_arc-standard.py':
+            continue
         if filename == 'slurm_running.sh':
             continue
         # Create the full target file path
@@ -214,9 +204,9 @@ def move_files(source_dir, target_dir):
         except Exception as e:
             print(f"Error moving '{filename}': {e}")
 
-os.mkdir(str(sys.argv[9]))
-move_files('/home/hice1/awhitesides3/TBR/scripts', str(sys.argv[9]))
-print("OpenMC files moved to new directory:", str(sys.argv[9]))
+os.mkdir(str(sys.argv[8]))
+move_files('/home/hice1/awhitesides3/TBR/scripts', str(sys.argv[8]))
+print("OpenMC files moved to new directory:", str(sys.argv[8]))
 '''
 try:
     if sys.argv[9] is not None:
