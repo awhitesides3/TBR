@@ -123,7 +123,9 @@ class Device(openmc.model.Model):
         print("WARNING: Cell with name:", name, "not found. returning None.")
         return None
 
-def generate_device(Li6_enrichment = 7.5, dopant = "Li4SiO4", dopant_mass = 0, multiplier_material = beryllium, multiplier_thickness = 0, reflector_material = lead, reflector_thickness = 0, channel_thickness = 2, order = 1, vv_file = 'arc_vv.txt', blanket_file = "arc_blanket.txt", dopant_mass_units = "wppm"):
+def generate_device(Li6_enrichment = 7.5, dopant = "Li4SiO4", dopant_mass = 0, multiplier_material = beryllium, multiplier_thickness = 0, reflector_material = lead,
+                    reflector_thickness = 0, channel_thickness = 2, order = 1, gap_thickness = 0, multiplier_2_material = beryllium, multiplier_2_thickness = 0,
+                    vv_file = 'arc_vv.txt', blanket_file = "arc_blanket.txt", dopant_mass_units = "wppm"):
     """
     Generates a device object with specified fertile inventory and Li-6 enrichment.
 
@@ -154,6 +156,15 @@ def generate_device(Li6_enrichment = 7.5, dopant = "Li4SiO4", dopant_mass = 0, m
     elif multiplier_material == 'tellurium':
         multiplier_material = tellurium
 
+    if multiplier_2_material == 'beryllium':
+        multiplier_2_material = beryllium
+    elif multiplier_2_material == 'lead':
+        multiplier_2_material = lead
+    elif multiplier_2_material == 'zirconium':
+        multiplier_2_material = zirconium
+    elif multiplier_2_material == 'tellurium':
+        multiplier_2_material = tellurium
+
     if reflector_material == 'beryllium':
         reflector_material = beryllium
     elif reflector_material == 'lead':
@@ -176,6 +187,9 @@ def generate_device(Li6_enrichment = 7.5, dopant = "Li4SiO4", dopant_mass = 0, m
     print(reflector_thickness)
     print(channel_thickness)
     print(order)
+    print(gap_thickness)
+    print(multiplier_2_material)
+    print(multiplier_2_thickness)
     # ==============================================================================
     # Geometry
     # ==============================================================================
@@ -206,6 +220,38 @@ def generate_device(Li6_enrichment = 7.5, dopant = "Li4SiO4", dopant_mass = 0, m
                                         blanket_inner, reflector_outer, blanket_outer]) #[*]
 
         plasma, pfc, vv, channel, multiplier, tank_inner, salt, reflector, tank_outer, outside = regions #[*]
+    elif int(order) == 2:    
+        """ PFCs and Vacuum Vessel """
+
+        vv_points = np.loadtxt("/home/hice1/awhitesides3/TBR/data/" + vv_file)
+
+        pfc_polygon = openmc.model.Polygon(vv_points, basis='rz')
+        vv_inner_edge = pfc_polygon.offset(0.3) #other lit says 0.1cm [PFC]
+        vv_channel_inner = vv_inner_edge.offset(1.0) #VV [STR1]
+        channel_outer = vv_channel_inner.offset(channel_thickness) #FLiBe channels [FLiBe1]
+        multiplier_outer = channel_outer.offset(multiplier_thickness) #[*]Be multiplier [Be]
+        vv_channel_outer = multiplier_outer.offset(3.0) #Channel shell [STR2]
+
+        #split of FLIBE2
+        gap_outer = vv_channel_outer.offset(gap_thickness) #width of FLIBE2a
+        multiplier_2_outer = gap_outer.offset(multiplier_2_thickness) #multiplier 2
+        vv_str3_outer = multiplier_2_outer.offset(0) #str 3
+
+        """ Blanket and Outer Blanket Tank """
+
+        blanket_points = np.loadtxt("/home/hice1/awhitesides3/TBR/data/" + blanket_file)
+
+        blanket_inner = openmc.model.Polygon(blanket_points, basis='rz')
+        reflector_outer = blanket_inner.offset(reflector_thickness)
+        # gap = blanket_inner.offset(1.0)
+        blanket_outer = reflector_outer.offset(3.0) #Blanket tank outer [FLiBe2] originially offset of 2 from gap
+
+        regions = openmc.model.subdivide([pfc_polygon,
+                                        vv_inner_edge, vv_channel_inner,
+                                        channel_outer, multiplier_outer, vv_channel_outer, gap_outer, multiplier_2_outer, vv_str3_outer, 
+                                        blanket_inner, reflector_outer, blanket_outer]) #[*] #surfaces
+
+        plasma, pfc, vv, channel, multiplier, tank_inner, gap, multiplier_2, str_3, salt, reflector, tank_outer, outside = regions #[*] #cells
     # Read volume calc file
     vol_calc_load = openmc.VolumeCalculation.from_hdf5('/home/hice1/awhitesides3/TBR/data/arc-1_volumes.h5')
     flibe_volume = vol_calc_load.volumes[8].n
@@ -250,16 +296,32 @@ def generate_device(Li6_enrichment = 7.5, dopant = "Li4SiO4", dopant_mass = 0, m
     vcrti.name = "tank outer"
     device.vcrti_BO = vcrti_BO
 
-    device.plasma = openmc.Cell(region=plasma, fill=None, name='plasma')
-    device.pfc = openmc.Cell(region=pfc, fill=tungsten, name='PFC')
-    device.vv = openmc.Cell(region=vv, fill=vcrti_VV, name='VV')
-    device.channel = openmc.Cell(region=channel, fill=doped_flibe_channels, name='channel')
-    device.multiplier = openmc.Cell(region = multiplier, fill = multiplier_material, name = 'multiplier')
-    device.tank_inner = openmc.Cell(region=tank_inner, fill=vcrti_BI, name='tank inner')
-    device.blanket = openmc.Cell(region=salt, fill=doped_flibe_blanket, name='blanket')
-    device.reflector = openmc.Cell(region = reflector, fill = reflector_material, name = 'reflector')
-    device.tank_outer = openmc.Cell(region=tank_outer, fill=vcrti_BO, name='tank outer')
-    device.domain.region = device.domain.region & outside
+    if int(order) == 1:            
+        device.plasma = openmc.Cell(region=plasma, fill=None, name='plasma')
+        device.pfc = openmc.Cell(region=pfc, fill=tungsten, name='PFC')
+        device.vv = openmc.Cell(region=vv, fill=vcrti_VV, name='VV')
+        device.channel = openmc.Cell(region=channel, fill=doped_flibe_channels, name='channel')
+        device.multiplier = openmc.Cell(region = multiplier, fill = multiplier_material, name = 'multiplier')
+        device.tank_inner = openmc.Cell(region=tank_inner, fill=vcrti_BI, name='tank inner')
+        device.blanket = openmc.Cell(region=salt, fill=doped_flibe_blanket, name='blanket')
+        device.reflector = openmc.Cell(region = reflector, fill = reflector_material, name = 'reflector')
+        device.tank_outer = openmc.Cell(region=tank_outer, fill=vcrti_BO, name='tank outer')
+        device.domain.region = device.domain.region & outside
+
+    if int(order) == 2:
+        device.plasma = openmc.Cell(region=plasma, fill=None, name='plasma')
+        device.pfc = openmc.Cell(region=pfc, fill=tungsten, name='PFC')
+        device.vv = openmc.Cell(region=vv, fill=vcrti_VV, name='VV')
+        device.channel = openmc.Cell(region=channel, fill=doped_flibe_channels, name='channel')
+        device.multiplier = openmc.Cell(region = multiplier, fill = multiplier_material, name = 'multiplier')
+        device.tank_inner = openmc.Cell(region=tank_inner, fill=vcrti_BI, name='tank inner')
+        device.gap = openmc.Cell(region = gap, fill = doped_flibe_blanket, name = 'blanket 2a')
+        device.multiplier_2 = openmc.Cell(region = multiplier_2, fill = multiplier_2_material, name = 'multiplier 2')
+        device.str_3 = openmc.Cell(region=str_3, fill=vcrti_BI, name='str 3')
+        device.blanket = openmc.Cell(region=salt, fill=doped_flibe_blanket, name='blanket 2b')
+        device.reflector = openmc.Cell(region = reflector, fill = reflector_material, name = 'reflector')
+        device.tank_outer = openmc.Cell(region=tank_outer, fill=vcrti_BO, name='tank outer')
+        device.domain.region = device.domain.region & outside
 
     # ==============================================================================
     # Settings

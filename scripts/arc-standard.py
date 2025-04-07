@@ -14,10 +14,11 @@ openmc.config["cross_sections"] = '/home/hice1/awhitesides3/endfb-viii.0-hdf5/cr
 # ==============================================================================
 # Geometry
 # ==============================================================================
-def create_arc(Li6_enrichment, dopant, dopant_mass, multiplier_material, multiplier_thickness, reflector_material, reflector_thickness, channel_thickness, order):
+def create_arc(Li6_enrichment, dopant, dopant_mass, multiplier_material, multiplier_thickness, reflector_material, reflector_thickness, channel_thickness, order,
+                gap_thickness, multiplier_2_material, multiplier_2_thickness):
     device = anp.generate_device(Li6_enrichment, dopant, dopant_mass,
                                 multiplier_material, multiplier_thickness, reflector_material,
-                                reflector_thickness, channel_thickness, order)
+                                reflector_thickness, channel_thickness, order, gap_thickness, multiplier_2_material, multiplier_2_thickness)
     
     # Plotting
     plot = openmc.Plot()
@@ -81,15 +82,26 @@ def create_arc(Li6_enrichment, dopant, dopant_mass, multiplier_material, multipl
     # device.add_tally('Tbr Vacuum Vessel Tally ', ['(n,Xt)', 'fission', 'kappa-fission', 'fission-q-prompt', 'fission-q-recoverable', 'heating', 'heating-local'], filters=[tbr_filter2])
     
     # tbr_filter3 = openmc.MaterialFilter(device.doped_flibe_channels)
-    tbr_filter3 = openmc.CellFilter(device.get_cell(name = 'channel'))
-    device.add_tally('TBR Channel Tally', ['(n,Xt)'], nuclides = ['Li6', 'Li7'], filters = [tbr_filter3])
-    
+    if int(order) == 1:
+        tbr_filter3 = openmc.CellFilter(device.get_cell(name = 'channel'))
+        device.add_tally('TBR Channel Tally', ['(n,Xt)'], nuclides = ['Li6', 'Li7'], filters = [tbr_filter3])
+
+        tbr_filter5 = openmc.CellFilter(device.get_cell(name = 'blanket'))
+        device.add_tally('TBR Blanket Tally', ['(n,Xt)'], nuclides = ['Li6', 'Li7'], filters = [tbr_filter5])
+
+    if int(order) == 2:
+        tbr_filter3 = openmc.CellFilter(device.get_cell(name = 'channel'))
+        device.add_tally('TBR Channel Tally', ['(n,Xt)'], nuclides = ['Li6', 'Li7'], filters = [tbr_filter3])
+
+        tbr_filter4 = openmc.CellFilter(device.get_cell(name = 'blanket 2a'))
+        device.add_tally('TBR Blanket 2a Tally', ['(n,Xt)'], nuclides = ['Li6', 'Li7'], filters = [tbr_filter4])
+
+        tbr_filter5 = openmc.CellFilter(device.get_cell(name = 'blanket 2b'))
+        device.add_tally('TBR Blanket 2b Tally', ['(n,Xt)'], nuclides = ['Li6', 'Li7'], filters = [tbr_filter5])
     # tbr_filter4 = openmc.MaterialFilter(device.vcrti_BI)
     # device.add_tally('Tbr Tank Inner Tally ', ['(n,Xt)', 'fission', 'kappa-fission', 'fission-q-prompt', 'fission-q-recoverable', 'heating', 'heating-local'], filters=[tbr_filter4])
 
-    tbr_filter5 = openmc.CellFilter(device.get_cell(name = 'blanket'))
     # tbr_filter5 = openmc.MaterialFilter(device.doped_flibe_blanket) #device.doped_flibe, initially wanted 'doped_mat' which doesn't exist
-    device.add_tally('TBR Blanket Tally', ['(n,Xt)'], nuclides = ['Li6', 'Li7'], filters = [tbr_filter5])
     
     # tbr_filter6 = openmc.MaterialFilter(device.vcrti_BO)
     # device.add_tally('Tbr Tank Outer Tally ', ['(n,Xt)', 'fission', 'kappa-fission', 'fission-q-prompt', 'fission-q-recoverable', 'heating', 'heating-local'], filters=[tbr_filter6])
@@ -120,7 +132,7 @@ def create_arc(Li6_enrichment, dopant, dopant_mass, multiplier_material, multipl
 
 def make_materials_geometry_tallies(Li6_enrichment, dopant, dopant_mass,
                                 multiplier_material, multiplier_thickness, reflector_material,
-                                reflector_thickness, channel_thickness, order):
+                                reflector_thickness, channel_thickness, order, gap_thickness, multiplier_2_material, multiplier_2_thickness):
     """Makes a neutronics model of a blanket and simulates the TBR value.
 
     Arguments:
@@ -130,7 +142,8 @@ def make_materials_geometry_tallies(Li6_enrichment, dopant, dopant_mass,
         resutsl (dict): simulation tally results for TBR along with the standard deviation and enrichment
     """
     # RUN OPENMC
-    device = create_arc(Li6_enrichment, dopant, dopant_mass, multiplier_material, multiplier_thickness, reflector_material, reflector_thickness, channel_thickness, order)
+    device = create_arc(Li6_enrichment, dopant, dopant_mass, multiplier_material, multiplier_thickness, reflector_material, reflector_thickness, channel_thickness, order,
+                        gap_thickness, multiplier_2_material, multiplier_2_thickness)
     #remove old output files
     for file in os.listdir('.'):
         if file.endswith('.h5'):
@@ -139,19 +152,31 @@ def make_materials_geometry_tallies(Li6_enrichment, dopant, dopant_mass,
 
     # OPEN OUPUT FILE
     sp = openmc.StatePoint(sp_filename)
-
-    tbr_tally_blanket = sp.get_tally(name='TBR Blanket Tally')
-    tbr_tally_channel = sp.get_tally(name='TBR Channel Tally')
-
-    df_blanket = tbr_tally_blanket.get_pandas_dataframe()
-    df_channel = tbr_tally_channel.get_pandas_dataframe()
-    print(df_blanket)
-    print(df_channel)
-    combined_df = pd.concat([df_blanket, df_channel], ignore_index = True)
-    combined_df.to_csv(f'{dopant_mass}wppm.csv', index = False)
-    tbr_tally_result = df_blanket['mean'].sum() + df_channel['mean'].sum()
-    tbr_tally_std_dev = df_blanket['std. dev.'].sum() + df_channel['mean'].sum()
-
+    if int(order) == 1:
+        tbr_tally_blanket = sp.get_tally(name='TBR Blanket Tally')
+        tbr_tally_channel = sp.get_tally(name='TBR Channel Tally')
+        df_blanket = tbr_tally_blanket.get_pandas_dataframe()
+        df_channel = tbr_tally_channel.get_pandas_dataframe()
+        print(df_blanket)
+        print(df_channel)
+        combined_df = pd.concat([df_blanket, df_channel], ignore_index = True)
+        combined_df.to_csv(f'{dopant_mass}wppm.csv', index = False)
+        tbr_tally_result = df_blanket['mean'].sum() + df_channel['mean'].sum()
+        tbr_tally_std_dev = df_blanket['std. dev.'].sum() + df_channel['mean'].sum()
+    elif int(order) == 2:
+        tbr_tally_channel = sp.get_tally(name='TBR Channel Tally')
+        tbr_tally_blanket_2a = sp.get_tally(name='TBR Blanket 2a Tally')
+        tbr_tally_blanket_2b = sp.get_tally(name='TBR Blanket 2b Tally')        
+        df_channel = tbr_tally_channel.get_pandas_dataframe()
+        df_blanket_2a = tbr_tally_blanket_2a.get_pandas_dataframe()
+        df_blanket_2b = tbr_tally_blanket_2b.get_pandas_dataframe()
+        print(df_channel)
+        print(df_blanket_2a)
+        print(df_blanket_2b)
+        combined_df = pd.concat([df_channel, df_blanket_2a, df_blanket_2b], ignore_index = True)
+        combined_df.to_csv(f'{dopant_mass}wppm.csv', index = False)
+        tbr_tally_result = df_channel['mean'].sum() + df_blanket_2a['mean'].sum() + df_blanket_2b['mean'].sum() 
+        tbr_tally_std_dev = df_channel['mean'].sum() + df_blanket_2a['std. dev.'].sum() + df_blanket_2b['std. dev.'].sum()
     # command = ["openmc-plot-mesh-tally", sp_filename]
     # # Run the command
     # subprocess.run(command)
@@ -161,14 +186,14 @@ def make_materials_geometry_tallies(Li6_enrichment, dopant, dopant_mass,
             'tbr_tally_std_dev': tbr_tally_std_dev}
 
 results = []
-for dopant_wppm in np.arange(0, 950, 50):  # dopant wppm; start at 0wppm, end at 900wppm, step of 50wppm
+for dopant_wppm in np.arange(0, 150, 50):  # dopant wppm; start at 0wppm, end at 900wppm, step of 50wppm
     print(dopant_wppm)
     results.append(make_materials_geometry_tallies(7.5, str(sys.argv[1]), dopant_wppm, 
                     sys.argv[2], float(sys.argv[3]), sys.argv[4],
-                    float(sys.argv[5]), float(sys.argv[6]), sys.argv[7]))
+                    float(sys.argv[5]), float(sys.argv[6]), sys.argv[7], float(sys.argv[8]), sys.argv[9], float(sys.argv[10])))
 print(results)
 # ================================================================================
-print(str(sys.argv[8]))
+print(str(sys.argv[11]))
 
 def move_files(source_dir, target_dir):
     # Check if the source directory exists
@@ -205,8 +230,8 @@ def move_files(source_dir, target_dir):
             print(f"Error moving '{filename}': {e}")
 
 os.mkdir(str(sys.argv[8]))
-move_files('/home/hice1/awhitesides3/TBR/scripts', str(sys.argv[8]))
-print("OpenMC files moved to new directory:", str(sys.argv[8]))
+move_files('/home/hice1/awhitesides3/TBR/scripts', str(sys.argv[11]))
+print("OpenMC files moved to new directory:", str(sys.argv[11]))
 '''
 try:
     if sys.argv[9] is not None:
