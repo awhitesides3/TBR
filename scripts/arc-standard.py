@@ -66,8 +66,8 @@ def create_arc(Li6_enrichment, dopant, dopant_mass, multiplier_material, multipl
     # Tallies
     # ==============================================================================
     # """ Cylindrical Mesh Tally """
-    r_grid = np.linspace(0, 600, num=25) #[NEW] original: (25, 200, num=25), 0, 600
-    z_grid = np.linspace(-700, 700, num=50) #[NEW] original: (-200, 200, num=50), -700, 700
+    r_grid = np.linspace(0, 620, num=620) #[NEW] original: (25, 200, num=25), 0, 600
+    z_grid = np.array([-10,10]) #[NEW] original: (-200, 200, num=50), -700, 700
     mesh = openmc.CylindricalMesh(r_grid=r_grid, z_grid=z_grid) #[NEW]
     mesh.phi_grid = np.array([0, (2 * np.pi)/(18 * 2)])
     mesh_filter = openmc.MeshFilter(mesh)
@@ -149,9 +149,13 @@ def make_materials_geometry_tallies(Li6_enrichment, dopant, dopant_mass,
         if file.endswith('.h5'):
             os.remove(file)
     sp_filename = device.run(output = False)  # runs with reduced amount of output printing, output = false
-
     # OPEN OUPUT FILE
     sp = openmc.StatePoint(sp_filename)
+    # export mesh tally to csv
+    mesh_tally = sp.get_tally(name='Mesh Tally')
+    df_mesh = mesh_tally.get_pandas_dataframe()
+    df_mesh.to_csv(f'{dopant_mass}wppm_mesh.csv', index = False)
+    #export tbr tallies to csv
     if int(order) == 1:
         tbr_tally_blanket = sp.get_tally(name='TBR Blanket Tally')
         tbr_tally_channel = sp.get_tally(name='TBR Channel Tally')
@@ -186,7 +190,7 @@ def make_materials_geometry_tallies(Li6_enrichment, dopant, dopant_mass,
             'tbr_tally_std_dev': tbr_tally_std_dev}
 
 results = []
-for dopant_wppm in np.arange(0, 150, 50):  # dopant wppm; start at 0wppm, end at 900wppm, step of 50wppm
+for dopant_wppm in np.arange(0, 100, 50):  # dopant wppm; start at 0wppm, end at 900wppm, step of 50wppm
     print(dopant_wppm)
     results.append(make_materials_geometry_tallies(7.5, str(sys.argv[1]), dopant_wppm, 
                     sys.argv[2], float(sys.argv[3]), sys.argv[4],
@@ -229,7 +233,7 @@ def move_files(source_dir, target_dir):
         except Exception as e:
             print(f"Error moving '{filename}': {e}")
 
-os.mkdir(str(sys.argv[8]))
+os.mkdir(str(sys.argv[11]))
 move_files('/home/hice1/awhitesides3/TBR/scripts', str(sys.argv[11]))
 print("OpenMC files moved to new directory:", str(sys.argv[11]))
 '''

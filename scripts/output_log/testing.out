@@ -1,6 +1,6 @@
 ---------------------------------------
-Begin Slurm Prolog: Apr-06-2025 23:46:17
-Job ID:    2419976
+Begin Slurm Prolog: Apr-11-2025 22:52:25
+Job ID:    2444571
 User ID:   awhitesides3
 Account:   me
 Job name:  TBR_runs_11
@@ -10,10 +10,6 @@ QOS:       coe-ice
 Obtaining file:///home/hice1/awhitesides3/TBR/scripts
 ERROR: file:///home/hice1/awhitesides3/TBR/scripts does not appear to be a Python project: neither 'setup.py' nor 'pyproject.toml' found.
 48
-/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
-  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
-/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
-  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
 /home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
   warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
 /home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
@@ -40,7 +36,7 @@ Material
 	Pb207          =	0.221        [ao]
 	Pb208          =	0.524        [ao]
 
-1.0
+10.0
 Material
 	ID             =	12
 	Name           =	
@@ -57,7 +53,7 @@ Material
 
 0.0
 2.0
-2
+1
 0.0
 Material
 	ID             =	7
@@ -100,7 +96,7 @@ Material
          License | https://docs.openmc.org/en/latest/license.html
          Version | 0.15.0
         Git SHA1 | 84fb85977f46e162fea8f5a20ea653a3ec62ac24
-       Date/Time | 2025-04-06 23:46:27
+       Date/Time | 2025-04-11 22:52:41
    MPI Processes | 1
   OpenMP Threads | 48
 
@@ -125,14 +121,11 @@ Pixels: 7000 8000
 
  Processing plot 1: geometry_plot.png...
    cell nuclide   score     mean  std. dev.
-0     6     Li6  (n,Xt) 8.38e-02   1.47e-04
-1     6     Li7  (n,Xt) 1.91e-02   3.26e-05
+0    10     Li6  (n,Xt) 1.16e+00   1.53e-03
+1    10     Li7  (n,Xt) 2.71e-02   9.44e-05
    cell nuclide   score     mean  std. dev.
-0    10     Li6  (n,Xt) 0.00e+00   0.00e+00
-1    10     Li7  (n,Xt) 0.00e+00   0.00e+00
-   cell nuclide   score     mean  std. dev.
-0    13     Li6  (n,Xt) 1.03e+00   1.40e-03
-1    13     Li7  (n,Xt) 7.72e-02   1.55e-04
+0     6     Li6  (n,Xt) 1.35e-01   2.39e-04
+1     6     Li7  (n,Xt) 1.86e-02   2.22e-05
 50
 7.5
 lead
@@ -151,7 +144,7 @@ Material
 	Pb207          =	0.221        [ao]
 	Pb208          =	0.524        [ao]
 
-1.0
+10.0
 Material
 	ID             =	12
 	Name           =	
@@ -168,7 +161,7 @@ Material
 
 0.0
 2.0
-2
+1
 0.0
 Material
 	ID             =	7
@@ -183,18 +176,29 @@ Material
 
 0.0
    cell nuclide   score     mean  std. dev.
-0    20     Li6  (n,Xt) 8.38e-02   1.37e-04
-1    20     Li7  (n,Xt) 1.89e-02   3.33e-05
+0    20     Li6  (n,Xt) 1.16e+00   7.30e-04
+1    20     Li7  (n,Xt) 2.66e-02   9.09e-05
    cell nuclide   score     mean  std. dev.
-0    23     Li6  (n,Xt) 0.00e+00   0.00e+00
-1    23     Li7  (n,Xt) 0.00e+00   0.00e+00
-   cell nuclide   score     mean  std. dev.
-0    26     Li6  (n,Xt) 1.03e+00   9.38e-04
-1    26     Li7  (n,Xt) 7.60e-02   1.41e-04
-100
+0    17     Li6  (n,Xt) 1.35e-01   2.49e-04
+1    17     Li7  (n,Xt) 1.84e-02   2.33e-05
+[{'dopant mass': np.int64(0), 'tbr_tally_result': np.float64(1.3444849066594968), 'tbr_tally_std_dev': np.float64(0.15557363697768498)}, {'dopant mass': np.int64(50), 'tbr_tally_result': np.float64(1.3438092168774596), 'tbr_tally_std_dev': np.float64(0.15412072107180166)}]
+/home/hice1/awhitesides3/TBR/scripts/shielding_test_2/optimal_case
+Traceback (most recent call last):
+  File "/home/hice1/awhitesides3/TBR/scripts/arc-standard.py", line 236, in <module>
+    os.mkdir(str(sys.argv[11]))
+FileExistsError: [Errno 17] File exists: '/home/hice1/awhitesides3/TBR/scripts/shielding_test_2/optimal_case'
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/source.py:656: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+/home/hice1/awhitesides3/.conda/envs/openmc-env/lib/python3.12/site-packages/openmc/geometry.py:128: UserWarning: remove_surfs kwarg will be deprecated soon, please set the Geometry.merge_surfaces attribute instead.
+  warnings.warn("remove_surfs kwarg will be deprecated soon, please "
+0
 7.5
 lead
-100
+0
 Material
 	ID             =	12
 	Name           =	
@@ -209,7 +213,7 @@ Material
 	Pb207          =	0.221        [ao]
 	Pb208          =	0.524        [ao]
 
-1.0
+0.0
 Material
 	ID             =	12
 	Name           =	
@@ -226,7 +230,7 @@ Material
 
 0.0
 2.0
-2
+1
 0.0
 Material
 	ID             =	7
@@ -241,40 +245,82 @@ Material
 
 0.0
    cell nuclide   score     mean  std. dev.
-0    33     Li6  (n,Xt) 8.39e-02   1.47e-04
-1    33     Li7  (n,Xt) 1.86e-02   3.27e-05
+0    10     Li6  (n,Xt) 9.92e-01   1.02e-03
+1    10     Li7  (n,Xt) 8.71e-02   1.14e-04
    cell nuclide   score     mean  std. dev.
-0    36     Li6  (n,Xt) 0.00e+00   0.00e+00
-1    36     Li7  (n,Xt) 0.00e+00   0.00e+00
+0     6     Li6  (n,Xt) 7.72e-02   2.08e-04
+1     6     Li7  (n,Xt) 1.92e-02   2.45e-05
+50
+7.5
+lead
+50
+Material
+	ID             =	12
+	Name           =	
+	Temperature    =	None
+	Density        =	11.342 [g/cm3]
+	Volume         =	None [cm^3]
+	Depletable     =	False
+	S(a,b) Tables  
+	Nuclides       
+	Pb204          =	0.014        [ao]
+	Pb206          =	0.241        [ao]
+	Pb207          =	0.221        [ao]
+	Pb208          =	0.524        [ao]
+
+0.0
+Material
+	ID             =	12
+	Name           =	
+	Temperature    =	None
+	Density        =	11.342 [g/cm3]
+	Volume         =	None [cm^3]
+	Depletable     =	False
+	S(a,b) Tables  
+	Nuclides       
+	Pb204          =	0.014        [ao]
+	Pb206          =	0.241        [ao]
+	Pb207          =	0.221        [ao]
+	Pb208          =	0.524        [ao]
+
+0.0
+2.0
+1
+0.0
+Material
+	ID             =	7
+	Name           =	
+	Temperature    =	None
+	Density        =	1.85 [g/cm3]
+	Volume         =	None [cm^3]
+	Depletable     =	False
+	S(a,b) Tables  
+	Nuclides       
+	Be9            =	1.0          [ao]
+
+0.0
    cell nuclide   score     mean  std. dev.
-0    39     Li6  (n,Xt) 1.04e+00   6.51e-04
-1    39     Li7  (n,Xt) 7.47e-02   1.72e-04
-[{'dopant mass': np.int64(0), 'tbr_tally_result': np.float64(1.211576208179646), 'tbr_tally_std_dev': np.float64(0.10440933430177717)}, {'dopant mass': np.int64(50), 'tbr_tally_result': np.float64(1.2130682009796512), 'tbr_tally_std_dev': np.float64(0.10371750238604453)}, {'dopant mass': np.int64(100), 'tbr_tally_result': np.float64(1.2153289750649954), 'tbr_tally_std_dev': np.float64(0.10332026354928461)}]
-/home/hice1/awhitesides3/TBR/scripts/split_flibe_testing/test_slry_Pb_mlt_Pb_mlt_1
-Moved 'plots.xml' to '/home/hice1/awhitesides3/TBR/scripts/split_flibe_testing/test_slry_Pb_mlt_Pb_mlt_1'
-Moved 'settings.xml' to '/home/hice1/awhitesides3/TBR/scripts/split_flibe_testing/test_slry_Pb_mlt_Pb_mlt_1'
-Moved 'geometry.xml' to '/home/hice1/awhitesides3/TBR/scripts/split_flibe_testing/test_slry_Pb_mlt_Pb_mlt_1'
-Moved 'materials.xml' to '/home/hice1/awhitesides3/TBR/scripts/split_flibe_testing/test_slry_Pb_mlt_Pb_mlt_1'
-Moved 'tallies.xml' to '/home/hice1/awhitesides3/TBR/scripts/split_flibe_testing/test_slry_Pb_mlt_Pb_mlt_1'
-Moved 'geometry_plot.png' to '/home/hice1/awhitesides3/TBR/scripts/split_flibe_testing/test_slry_Pb_mlt_Pb_mlt_1'
-Moved 'model.xml' to '/home/hice1/awhitesides3/TBR/scripts/split_flibe_testing/test_slry_Pb_mlt_Pb_mlt_1'
-Moved 'summary.h5' to '/home/hice1/awhitesides3/TBR/scripts/split_flibe_testing/test_slry_Pb_mlt_Pb_mlt_1'
-Moved 'statepoint.10.h5' to '/home/hice1/awhitesides3/TBR/scripts/split_flibe_testing/test_slry_Pb_mlt_Pb_mlt_1'
-Moved 'tallies.out' to '/home/hice1/awhitesides3/TBR/scripts/split_flibe_testing/test_slry_Pb_mlt_Pb_mlt_1'
-Moved '0wppm.csv' to '/home/hice1/awhitesides3/TBR/scripts/split_flibe_testing/test_slry_Pb_mlt_Pb_mlt_1'
-Moved '50wppm.csv' to '/home/hice1/awhitesides3/TBR/scripts/split_flibe_testing/test_slry_Pb_mlt_Pb_mlt_1'
-Moved '100wppm.csv' to '/home/hice1/awhitesides3/TBR/scripts/split_flibe_testing/test_slry_Pb_mlt_Pb_mlt_1'
-OpenMC files moved to new directory: /home/hice1/awhitesides3/TBR/scripts/split_flibe_testing/test_slry_Pb_mlt_Pb_mlt_1
-Sun Apr  6 11:48:40 PM EDT 2025
+0    20     Li6  (n,Xt) 9.97e-01   1.08e-03
+1    20     Li7  (n,Xt) 8.57e-02   1.11e-04
+   cell nuclide   score     mean  std. dev.
+0    17     Li6  (n,Xt) 7.72e-02   9.67e-05
+1    17     Li7  (n,Xt) 1.90e-02   2.18e-05
+[{'dopant mass': np.int64(0), 'tbr_tally_result': np.float64(1.1753664873761247), 'tbr_tally_std_dev': np.float64(0.09756751212787952)}, {'dopant mass': np.int64(50), 'tbr_tally_result': np.float64(1.1791149818010274), 'tbr_tally_std_dev': np.float64(0.09746405983960817)}]
+/home/hice1/awhitesides3/TBR/scripts/shielding_test_2/bare_case
+Traceback (most recent call last):
+  File "/home/hice1/awhitesides3/TBR/scripts/arc-standard.py", line 236, in <module>
+    os.mkdir(str(sys.argv[11]))
+FileExistsError: [Errno 17] File exists: '/home/hice1/awhitesides3/TBR/scripts/shielding_test_2/bare_case'
+Fri Apr 11 10:56:22 PM EDT 2025
 ---------------------------------------
-Begin Slurm Epilog: Apr-06-2025 23:48:40
-Job ID:        2419976
+Begin Slurm Epilog: Apr-11-2025 22:56:22
+Job ID:        2444571
 User ID:       awhitesides3
 Account:       me
 Job name:      TBR_runs_11
 Resources:     cpu=96,mem=96G,node=2
-Rsrc Used:     cput=03:50:24,vmem=0,walltime=00:02:24,mem=1470348K,energy_used=0
+Rsrc Used:     cput=06:20:48,vmem=0,walltime=00:03:58,mem=1487444K,energy_used=0
 Partition:     pace-cpu
 QOS:           coe-ice
-Nodes:         atl1-1-01-005-3-2,atl1-1-01-005-4-1
+Nodes:         atl1-1-01-005-3-[1-2]
 ---------------------------------------

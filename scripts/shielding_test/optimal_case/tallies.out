@@ -1,0 +1,1444 @@
+ ======================>     TALLY 4: MESH TALLY     <======================
+
+ Mesh Index (1, 1, 1)
+   Total Material
+     Flux                                 0.00289818 +/- 4.79818e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.00089531 +/- 0.000163356
+ Mesh Index (2, 1, 1)
+   Total Material
+     Flux                                 0.00294302 +/- 5.49939e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.00029507 +/- 3.93064e-05
+ Mesh Index (3, 1, 1)
+   Total Material
+     Flux                                 0.00296386 +/- 4.91743e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.00060684 +/- 0.000134071
+ Mesh Index (4, 1, 1)
+   Total Material
+     Flux                                 0.00295733 +/- 7.70729e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.000568635 +/- 0.00011485
+ Mesh Index (5, 1, 1)
+   Total Material
+     Flux                                 0.0029815 +/- 5.55483e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.000349702 +/- 6.06864e-05
+ Mesh Index (6, 1, 1)
+   Total Material
+     Flux                                 0.00294771 +/- 5.38764e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.000700754 +/- 0.000149868
+ Mesh Index (7, 1, 1)
+   Total Material
+     Flux                                 0.00294767 +/- 7.22252e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.00074927 +/- 0.000119197
+ Mesh Index (8, 1, 1)
+   Total Material
+     Flux                                 0.00292959 +/- 8.02957e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.000724472 +/- 7.83671e-05
+ Mesh Index (9, 1, 1)
+   Total Material
+     Flux                                 0.00289511 +/- 5.08909e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.000563068 +/- 0.000120748
+ Mesh Index (10, 1, 1)
+   Total Material
+     Flux                                 0.00301873 +/- 6.31575e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.00106107 +/- 0.000297395
+ Mesh Index (11, 1, 1)
+   Total Material
+     Flux                                 0.00286291 +/- 6.2066e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.000783562 +/- 0.000178481
+ Mesh Index (12, 1, 1)
+   Total Material
+     Flux                                 0.00279868 +/- 4.93093e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.000512513 +/- 0.000104753
+ Mesh Index (13, 1, 1)
+   Total Material
+     Flux                                 0.0028836 +/- 4.7132e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.00067673 +/- 0.000158901
+ Mesh Index (14, 1, 1)
+   Total Material
+     Flux                                 0.00290913 +/- 6.70259e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.00445042 +/- 0.00387285
+ Mesh Index (15, 1, 1)
+   Total Material
+     Flux                                 0.00287079 +/- 8.46217e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.000717117 +/- 0.000208681
+ Mesh Index (16, 1, 1)
+   Total Material
+     Flux                                 0.00295926 +/- 6.97376e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.00170058 +/- 0.000772072
+ Mesh Index (17, 1, 1)
+   Total Material
+     Flux                                 0.00304824 +/- 8.15358e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.0010284 +/- 0.000167657
+ Mesh Index (18, 1, 1)
+   Total Material
+     Flux                                 0.00302326 +/- 6.0416e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.00162449 +/- 0.0005391
+ Mesh Index (19, 1, 1)
+   Total Material
+     Flux                                 0.00297799 +/- 6.95287e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.0010923 +/- 0.000267712
+ Mesh Index (20, 1, 1)
+   Total Material
+     Flux                                 0.00302644 +/- 7.18405e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.00067566 +/- 0.000135835
+ Mesh Index (21, 1, 1)
+   Total Material
+     Flux                                 0.00301913 +/- 6.16352e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.000923096 +/- 0.000209598
+ Mesh Index (22, 1, 1)
+   Total Material
+     Flux                                 0.00297359 +/- 5.09383e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.00563102 +/- 0.00457985
+ Mesh Index (23, 1, 1)
+   Total Material
+     Flux                                 0.00299969 +/- 7.23409e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.00116187 +/- 0.000327241
+ Mesh Index (24, 1, 1)
+   Total Material
+     Flux                                 0.00292842 +/- 6.31216e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.000944079 +/- 0.000317518
+ Mesh Index (25, 1, 1)
+   Total Material
+     Flux                                 0.0029607 +/- 8.11918e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.000643857 +/- 0.000149962
+ Mesh Index (26, 1, 1)
+   Total Material
+     Flux                                 0.0029572 +/- 5.452e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.000625811 +/- 0.000184464
+ Mesh Index (27, 1, 1)
+   Total Material
+     Flux                                 0.00306328 +/- 5.66647e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.000811755 +/- 0.000209581
+ Mesh Index (28, 1, 1)
+   Total Material
+     Flux                                 0.00313038 +/- 5.31601e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.000720168 +/- 0.000221826
+ Mesh Index (29, 1, 1)
+   Total Material
+     Flux                                 0.00308106 +/- 8.07462e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.000634647 +/- 0.000170857
+ Mesh Index (30, 1, 1)
+   Total Material
+     Flux                                 0.0032516 +/- 5.97026e-05
+     (n,Xt)                               2.08316e-10 +/- 1.00176e-11
+     heating-local                        227.055 +/- 4.84644
+     Absorption Rate                      0.0010074 +/- 0.000127253
+ Mesh Index (31, 1, 1)
+   Total Material
+     Flux                                 0.00372493 +/- 6.54817e-05
+     (n,Xt)                               6.30073e-07 +/- 3.95672e-08
+     heating-local                        322.798 +/- 16.463
+     Absorption Rate                      0.00021393 +/- 1.563e-05
+ Mesh Index (32, 1, 1)
+   Total Material
+     Flux                                 0.00403845 +/- 0.000115904
+     (n,Xt)                               1.17266e-05 +/- 6.71174e-07
+     heating-local                        234.175 +/- 11.8806
+     Absorption Rate                      0.000105238 +/- 1.00577e-05
+ Mesh Index (33, 1, 1)
+   Total Material
+     Flux                                 0.00400944 +/- 3.78329e-05
+     (n,Xt)                               1.14516e-05 +/- 4.78494e-07
+     heating-local                        228.566 +/- 8.79936
+     Absorption Rate                      0.000200811 +/- 2.87065e-05
+ Mesh Index (34, 1, 1)
+   Total Material
+     Flux                                 0.00375854 +/- 9.51981e-05
+     (n,Xt)                               3.32033e-07 +/- 2.70302e-08
+     heating-local                        133.012 +/- 6.56721
+     Absorption Rate                      0.000742275 +/- 7.3769e-05
+ Mesh Index (35, 1, 1)
+   Total Material
+     Flux                                 0.00383241 +/- 9.07614e-05
+     (n,Xt)                               1.46581e-10 +/- 1.18879e-11
+     heating-local                        119.841 +/- 6.68428
+     Absorption Rate                      0.00044646 +/- 7.06011e-05
+ Mesh Index (36, 1, 1)
+   Total Material
+     Flux                                 0.00367484 +/- 8.57386e-05
+     (n,Xt)                               1.25044e-10 +/- 1.00633e-11
+     heating-local                        95.3489 +/- 5.06587
+     Absorption Rate                      0.000372957 +/- 4.90812e-05
+ Mesh Index (37, 1, 1)
+   Total Material
+     Flux                                 0.00360634 +/- 0.000105025
+     (n,Xt)                               1.10229e-10 +/- 1.10085e-11
+     heating-local                        94.6006 +/- 6.03228
+     Absorption Rate                      0.000476397 +/- 5.54426e-05
+ Mesh Index (38, 1, 1)
+   Total Material
+     Flux                                 0.00362462 +/- 8.4742e-05
+     (n,Xt)                               9.77684e-11 +/- 1.03692e-11
+     heating-local                        84.0732 +/- 6.25632
+     Absorption Rate                      0.000331501 +/- 4.29033e-05
+ Mesh Index (39, 1, 1)
+   Total Material
+     Flux                                 0.00342125 +/- 8.38016e-05
+     (n,Xt)                               9.58969e-11 +/- 1.15842e-11
+     heating-local                        84.0382 +/- 7.02606
+     Absorption Rate                      0.000332972 +/- 3.08738e-05
+ Mesh Index (40, 1, 1)
+   Total Material
+     Flux                                 0.00331803 +/- 8.3397e-05
+     (n,Xt)                               8.64432e-11 +/- 1.2848e-11
+     heating-local                        76.6243 +/- 8.57508
+     Absorption Rate                      0.000285279 +/- 4.15942e-05
+ Mesh Index (41, 1, 1)
+   Total Material
+     Flux                                 0.00318264 +/- 7.90454e-05
+     (n,Xt)                               7.58815e-11 +/- 1.12441e-11
+     heating-local                        67.7026 +/- 7.15314
+     Absorption Rate                      0.000287741 +/- 4.57651e-05
+ Mesh Index (42, 1, 1)
+   Total Material
+     Flux                                 0.00317044 +/- 0.000125578
+     (n,Xt)                               6.988e-11 +/- 9.92514e-12
+     heating-local                        62.1124 +/- 6.50478
+     Absorption Rate                      0.000320862 +/- 3.48399e-05
+ Mesh Index (43, 1, 1)
+   Total Material
+     Flux                                 0.00300171 +/- 7.50597e-05
+     (n,Xt)                               6.24146e-11 +/- 8.5558e-12
+     heating-local                        58.4605 +/- 6.78433
+     Absorption Rate                      0.000315019 +/- 3.37329e-05
+ Mesh Index (44, 1, 1)
+   Total Material
+     Flux                                 0.0031224 +/- 5.85068e-05
+     (n,Xt)                               5.04624e-10 +/- 6.98603e-11
+     heating-local                        116.963 +/- 7.97598
+     Absorption Rate                      0.000183514 +/- 1.63504e-05
+ Mesh Index (45, 1, 1)
+   Total Material
+     Flux                                 0.00274499 +/- 6.25959e-05
+     (n,Xt)                               4.97727e-10 +/- 7.18052e-11
+     heating-local                        109.423 +/- 7.13966
+     Absorption Rate                      6.11066e-05 +/- 7.05964e-06
+ Mesh Index (46, 1, 1)
+   Total Material
+     Flux                                 0.00275074 +/- 9.90819e-05
+     (n,Xt)                               4.68795e-10 +/- 7.66963e-11
+     heating-local                        112.203 +/- 9.04034
+     Absorption Rate                      0.000105153 +/- 1.50147e-05
+ Mesh Index (47, 1, 1)
+   Total Material
+     Flux                                 0.00277259 +/- 5.93862e-05
+     (n,Xt)                               7.91513e-06 +/- 3.26772e-07
+     heating-local                        104.712 +/- 4.18484
+     Absorption Rate                      0.000105915 +/- 8.48649e-06
+ Mesh Index (48, 1, 1)
+   Total Material
+     Flux                                 0.00253824 +/- 6.47139e-05
+     (n,Xt)                               1.04877e-05 +/- 5.35124e-07
+     heating-local                        95.3603 +/- 2.40095
+     Absorption Rate                      9.2489e-05 +/- 1.15795e-05
+ Mesh Index (49, 1, 1)
+   Total Material
+     Flux                                 0.00237516 +/- 5.51213e-05
+     (n,Xt)                               9.91728e-06 +/- 7.80708e-07
+     heating-local                        90.378 +/- 4.90418
+     Absorption Rate                      7.28566e-05 +/- 8.31206e-06
+ Mesh Index (50, 1, 1)
+   Total Material
+     Flux                                 0.00230867 +/- 2.79643e-05
+     (n,Xt)                               9.85678e-06 +/- 4.87238e-07
+     heating-local                        85.3424 +/- 1.86121
+     Absorption Rate                      7.89432e-05 +/- 9.04041e-06
+ Mesh Index (51, 1, 1)
+   Total Material
+     Flux                                 0.00214726 +/- 7.10191e-05
+     (n,Xt)                               9.32834e-06 +/- 5.70106e-07
+     heating-local                        76.5546 +/- 3.29301
+     Absorption Rate                      6.33498e-05 +/- 8.96432e-06
+ Mesh Index (52, 1, 1)
+   Total Material
+     Flux                                 0.00198613 +/- 5.61265e-05
+     (n,Xt)                               8.83369e-06 +/- 4.85623e-07
+     heating-local                        77.0995 +/- 2.5036
+     Absorption Rate                      7.78289e-05 +/- 7.41899e-06
+ Mesh Index (53, 1, 1)
+   Total Material
+     Flux                                 0.00183595 +/- 7.38019e-05
+     (n,Xt)                               8.67332e-06 +/- 4.85357e-07
+     heating-local                        72.1239 +/- 2.72381
+     Absorption Rate                      5.64158e-05 +/- 4.81351e-06
+ Mesh Index (54, 1, 1)
+   Total Material
+     Flux                                 0.00171649 +/- 6.47087e-05
+     (n,Xt)                               8.73827e-06 +/- 5.0747e-07
+     heating-local                        65.4845 +/- 3.34507
+     Absorption Rate                      5.51811e-05 +/- 7.28921e-06
+ Mesh Index (55, 1, 1)
+   Total Material
+     Flux                                 0.00157528 +/- 4.5877e-05
+     (n,Xt)                               7.84616e-06 +/- 6.15225e-07
+     heating-local                        60.1234 +/- 2.60632
+     Absorption Rate                      4.92795e-05 +/- 6.49771e-06
+ Mesh Index (56, 1, 1)
+   Total Material
+     Flux                                 0.00144664 +/- 3.82679e-05
+     (n,Xt)                               7.40521e-06 +/- 6.14836e-07
+     heating-local                        59.3126 +/- 2.96016
+     Absorption Rate                      4.02424e-05 +/- 4.60839e-06
+ Mesh Index (57, 1, 1)
+   Total Material
+     Flux                                 0.00127419 +/- 5.41808e-05
+     (n,Xt)                               6.37444e-06 +/- 3.35928e-07
+     heating-local                        50.7883 +/- 2.61047
+     Absorption Rate                      3.2621e-05 +/- 5.23549e-06
+ Mesh Index (58, 1, 1)
+   Total Material
+     Flux                                 0.00127665 +/- 5.08338e-05
+     (n,Xt)                               6.80796e-06 +/- 2.90155e-07
+     heating-local                        55.7464 +/- 2.6878
+     Absorption Rate                      4.05943e-05 +/- 7.17005e-06
+ Mesh Index (59, 1, 1)
+   Total Material
+     Flux                                 0.00125633 +/- 4.87174e-05
+     (n,Xt)                               7.12006e-06 +/- 4.97108e-07
+     heating-local                        54.7927 +/- 3.13046
+     Absorption Rate                      3.11941e-05 +/- 3.87471e-06
+ Mesh Index (60, 1, 1)
+   Total Material
+     Flux                                 0.0011327 +/- 4.41928e-05
+     (n,Xt)                               6.53939e-06 +/- 5.3372e-07
+     heating-local                        49.1615 +/- 2.09939
+     Absorption Rate                      3.04275e-05 +/- 4.85203e-06
+ Mesh Index (61, 1, 1)
+   Total Material
+     Flux                                 0.00103879 +/- 2.80728e-05
+     (n,Xt)                               5.70147e-06 +/- 3.12941e-07
+     heating-local                        41.1039 +/- 0.922919
+     Absorption Rate                      2.30928e-05 +/- 3.00044e-06
+ Mesh Index (62, 1, 1)
+   Total Material
+     Flux                                 0.000984076 +/- 3.39456e-05
+     (n,Xt)                               5.76301e-06 +/- 4.08087e-07
+     heating-local                        40.1183 +/- 1.78545
+     Absorption Rate                      2.4299e-05 +/- 6.09836e-06
+ Mesh Index (63, 1, 1)
+   Total Material
+     Flux                                 0.000843964 +/- 3.6426e-05
+     (n,Xt)                               4.98488e-06 +/- 5.67188e-07
+     heating-local                        37.3835 +/- 3.46221
+     Absorption Rate                      2.12956e-05 +/- 3.04722e-06
+ Mesh Index (64, 1, 1)
+   Total Material
+     Flux                                 0.000778221 +/- 3.09983e-05
+     (n,Xt)                               4.51555e-06 +/- 3.49982e-07
+     heating-local                        32.6984 +/- 1.69761
+     Absorption Rate                      2.17081e-05 +/- 3.38911e-06
+ Mesh Index (65, 1, 1)
+   Total Material
+     Flux                                 0.000792115 +/- 3.20859e-05
+     (n,Xt)                               5.22287e-06 +/- 4.71122e-07
+     heating-local                        34.3633 +/- 2.62615
+     Absorption Rate                      2.52815e-05 +/- 5.32407e-06
+ Mesh Index (66, 1, 1)
+   Total Material
+     Flux                                 0.000695669 +/- 3.54188e-05
+     (n,Xt)                               4.24616e-06 +/- 3.28116e-07
+     heating-local                        31.4728 +/- 2.60228
+     Absorption Rate                      2.02151e-05 +/- 4.1998e-06
+ Mesh Index (67, 1, 1)
+   Total Material
+     Flux                                 0.000628707 +/- 2.27941e-05
+     (n,Xt)                               4.06816e-06 +/- 4.01156e-07
+     heating-local                        29.3115 +/- 2.78864
+     Absorption Rate                      1.72764e-05 +/- 3.33028e-06
+ Mesh Index (68, 1, 1)
+   Total Material
+     Flux                                 0.000622456 +/- 2.97818e-05
+     (n,Xt)                               4.24502e-06 +/- 2.73674e-07
+     heating-local                        29.5012 +/- 1.75396
+     Absorption Rate                      1.21145e-05 +/- 2.2192e-06
+ Mesh Index (69, 1, 1)
+   Total Material
+     Flux                                 0.000505955 +/- 3.56586e-05
+     (n,Xt)                               3.36606e-06 +/- 3.26257e-07
+     heating-local                        22.0188 +/- 1.99559
+     Absorption Rate                      8.90975e-06 +/- 1.03451e-06
+ Mesh Index (70, 1, 1)
+   Total Material
+     Flux                                 0.00055215 +/- 4.45746e-05
+     (n,Xt)                               3.58302e-06 +/- 4.12131e-07
+     heating-local                        24.2986 +/- 2.05256
+     Absorption Rate                      1.42111e-05 +/- 4.31645e-06
+ Mesh Index (71, 1, 1)
+   Total Material
+     Flux                                 0.000508371 +/- 3.18747e-05
+     (n,Xt)                               3.20362e-06 +/- 2.71373e-07
+     heating-local                        21.7888 +/- 3.00554
+     Absorption Rate                      1.15843e-05 +/- 3.17247e-06
+ Mesh Index (72, 1, 1)
+   Total Material
+     Flux                                 0.000513641 +/- 3.68562e-05
+     (n,Xt)                               3.97795e-06 +/- 3.81382e-07
+     heating-local                        24.2285 +/- 2.32605
+     Absorption Rate                      1.2671e-05 +/- 3.55651e-06
+ Mesh Index (73, 1, 1)
+   Total Material
+     Flux                                 0.000430844 +/- 2.28457e-05
+     (n,Xt)                               3.08381e-06 +/- 3.15352e-07
+     heating-local                        20.3581 +/- 1.91815
+     Absorption Rate                      1.61963e-05 +/- 4.51392e-06
+ Mesh Index (74, 1, 1)
+   Total Material
+     Flux                                 0.00039263 +/- 2.6138e-05
+     (n,Xt)                               2.95636e-06 +/- 3.39618e-07
+     heating-local                        18.4685 +/- 1.85064
+     Absorption Rate                      9.26031e-06 +/- 1.8589e-06
+ Mesh Index (75, 1, 1)
+   Total Material
+     Flux                                 0.000368516 +/- 2.34084e-05
+     (n,Xt)                               2.33841e-06 +/- 2.84166e-07
+     heating-local                        14.5282 +/- 1.5646
+     Absorption Rate                      9.36993e-06 +/- 1.40619e-06
+ Mesh Index (76, 1, 1)
+   Total Material
+     Flux                                 0.000318042 +/- 2.23923e-05
+     (n,Xt)                               2.81163e-06 +/- 3.69329e-07
+     heating-local                        16.9071 +/- 1.72929
+     Absorption Rate                      8.77763e-06 +/- 7.88485e-07
+ Mesh Index (77, 1, 1)
+   Total Material
+     Flux                                 0.00028957 +/- 1.65703e-05
+     (n,Xt)                               2.53193e-06 +/- 2.39598e-07
+     heating-local                        15.0492 +/- 1.58009
+     Absorption Rate                      1.0739e-05 +/- 4.91173e-06
+ Mesh Index (78, 1, 1)
+   Total Material
+     Flux                                 0.000292307 +/- 1.41706e-05
+     (n,Xt)                               2.06854e-06 +/- 1.43478e-07
+     heating-local                        12.9294 +/- 1.03762
+     Absorption Rate                      1.04522e-05 +/- 3.54717e-06
+ Mesh Index (79, 1, 1)
+   Total Material
+     Flux                                 0.000271246 +/- 2.43704e-05
+     (n,Xt)                               1.72836e-06 +/- 2.69508e-07
+     heating-local                        11.6254 +/- 1.59495
+     Absorption Rate                      8.93335e-06 +/- 2.42022e-06
+ Mesh Index (80, 1, 1)
+   Total Material
+     Flux                                 0.000246538 +/- 1.56863e-05
+     (n,Xt)                               1.82895e-06 +/- 2.62603e-07
+     heating-local                        12.0941 +/- 1.83202
+     Absorption Rate                      5.2994e-06 +/- 7.35122e-07
+ Mesh Index (81, 1, 1)
+   Total Material
+     Flux                                 0.00020383 +/- 2.21422e-05
+     (n,Xt)                               1.81871e-06 +/- 2.75013e-07
+     heating-local                        11.5692 +/- 1.40627
+     Absorption Rate                      5.15131e-06 +/- 1.38961e-06
+ Mesh Index (82, 1, 1)
+   Total Material
+     Flux                                 0.000188732 +/- 1.61909e-05
+     (n,Xt)                               1.72617e-06 +/- 2.28436e-07
+     heating-local                        11.4314 +/- 1.42373
+     Absorption Rate                      4.69087e-06 +/- 1.20958e-06
+ Mesh Index (83, 1, 1)
+   Total Material
+     Flux                                 0.000172107 +/- 1.52361e-05
+     (n,Xt)                               1.94838e-06 +/- 3.78392e-07
+     heating-local                        10.7689 +/- 1.91865
+     Absorption Rate                      7.1484e-06 +/- 1.9698e-06
+ Mesh Index (84, 1, 1)
+   Total Material
+     Flux                                 0.000150091 +/- 1.6467e-05
+     (n,Xt)                               1.4906e-06 +/- 3.01709e-07
+     heating-local                        8.96598 +/- 1.74862
+     Absorption Rate                      3.01978e-06 +/- 7.56712e-07
+ Mesh Index (85, 1, 1)
+   Total Material
+     Flux                                 0.000138761 +/- 1.67667e-05
+     (n,Xt)                               1.40117e-06 +/- 3.79916e-07
+     heating-local                        8.33954 +/- 2.13528
+     Absorption Rate                      3.63241e-06 +/- 8.33016e-07
+ Mesh Index (86, 1, 1)
+   Total Material
+     Flux                                 0.000154104 +/- 2.66542e-05
+     (n,Xt)                               1.13896e-06 +/- 2.594e-07
+     heating-local                        7.37699 +/- 1.62991
+     Absorption Rate                      3.78737e-06 +/- 9.703e-07
+ Mesh Index (87, 1, 1)
+   Total Material
+     Flux                                 0.000138473 +/- 1.61403e-05
+     (n,Xt)                               1.13371e-06 +/- 2.02716e-07
+     heating-local                        6.20358 +/- 1.17044
+     Absorption Rate                      4.856e-06 +/- 1.2194e-06
+ Mesh Index (88, 1, 1)
+   Total Material
+     Flux                                 0.000124806 +/- 1.5831e-05
+     (n,Xt)                               7.7662e-07 +/- 1.11919e-07
+     heating-local                        4.27308 +/- 0.543557
+     Absorption Rate                      3.27645e-06 +/- 8.04979e-07
+ Mesh Index (89, 1, 1)
+   Total Material
+     Flux                                 9.90715e-05 +/- 9.28095e-06
+     (n,Xt)                               5.40391e-07 +/- 1.0212e-07
+     heating-local                        3.02974 +/- 0.505572
+     Absorption Rate                      3.84404e-06 +/- 1.34462e-06
+ Mesh Index (90, 1, 1)
+   Total Material
+     Flux                                 9.85003e-05 +/- 1.11823e-05
+     (n,Xt)                               6.00475e-07 +/- 8.72403e-08
+     heating-local                        4.11576 +/- 0.73809
+     Absorption Rate                      4.96193e-06 +/- 2.94786e-06
+ Mesh Index (91, 1, 1)
+   Total Material
+     Flux                                 0.000104611 +/- 7.11015e-06
+     (n,Xt)                               9.10239e-07 +/- 1.12046e-07
+     heating-local                        5.65748 +/- 0.784783
+     Absorption Rate                      2.04621e-06 +/- 5.76057e-07
+ Mesh Index (92, 1, 1)
+   Total Material
+     Flux                                 8.7326e-05 +/- 1.72037e-05
+     (n,Xt)                               6.41127e-07 +/- 1.54811e-07
+     heating-local                        4.7406 +/- 1.15529
+     Absorption Rate                      1.01467e-05 +/- 8.61689e-06
+ Mesh Index (93, 1, 1)
+   Total Material
+     Flux                                 0.000105188 +/- 1.67917e-05
+     (n,Xt)                               6.54391e-07 +/- 1.60855e-07
+     heating-local                        5.48539 +/- 1.13124
+     Absorption Rate                      2.75434e-06 +/- 6.6714e-07
+ Mesh Index (94, 1, 1)
+   Total Material
+     Flux                                 8.26357e-05 +/- 8.07744e-06
+     (n,Xt)                               7.0649e-07 +/- 1.40824e-07
+     heating-local                        4.426 +/- 0.763691
+     Absorption Rate                      3.29065e-06 +/- 1.4644e-06
+ Mesh Index (95, 1, 1)
+   Total Material
+     Flux                                 5.72306e-05 +/- 7.88338e-06
+     (n,Xt)                               4.33359e-07 +/- 8.4843e-08
+     heating-local                        3.105 +/- 0.752284
+     Absorption Rate                      1.16315e-06 +/- 5.11451e-07
+ Mesh Index (96, 1, 1)
+   Total Material
+     Flux                                 7.07474e-05 +/- 9.84549e-06
+     (n,Xt)                               5.84726e-07 +/- 8.07515e-08
+     heating-local                        3.58705 +/- 0.546898
+     Absorption Rate                      4.04244e-06 +/- 2.00378e-06
+ Mesh Index (97, 1, 1)
+   Total Material
+     Flux                                 4.92508e-05 +/- 5.24334e-06
+     (n,Xt)                               4.66394e-07 +/- 1.09773e-07
+     heating-local                        2.7137 +/- 0.512808
+     Absorption Rate                      1.47794e-06 +/- 4.25102e-07
+ Mesh Index (98, 1, 1)
+   Total Material
+     Flux                                 5.27875e-05 +/- 7.48757e-06
+     (n,Xt)                               6.33711e-07 +/- 2.27545e-07
+     heating-local                        3.38524 +/- 1.07545
+     Absorption Rate                      4.68276e-06 +/- 3.43425e-06
+ Mesh Index (99, 1, 1)
+   Total Material
+     Flux                                 4.5161e-05 +/- 8.17899e-06
+     (n,Xt)                               5.27027e-07 +/- 1.33706e-07
+     heating-local                        2.72122 +/- 0.659661
+     Absorption Rate                      3.94663e-06 +/- 2.27299e-06
+ Mesh Index (100, 1, 1)
+   Total Material
+     Flux                                 3.74334e-05 +/- 6.27858e-06
+     (n,Xt)                               2.62381e-07 +/- 7.37585e-08
+     heating-local                        1.46707 +/- 0.323705
+     Absorption Rate                      9.85689e-07 +/- 6.61586e-07
+ Mesh Index (101, 1, 1)
+   Total Material
+     Flux                                 4.36978e-05 +/- 7.80642e-06
+     (n,Xt)                               5.18511e-07 +/- 1.01525e-07
+     heating-local                        2.81058 +/- 0.481552
+     Absorption Rate                      1.70006e-06 +/- 8.07914e-07
+ Mesh Index (102, 1, 1)
+   Total Material
+     Flux                                 3.09434e-05 +/- 6.70612e-06
+     (n,Xt)                               4.92062e-07 +/- 1.33272e-07
+     heating-local                        2.73102 +/- 0.850049
+     Absorption Rate                      5.49442e-07 +/- 1.44898e-07
+ Mesh Index (103, 1, 1)
+   Total Material
+     Flux                                 4.26299e-05 +/- 8.92738e-06
+     (n,Xt)                               4.85008e-07 +/- 1.75056e-07
+     heating-local                        3.12245 +/- 1.12437
+     Absorption Rate                      7.95755e-07 +/- 3.23824e-07
+ Mesh Index (104, 1, 1)
+   Total Material
+     Flux                                 4.27613e-05 +/- 6.73496e-06
+     (n,Xt)                               6.67388e-07 +/- 2.52507e-07
+     heating-local                        3.64595 +/- 1.25771
+     Absorption Rate                      7.84978e-07 +/- 2.39074e-07
+ Mesh Index (105, 1, 1)
+   Total Material
+     Flux                                 2.79659e-05 +/- 5.61598e-06
+     (n,Xt)                               2.78776e-07 +/- 1.04728e-07
+     heating-local                        1.74308 +/- 0.465304
+     Absorption Rate                      5.72366e-07 +/- 2.74949e-07
+ Mesh Index (106, 1, 1)
+   Total Material
+     Flux                                 3.51064e-05 +/- 5.22429e-06
+     (n,Xt)                               2.70035e-07 +/- 8.46347e-08
+     heating-local                        1.38944 +/- 0.392953
+     Absorption Rate                      2.65601e-06 +/- 1.48247e-06
+ Mesh Index (107, 1, 1)
+   Total Material
+     Flux                                 3.28041e-05 +/- 5.60362e-06
+     (n,Xt)                               2.25443e-07 +/- 6.94804e-08
+     heating-local                        1.18429 +/- 0.337316
+     Absorption Rate                      1.37386e-06 +/- 5.82202e-07
+ Mesh Index (108, 1, 1)
+   Total Material
+     Flux                                 1.93016e-05 +/- 7.02814e-06
+     (n,Xt)                               1.67066e-07 +/- 7.23234e-08
+     heating-local                        0.879329 +/- 0.351149
+     Absorption Rate                      5.70363e-07 +/- 4.15599e-07
+ Mesh Index (109, 1, 1)
+   Total Material
+     Flux                                 2.42991e-05 +/- 7.09267e-06
+     (n,Xt)                               2.37635e-07 +/- 8.81305e-08
+     heating-local                        1.15306 +/- 0.420704
+     Absorption Rate                      3.87756e-07 +/- 1.89991e-07
+ Mesh Index (110, 1, 1)
+   Total Material
+     Flux                                 1.98506e-05 +/- 6.90302e-06
+     (n,Xt)                               2.24817e-07 +/- 7.32826e-08
+     heating-local                        1.07885 +/- 0.351761
+     Absorption Rate                      2.62685e-07 +/- 9.71758e-08
+ Mesh Index (111, 1, 1)
+   Total Material
+     Flux                                 2.1476e-05 +/- 6.61012e-06
+     (n,Xt)                               3.5295e-07 +/- 1.4036e-07
+     heating-local                        1.69192 +/- 0.671721
+     Absorption Rate                      3.85112e-07 +/- 1.38125e-07
+ Mesh Index (112, 1, 1)
+   Total Material
+     Flux                                 1.46568e-05 +/- 3.25427e-06
+     (n,Xt)                               1.40881e-07 +/- 2.86471e-08
+     heating-local                        0.675904 +/- 0.136942
+     Absorption Rate                      1.72411e-07 +/- 3.88642e-08
+ Mesh Index (113, 1, 1)
+   Total Material
+     Flux                                 1.47527e-05 +/- 4.53768e-06
+     (n,Xt)                               1.60174e-07 +/- 6.38321e-08
+     heating-local                        1.02349 +/- 0.284914
+     Absorption Rate                      2.76443e-07 +/- 1.01613e-07
+ Mesh Index (114, 1, 1)
+   Total Material
+     Flux                                 1.08189e-05 +/- 5.61682e-06
+     (n,Xt)                               1.61783e-07 +/- 8.58579e-08
+     heating-local                        0.775145 +/- 0.411221
+     Absorption Rate                      2.00132e-06 +/- 1.88231e-06
+ Mesh Index (115, 1, 1)
+   Total Material
+     Flux                                 1.72569e-05 +/- 4.41062e-06
+     (n,Xt)                               2.30519e-07 +/- 7.55414e-08
+     heating-local                        1.18368 +/- 0.353352
+     Absorption Rate                      2.34124e-07 +/- 7.62713e-08
+ Mesh Index (116, 1, 1)
+   Total Material
+     Flux                                 9.7662e-06 +/- 3.22769e-06
+     (n,Xt)                               8.57266e-08 +/- 3.62551e-08
+     heating-local                        0.436898 +/- 0.169118
+     Absorption Rate                      9.44983e-08 +/- 3.50218e-08
+ Mesh Index (117, 1, 1)
+   Total Material
+     Flux                                 1.32258e-05 +/- 3.59745e-06
+     (n,Xt)                               1.50625e-07 +/- 5.77398e-08
+     heating-local                        0.879886 +/- 0.272465
+     Absorption Rate                      1.52628e-07 +/- 5.76048e-08
+ Mesh Index (118, 1, 1)
+   Total Material
+     Flux                                 9.69824e-06 +/- 3.13638e-06
+     (n,Xt)                               9.07163e-08 +/- 5.1685e-08
+     heating-local                        0.527025 +/- 0.23798
+     Absorption Rate                      9.24301e-08 +/- 5.14879e-08
+ Mesh Index (119, 1, 1)
+   Total Material
+     Flux                                 1.43928e-05 +/- 4.91017e-06
+     (n,Xt)                               1.43304e-07 +/- 9.06271e-08
+     heating-local                        0.730265 +/- 0.428853
+     Absorption Rate                      1.64417e-07 +/- 9.45167e-08
+ Mesh Index (1, 1, 2)
+   Total Material
+     Flux                                 0.00281563 +/- 5.79295e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.000870041 +/- 0.000169854
+ Mesh Index (2, 1, 2)
+   Total Material
+     Flux                                 0.00281974 +/- 8.59283e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.000436215 +/- 9.82734e-05
+ Mesh Index (3, 1, 2)
+   Total Material
+     Flux                                 0.00293652 +/- 3.98743e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.000710878 +/- 0.000193521
+ Mesh Index (4, 1, 2)
+   Total Material
+     Flux                                 0.00288394 +/- 6.4378e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.000926713 +/- 0.000142429
+ Mesh Index (5, 1, 2)
+   Total Material
+     Flux                                 0.00292178 +/- 5.74468e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.00055895 +/- 0.000119752
+ Mesh Index (6, 1, 2)
+   Total Material
+     Flux                                 0.00289184 +/- 6.9565e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.000550617 +/- 0.000109794
+ Mesh Index (7, 1, 2)
+   Total Material
+     Flux                                 0.00286286 +/- 6.79373e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.000495187 +/- 8.74246e-05
+ Mesh Index (8, 1, 2)
+   Total Material
+     Flux                                 0.00293739 +/- 4.44918e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.000605037 +/- 8.12252e-05
+ Mesh Index (9, 1, 2)
+   Total Material
+     Flux                                 0.00294183 +/- 5.16231e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.000909922 +/- 0.000272964
+ Mesh Index (10, 1, 2)
+   Total Material
+     Flux                                 0.00293545 +/- 5.67865e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.000941139 +/- 0.000253461
+ Mesh Index (11, 1, 2)
+   Total Material
+     Flux                                 0.00290597 +/- 4.92029e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.000584863 +/- 0.000125008
+ Mesh Index (12, 1, 2)
+   Total Material
+     Flux                                 0.00296649 +/- 5.04176e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.00076604 +/- 0.000126553
+ Mesh Index (13, 1, 2)
+   Total Material
+     Flux                                 0.00293069 +/- 6.62862e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.000503991 +/- 0.000108603
+ Mesh Index (14, 1, 2)
+   Total Material
+     Flux                                 0.00287229 +/- 4.95338e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.00150861 +/- 0.000702385
+ Mesh Index (15, 1, 2)
+   Total Material
+     Flux                                 0.00281645 +/- 5.78114e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.00476666 +/- 0.0032211
+ Mesh Index (16, 1, 2)
+   Total Material
+     Flux                                 0.00292415 +/- 6.40488e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.000771274 +/- 0.000100752
+ Mesh Index (17, 1, 2)
+   Total Material
+     Flux                                 0.0028432 +/- 8.30251e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.00104358 +/- 0.000243477
+ Mesh Index (18, 1, 2)
+   Total Material
+     Flux                                 0.0029843 +/- 6.30141e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.0012713 +/- 0.000325211
+ Mesh Index (19, 1, 2)
+   Total Material
+     Flux                                 0.00296336 +/- 5.99015e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.00139219 +/- 0.000419671
+ Mesh Index (20, 1, 2)
+   Total Material
+     Flux                                 0.00302191 +/- 4.79503e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.00106763 +/- 0.000294846
+ Mesh Index (21, 1, 2)
+   Total Material
+     Flux                                 0.00299123 +/- 4.56879e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.00279839 +/- 0.00177418
+ Mesh Index (22, 1, 2)
+   Total Material
+     Flux                                 0.00301319 +/- 4.48079e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.00373764 +/- 0.00272617
+ Mesh Index (23, 1, 2)
+   Total Material
+     Flux                                 0.00298429 +/- 6.45666e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.000748361 +/- 0.000151932
+ Mesh Index (24, 1, 2)
+   Total Material
+     Flux                                 0.00290076 +/- 5.70978e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.000521894 +/- 0.000119866
+ Mesh Index (25, 1, 2)
+   Total Material
+     Flux                                 0.00297053 +/- 2.93482e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.000718578 +/- 0.000175544
+ Mesh Index (26, 1, 2)
+   Total Material
+     Flux                                 0.00301925 +/- 6.98738e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.000534804 +/- 0.000136408
+ Mesh Index (27, 1, 2)
+   Total Material
+     Flux                                 0.00305703 +/- 6.39536e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.000752803 +/- 0.000260374
+ Mesh Index (28, 1, 2)
+   Total Material
+     Flux                                 0.00309664 +/- 3.60507e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.000655745 +/- 0.000152474
+ Mesh Index (29, 1, 2)
+   Total Material
+     Flux                                 0.00305955 +/- 7.56449e-05
+     (n,Xt)                               0 +/- 0
+     heating-local                        0 +/- 0
+     Absorption Rate                      0.000734617 +/- 0.000180359
+ Mesh Index (30, 1, 2)
+   Total Material
+     Flux                                 0.00321014 +/- 7.57232e-05
+     (n,Xt)                               2.01907e-10 +/- 1.1321e-11
+     heating-local                        222.555 +/- 17.1365
+     Absorption Rate                      0.00102992 +/- 5.86773e-05
+ Mesh Index (31, 1, 2)
+   Total Material
+     Flux                                 0.00380456 +/- 6.68399e-05
+     (n,Xt)                               6.09941e-07 +/- 2.95528e-08
+     heating-local                        319.19 +/- 14.0876
+     Absorption Rate                      0.000197349 +/- 2.0782e-05
+ Mesh Index (32, 1, 2)
+   Total Material
+     Flux                                 0.00396698 +/- 8.99741e-05
+     (n,Xt)                               1.17592e-05 +/- 4.9432e-07
+     heating-local                        229.577 +/- 9.36493
+     Absorption Rate                      0.000126296 +/- 8.36463e-06
+ Mesh Index (33, 1, 2)
+   Total Material
+     Flux                                 0.00405269 +/- 7.19978e-05
+     (n,Xt)                               1.12896e-05 +/- 4.132e-07
+     heating-local                        229.855 +/- 7.01911
+     Absorption Rate                      0.000201105 +/- 2.02428e-05
+ Mesh Index (34, 1, 2)
+   Total Material
+     Flux                                 0.00380789 +/- 6.5283e-05
+     (n,Xt)                               3.02541e-07 +/- 2.24145e-08
+     heating-local                        135.031 +/- 6.00964
+     Absorption Rate                      0.000806544 +/- 5.92077e-05
+ Mesh Index (35, 1, 2)
+   Total Material
+     Flux                                 0.00373943 +/- 9.47127e-05
+     (n,Xt)                               1.47037e-10 +/- 1.06764e-11
+     heating-local                        126.171 +/- 10.4927
+     Absorption Rate                      0.000527239 +/- 6.23588e-05
+ Mesh Index (36, 1, 2)
+   Total Material
+     Flux                                 0.00366871 +/- 0.000117043
+     (n,Xt)                               1.40167e-10 +/- 1.11795e-11
+     heating-local                        111.576 +/- 8.31259
+     Absorption Rate                      0.000443676 +/- 2.89652e-05
+ Mesh Index (37, 1, 2)
+   Total Material
+     Flux                                 0.00354445 +/- 8.96391e-05
+     (n,Xt)                               1.25342e-10 +/- 7.61426e-12
+     heating-local                        96.7315 +/- 5.20951
+     Absorption Rate                      0.000462438 +/- 6.31307e-05
+ Mesh Index (38, 1, 2)
+   Total Material
+     Flux                                 0.00371099 +/- 7.59739e-05
+     (n,Xt)                               1.15202e-10 +/- 1.04031e-11
+     heating-local                        93.4674 +/- 6.13785
+     Absorption Rate                      0.000482555 +/- 4.85576e-05
+ Mesh Index (39, 1, 2)
+   Total Material
+     Flux                                 0.00353352 +/- 9.44986e-05
+     (n,Xt)                               1.04894e-10 +/- 8.32149e-12
+     heating-local                        83.1261 +/- 5.85798
+     Absorption Rate                      0.000380124 +/- 4.65036e-05
+ Mesh Index (40, 1, 2)
+   Total Material
+     Flux                                 0.00331997 +/- 8.42021e-05
+     (n,Xt)                               8.76824e-11 +/- 7.57631e-12
+     heating-local                        74.6391 +/- 5.74256
+     Absorption Rate                      0.000298596 +/- 4.96704e-05
+ Mesh Index (41, 1, 2)
+   Total Material
+     Flux                                 0.00325096 +/- 5.65543e-05
+     (n,Xt)                               7.49071e-11 +/- 6.43324e-12
+     heating-local                        67.1191 +/- 3.14662
+     Absorption Rate                      0.000329818 +/- 3.08937e-05
+ Mesh Index (42, 1, 2)
+   Total Material
+     Flux                                 0.00318292 +/- 0.000123329
+     (n,Xt)                               5.98832e-11 +/- 4.49663e-12
+     heating-local                        58.9225 +/- 4.36684
+     Absorption Rate                      0.000215197 +/- 1.31212e-05
+ Mesh Index (43, 1, 2)
+   Total Material
+     Flux                                 0.00308932 +/- 9.54318e-05
+     (n,Xt)                               4.971e-11 +/- 3.67192e-12
+     heating-local                        52.445 +/- 3.8091
+     Absorption Rate                      0.000395306 +/- 4.66734e-05
+ Mesh Index (44, 1, 2)
+   Total Material
+     Flux                                 0.00317202 +/- 7.37975e-05
+     (n,Xt)                               4.23285e-10 +/- 5.56846e-11
+     heating-local                        113.749 +/- 6.04156
+     Absorption Rate                      0.000275364 +/- 2.34936e-05
+ Mesh Index (45, 1, 2)
+   Total Material
+     Flux                                 0.00290898 +/- 8.64618e-05
+     (n,Xt)                               4.73916e-10 +/- 8.34498e-11
+     heating-local                        114.57 +/- 9.13936
+     Absorption Rate                      8.58151e-05 +/- 1.48153e-05
+ Mesh Index (46, 1, 2)
+   Total Material
+     Flux                                 0.00278467 +/- 7.59381e-05
+     (n,Xt)                               4.31837e-10 +/- 6.2784e-11
+     heating-local                        108.355 +/- 8.23531
+     Absorption Rate                      9.17474e-05 +/- 1.34862e-05
+ Mesh Index (47, 1, 2)
+   Total Material
+     Flux                                 0.00272004 +/- 6.10512e-05
+     (n,Xt)                               8.04001e-06 +/- 3.35341e-07
+     heating-local                        107.289 +/- 3.26321
+     Absorption Rate                      9.34209e-05 +/- 7.35134e-06
+ Mesh Index (48, 1, 2)
+   Total Material
+     Flux                                 0.00250436 +/- 8.52522e-05
+     (n,Xt)                               1.00399e-05 +/- 4.95611e-07
+     heating-local                        97.8786 +/- 3.11486
+     Absorption Rate                      8.02324e-05 +/- 6.57746e-06
+ Mesh Index (49, 1, 2)
+   Total Material
+     Flux                                 0.00235712 +/- 5.62392e-05
+     (n,Xt)                               1.08098e-05 +/- 7.52922e-07
+     heating-local                        93.3064 +/- 3.87259
+     Absorption Rate                      8.25892e-05 +/- 9.85244e-06
+ Mesh Index (50, 1, 2)
+   Total Material
+     Flux                                 0.00218263 +/- 9.09979e-05
+     (n,Xt)                               9.22344e-06 +/- 4.85582e-07
+     heating-local                        82.9736 +/- 2.89116
+     Absorption Rate                      7.36109e-05 +/- 3.33264e-06
+ Mesh Index (51, 1, 2)
+   Total Material
+     Flux                                 0.0021379 +/- 6.32845e-05
+     (n,Xt)                               9.5385e-06 +/- 3.77883e-07
+     heating-local                        82.4941 +/- 2.72184
+     Absorption Rate                      8.81259e-05 +/- 1.35761e-05
+ Mesh Index (52, 1, 2)
+   Total Material
+     Flux                                 0.00189112 +/- 5.68556e-05
+     (n,Xt)                               8.72124e-06 +/- 5.12817e-07
+     heating-local                        72.299 +/- 3.6231
+     Absorption Rate                      5.42346e-05 +/- 6.80558e-06
+ Mesh Index (53, 1, 2)
+   Total Material
+     Flux                                 0.00187337 +/- 6.16568e-05
+     (n,Xt)                               9.13053e-06 +/- 5.73843e-07
+     heating-local                        74.3827 +/- 3.16488
+     Absorption Rate                      5.93345e-05 +/- 6.95929e-06
+ Mesh Index (54, 1, 2)
+   Total Material
+     Flux                                 0.00171257 +/- 8.48031e-05
+     (n,Xt)                               7.84509e-06 +/- 3.77848e-07
+     heating-local                        66.6205 +/- 3.74949
+     Absorption Rate                      5.96986e-05 +/- 9.3784e-06
+ Mesh Index (55, 1, 2)
+   Total Material
+     Flux                                 0.00153482 +/- 6.27186e-05
+     (n,Xt)                               7.31726e-06 +/- 4.17056e-07
+     heating-local                        61.4781 +/- 3.61179
+     Absorption Rate                      4.34361e-05 +/- 5.99615e-06
+ Mesh Index (56, 1, 2)
+   Total Material
+     Flux                                 0.00144344 +/- 5.26095e-05
+     (n,Xt)                               7.59239e-06 +/- 8.15837e-07
+     heating-local                        57.63 +/- 5.14962
+     Absorption Rate                      3.5245e-05 +/- 7.29479e-06
+ Mesh Index (57, 1, 2)
+   Total Material
+     Flux                                 0.00132709 +/- 4.01342e-05
+     (n,Xt)                               6.11683e-06 +/- 3.73118e-07
+     heating-local                        48.7814 +/- 3.02681
+     Absorption Rate                      3.23308e-05 +/- 4.89114e-06
+ Mesh Index (58, 1, 2)
+   Total Material
+     Flux                                 0.00127066 +/- 4.13216e-05
+     (n,Xt)                               6.73837e-06 +/- 5.02316e-07
+     heating-local                        51.2401 +/- 2.75401
+     Absorption Rate                      3.10018e-05 +/- 4.00378e-06
+ Mesh Index (59, 1, 2)
+   Total Material
+     Flux                                 0.00117177 +/- 4.42513e-05
+     (n,Xt)                               5.98855e-06 +/- 5.03162e-07
+     heating-local                        47.7846 +/- 2.63525
+     Absorption Rate                      3.35013e-05 +/- 3.66564e-06
+ Mesh Index (60, 1, 2)
+   Total Material
+     Flux                                 0.0011196 +/- 4.16254e-05
+     (n,Xt)                               6.18716e-06 +/- 3.43814e-07
+     heating-local                        52.2892 +/- 3.11658
+     Absorption Rate                      3.03493e-05 +/- 5.31999e-06
+ Mesh Index (61, 1, 2)
+   Total Material
+     Flux                                 0.00098221 +/- 4.98285e-05
+     (n,Xt)                               5.69634e-06 +/- 6.16263e-07
+     heating-local                        44.4879 +/- 3.38268
+     Absorption Rate                      1.88623e-05 +/- 3.06582e-06
+ Mesh Index (62, 1, 2)
+   Total Material
+     Flux                                 0.000890345 +/- 2.69746e-05
+     (n,Xt)                               5.75103e-06 +/- 6.23155e-07
+     heating-local                        41.1111 +/- 2.70956
+     Absorption Rate                      1.61416e-05 +/- 3.02319e-06
+ Mesh Index (63, 1, 2)
+   Total Material
+     Flux                                 0.000879029 +/- 3.65039e-05
+     (n,Xt)                               5.231e-06 +/- 4.00882e-07
+     heating-local                        36.9421 +/- 1.79183
+     Absorption Rate                      1.7514e-05 +/- 3.53811e-06
+ Mesh Index (64, 1, 2)
+   Total Material
+     Flux                                 0.000809696 +/- 3.22697e-05
+     (n,Xt)                               4.62676e-06 +/- 4.6912e-07
+     heating-local                        33.9618 +/- 2.19711
+     Absorption Rate                      2.72663e-05 +/- 6.30315e-06
+ Mesh Index (65, 1, 2)
+   Total Material
+     Flux                                 0.00072329 +/- 2.41339e-05
+     (n,Xt)                               5.06018e-06 +/- 4.70063e-07
+     heating-local                        33.8573 +/- 2.42028
+     Absorption Rate                      2.37561e-05 +/- 6.39761e-06
+ Mesh Index (66, 1, 2)
+   Total Material
+     Flux                                 0.000711165 +/- 2.87267e-05
+     (n,Xt)                               4.31181e-06 +/- 2.63753e-07
+     heating-local                        31.5199 +/- 2.3463
+     Absorption Rate                      2.03534e-05 +/- 3.44489e-06
+ Mesh Index (67, 1, 2)
+   Total Material
+     Flux                                 0.00065593 +/- 3.68732e-05
+     (n,Xt)                               4.00795e-06 +/- 2.58256e-07
+     heating-local                        28.4555 +/- 2.13981
+     Absorption Rate                      2.05383e-05 +/- 4.3377e-06
+ Mesh Index (68, 1, 2)
+   Total Material
+     Flux                                 0.000598329 +/- 3.24855e-05
+     (n,Xt)                               3.96751e-06 +/- 3.47656e-07
+     heating-local                        26.4602 +/- 1.54169
+     Absorption Rate                      1.08229e-05 +/- 1.54148e-06
+ Mesh Index (69, 1, 2)
+   Total Material
+     Flux                                 0.000549361 +/- 3.14663e-05
+     (n,Xt)                               3.81563e-06 +/- 3.98208e-07
+     heating-local                        26.666 +/- 2.15735
+     Absorption Rate                      1.05829e-05 +/- 1.61511e-06
+ Mesh Index (70, 1, 2)
+   Total Material
+     Flux                                 0.000512885 +/- 3.13551e-05
+     (n,Xt)                               3.57578e-06 +/- 3.26529e-07
+     heating-local                        23.6935 +/- 1.86381
+     Absorption Rate                      9.72779e-06 +/- 2.51608e-06
+ Mesh Index (71, 1, 2)
+   Total Material
+     Flux                                 0.000454366 +/- 2.49859e-05
+     (n,Xt)                               3.11697e-06 +/- 3.05576e-07
+     heating-local                        19.8737 +/- 1.24746
+     Absorption Rate                      8.79875e-06 +/- 1.67142e-06
+ Mesh Index (72, 1, 2)
+   Total Material
+     Flux                                 0.00045687 +/- 2.22259e-05
+     (n,Xt)                               3.28847e-06 +/- 2.88341e-07
+     heating-local                        22.2296 +/- 1.69477
+     Absorption Rate                      1.13723e-05 +/- 3.19084e-06
+ Mesh Index (73, 1, 2)
+   Total Material
+     Flux                                 0.000409095 +/- 1.72044e-05
+     (n,Xt)                               2.93304e-06 +/- 2.78499e-07
+     heating-local                        18.4235 +/- 1.69523
+     Absorption Rate                      1.44488e-05 +/- 4.11195e-06
+ Mesh Index (74, 1, 2)
+   Total Material
+     Flux                                 0.000367333 +/- 2.01822e-05
+     (n,Xt)                               2.62999e-06 +/- 1.30664e-07
+     heating-local                        17.3094 +/- 0.982584
+     Absorption Rate                      8.53404e-06 +/- 1.78673e-06
+ Mesh Index (75, 1, 2)
+   Total Material
+     Flux                                 0.000353408 +/- 1.82657e-05
+     (n,Xt)                               2.23253e-06 +/- 2.19819e-07
+     heating-local                        14.0167 +/- 1.47302
+     Absorption Rate                      6.66499e-06 +/- 1.1011e-06
+ Mesh Index (76, 1, 2)
+   Total Material
+     Flux                                 0.000308991 +/- 1.30064e-05
+     (n,Xt)                               2.28835e-06 +/- 3.06485e-07
+     heating-local                        14.9259 +/- 1.82101
+     Absorption Rate                      6.75163e-06 +/- 1.22129e-06
+ Mesh Index (77, 1, 2)
+   Total Material
+     Flux                                 0.000312829 +/- 2.35069e-05
+     (n,Xt)                               2.63694e-06 +/- 2.56746e-07
+     heating-local                        15.122 +/- 1.36513
+     Absorption Rate                      7.18247e-06 +/- 1.62556e-06
+ Mesh Index (78, 1, 2)
+   Total Material
+     Flux                                 0.00029723 +/- 3.10168e-05
+     (n,Xt)                               2.21779e-06 +/- 2.13059e-07
+     heating-local                        13.2904 +/- 1.23587
+     Absorption Rate                      6.31368e-06 +/- 7.2915e-07
+ Mesh Index (79, 1, 2)
+   Total Material
+     Flux                                 0.000267096 +/- 1.671e-05
+     (n,Xt)                               1.77008e-06 +/- 1.81337e-07
+     heating-local                        10.7009 +/- 0.95194
+     Absorption Rate                      8.94999e-06 +/- 1.82e-06
+ Mesh Index (80, 1, 2)
+   Total Material
+     Flux                                 0.000243983 +/- 2.49243e-05
+     (n,Xt)                               1.79926e-06 +/- 4.26929e-07
+     heating-local                        10.9361 +/- 2.2613
+     Absorption Rate                      9.81484e-06 +/- 2.27845e-06
+ Mesh Index (81, 1, 2)
+   Total Material
+     Flux                                 0.000199452 +/- 1.76805e-05
+     (n,Xt)                               1.69922e-06 +/- 2.7484e-07
+     heating-local                        11.7427 +/- 1.27328
+     Absorption Rate                      9.17785e-06 +/- 3.2411e-06
+ Mesh Index (82, 1, 2)
+   Total Material
+     Flux                                 0.000200078 +/- 1.7762e-05
+     (n,Xt)                               1.91781e-06 +/- 2.92635e-07
+     heating-local                        11.8715 +/- 1.7276
+     Absorption Rate                      4.6805e-06 +/- 1.28564e-06
+ Mesh Index (83, 1, 2)
+   Total Material
+     Flux                                 0.000191654 +/- 1.45313e-05
+     (n,Xt)                               1.43414e-06 +/- 2.56748e-07
+     heating-local                        8.86343 +/- 1.39101
+     Absorption Rate                      4.12334e-06 +/- 8.32422e-07
+ Mesh Index (84, 1, 2)
+   Total Material
+     Flux                                 0.000184844 +/- 1.43107e-05
+     (n,Xt)                               1.85826e-06 +/- 2.46192e-07
+     heating-local                        10.3696 +/- 1.34149
+     Absorption Rate                      4.92354e-06 +/- 1.31825e-06
+ Mesh Index (85, 1, 2)
+   Total Material
+     Flux                                 0.00012524 +/- 1.82625e-05
+     (n,Xt)                               1.22341e-06 +/- 3.48318e-07
+     heating-local                        6.98805 +/- 1.79724
+     Absorption Rate                      3.34655e-06 +/- 8.06115e-07
+ Mesh Index (86, 1, 2)
+   Total Material
+     Flux                                 0.000134635 +/- 1.22697e-05
+     (n,Xt)                               1.2665e-06 +/- 2.36308e-07
+     heating-local                        6.93149 +/- 1.15827
+     Absorption Rate                      3.30772e-06 +/- 6.24923e-07
+ Mesh Index (87, 1, 2)
+   Total Material
+     Flux                                 0.000136628 +/- 1.75437e-05
+     (n,Xt)                               1.03234e-06 +/- 1.5455e-07
+     heating-local                        6.0322 +/- 0.977455
+     Absorption Rate                      4.12253e-06 +/- 1.35083e-06
+ Mesh Index (88, 1, 2)
+   Total Material
+     Flux                                 0.000112951 +/- 1.24537e-05
+     (n,Xt)                               7.79741e-07 +/- 1.17111e-07
+     heating-local                        5.16922 +/- 0.741348
+     Absorption Rate                      2.71752e-06 +/- 1.3753e-06
+ Mesh Index (89, 1, 2)
+   Total Material
+     Flux                                 0.000124215 +/- 2.00827e-05
+     (n,Xt)                               7.73417e-07 +/- 1.35391e-07
+     heating-local                        5.00003 +/- 0.829349
+     Absorption Rate                      6.54993e-06 +/- 2.46062e-06
+ Mesh Index (90, 1, 2)
+   Total Material
+     Flux                                 0.000114328 +/- 1.11186e-05
+     (n,Xt)                               7.45516e-07 +/- 1.08155e-07
+     heating-local                        4.92925 +/- 0.665599
+     Absorption Rate                      2.68637e-06 +/- 1.16412e-06
+ Mesh Index (91, 1, 2)
+   Total Material
+     Flux                                 9.89167e-05 +/- 1.02235e-05
+     (n,Xt)                               8.17452e-07 +/- 1.62533e-07
+     heating-local                        4.4497 +/- 0.9549
+     Absorption Rate                      1.85856e-06 +/- 4.43792e-07
+ Mesh Index (92, 1, 2)
+   Total Material
+     Flux                                 8.01711e-05 +/- 7.0075e-06
+     (n,Xt)                               5.12469e-07 +/- 8.43137e-08
+     heating-local                        2.93578 +/- 0.471034
+     Absorption Rate                      2.4586e-06 +/- 8.55352e-07
+ Mesh Index (93, 1, 2)
+   Total Material
+     Flux                                 9.91511e-05 +/- 1.76745e-05
+     (n,Xt)                               6.13687e-07 +/- 1.22014e-07
+     heating-local                        4.12342 +/- 0.87225
+     Absorption Rate                      1.6837e-06 +/- 5.66602e-07
+ Mesh Index (94, 1, 2)
+   Total Material
+     Flux                                 8.15629e-05 +/- 1.16381e-05
+     (n,Xt)                               6.29846e-07 +/- 1.39599e-07
+     heating-local                        4.19519 +/- 1.12884
+     Absorption Rate                      3.4646e-06 +/- 1.18585e-06
+ Mesh Index (95, 1, 2)
+   Total Material
+     Flux                                 6.52637e-05 +/- 9.8473e-06
+     (n,Xt)                               3.05038e-07 +/- 6.97485e-08
+     heating-local                        2.89828 +/- 0.493571
+     Absorption Rate                      2.64979e-06 +/- 1.76189e-06
+ Mesh Index (96, 1, 2)
+   Total Material
+     Flux                                 6.30682e-05 +/- 6.97855e-06
+     (n,Xt)                               4.68405e-07 +/- 1.01315e-07
+     heating-local                        2.99075 +/- 0.544671
+     Absorption Rate                      1.53884e-06 +/- 6.33876e-07
+ Mesh Index (97, 1, 2)
+   Total Material
+     Flux                                 6.19827e-05 +/- 1.00957e-05
+     (n,Xt)                               6.32014e-07 +/- 2.05044e-07
+     heating-local                        4.06432 +/- 1.05534
+     Absorption Rate                      4.25521e-06 +/- 2.25696e-06
+ Mesh Index (98, 1, 2)
+   Total Material
+     Flux                                 5.71528e-05 +/- 9.29394e-06
+     (n,Xt)                               6.14258e-07 +/- 1.42076e-07
+     heating-local                        3.76761 +/- 0.686291
+     Absorption Rate                      2.26959e-06 +/- 8.0781e-07
+ Mesh Index (99, 1, 2)
+   Total Material
+     Flux                                 5.18817e-05 +/- 9.47854e-06
+     (n,Xt)                               5.60286e-07 +/- 1.51052e-07
+     heating-local                        3.39101 +/- 0.822048
+     Absorption Rate                      1.6275e-06 +/- 6.14262e-07
+ Mesh Index (100, 1, 2)
+   Total Material
+     Flux                                 5.30107e-05 +/- 8.89145e-06
+     (n,Xt)                               5.78473e-07 +/- 1.82583e-07
+     heating-local                        3.56525 +/- 0.829377
+     Absorption Rate                      7.38957e-07 +/- 2.2058e-07
+ Mesh Index (101, 1, 2)
+   Total Material
+     Flux                                 5.53735e-05 +/- 1.27791e-05
+     (n,Xt)                               6.63288e-07 +/- 1.96832e-07
+     heating-local                        3.7655 +/- 0.982313
+     Absorption Rate                      1.21631e-06 +/- 4.2982e-07
+ Mesh Index (102, 1, 2)
+   Total Material
+     Flux                                 4.54272e-05 +/- 6.24154e-06
+     (n,Xt)                               3.87717e-07 +/- 7.5617e-08
+     heating-local                        2.5982 +/- 0.508684
+     Absorption Rate                      4.48108e-07 +/- 9.51855e-08
+ Mesh Index (103, 1, 2)
+   Total Material
+     Flux                                 4.90812e-05 +/- 1.05686e-05
+     (n,Xt)                               4.215e-07 +/- 8.95672e-08
+     heating-local                        3.09201 +/- 0.800183
+     Absorption Rate                      5.77843e-07 +/- 1.0968e-07
+ Mesh Index (104, 1, 2)
+   Total Material
+     Flux                                 3.47931e-05 +/- 5.33253e-06
+     (n,Xt)                               3.72313e-07 +/- 1.05563e-07
+     heating-local                        2.58038 +/- 0.804595
+     Absorption Rate                      4.24943e-07 +/- 1.09501e-07
+ Mesh Index (105, 1, 2)
+   Total Material
+     Flux                                 1.32039e-05 +/- 3.35977e-06
+     (n,Xt)                               8.22233e-08 +/- 2.34008e-08
+     heating-local                        0.430951 +/- 0.112966
+     Absorption Rate                      9.32894e-08 +/- 2.4619e-08
+ Mesh Index (106, 1, 2)
+   Total Material
+     Flux                                 1.56734e-05 +/- 3.0373e-06
+     (n,Xt)                               1.40594e-07 +/- 5.19239e-08
+     heating-local                        0.764794 +/- 0.241295
+     Absorption Rate                      1.4429e-06 +/- 1.28973e-06
+ Mesh Index (107, 1, 2)
+   Total Material
+     Flux                                 2.42062e-05 +/- 4.36816e-06
+     (n,Xt)                               3.97905e-07 +/- 1.41673e-07
+     heating-local                        1.93123 +/- 0.675295
+     Absorption Rate                      5.37662e-07 +/- 1.42988e-07
+ Mesh Index (108, 1, 2)
+   Total Material
+     Flux                                 1.21529e-05 +/- 4.36935e-06
+     (n,Xt)                               1.11103e-07 +/- 7.47831e-08
+     heating-local                        0.590506 +/- 0.353682
+     Absorption Rate                      2.51111e-07 +/- 1.40301e-07
+ Mesh Index (109, 1, 2)
+   Total Material
+     Flux                                 1.37008e-05 +/- 5.02703e-06
+     (n,Xt)                               1.68624e-07 +/- 9.85219e-08
+     heating-local                        0.816359 +/- 0.471401
+     Absorption Rate                      3.16273e-07 +/- 2.27315e-07
+ Mesh Index (110, 1, 2)
+   Total Material
+     Flux                                 1.6458e-05 +/- 5.34477e-06
+     (n,Xt)                               1.57565e-07 +/- 5.84476e-08
+     heating-local                        0.754995 +/- 0.280002
+     Absorption Rate                      3.4652e-07 +/- 1.70093e-07
+ Mesh Index (111, 1, 2)
+   Total Material
+     Flux                                 2.10389e-05 +/- 6.58516e-06
+     (n,Xt)                               3.29544e-07 +/- 1.69904e-07
+     heating-local                        1.5787 +/- 0.81335
+     Absorption Rate                      4.66255e-07 +/- 1.9892e-07
+ Mesh Index (112, 1, 2)
+   Total Material
+     Flux                                 2.13464e-05 +/- 5.84791e-06
+     (n,Xt)                               3.11818e-07 +/- 1.47731e-07
+     heating-local                        1.49428 +/- 0.707216
+     Absorption Rate                      4.3171e-07 +/- 1.57018e-07
+ Mesh Index (113, 1, 2)
+   Total Material
+     Flux                                 1.76611e-05 +/- 5.56449e-06
+     (n,Xt)                               1.75876e-07 +/- 9.64032e-08
+     heating-local                        1.10005 +/- 0.453301
+     Absorption Rate                      2.40152e-07 +/- 9.5956e-08
+ Mesh Index (114, 1, 2)
+   Total Material
+     Flux                                 1.25459e-05 +/- 4.40018e-06
+     (n,Xt)                               1.1261e-07 +/- 4.4482e-08
+     heating-local                        0.541174 +/- 0.212837
+     Absorption Rate                      2.34154e-06 +/- 2.22221e-06
+ Mesh Index (115, 1, 2)
+   Total Material
+     Flux                                 1.70405e-05 +/- 7.02953e-06
+     (n,Xt)                               1.85096e-07 +/- 8.65911e-08
+     heating-local                        0.993696 +/- 0.397468
+     Absorption Rate                      1.88585e-07 +/- 8.67113e-08
+ Mesh Index (116, 1, 2)
+   Total Material
+     Flux                                 9.34203e-06 +/- 3.46402e-06
+     (n,Xt)                               6.51421e-08 +/- 3.3638e-08
+     heating-local                        0.443361 +/- 0.171169
+     Absorption Rate                      6.71514e-08 +/- 3.33231e-08
+ Mesh Index (117, 1, 2)
+   Total Material
+     Flux                                 1.1474e-05 +/- 4.04696e-06
+     (n,Xt)                               1.31184e-07 +/- 6.71778e-08
+     heating-local                        0.695345 +/- 0.315853
+     Absorption Rate                      1.41822e-07 +/- 6.78308e-08
+ Mesh Index (118, 1, 2)
+   Total Material
+     Flux                                 7.72251e-06 +/- 3.2397e-06
+     (n,Xt)                               1.2098e-07 +/- 8.2911e-08
+     heating-local                        0.600555 +/- 0.405126
+     Absorption Rate                      1.3127e-07 +/- 8.18174e-08
+ Mesh Index (119, 1, 2)
+   Total Material
+     Flux                                 5.13648e-06 +/- 2.13684e-06
+     (n,Xt)                               4.08904e-08 +/- 2.44163e-08
+     heating-local                        0.23824 +/- 0.117916
+     Absorption Rate                      6.06988e-08 +/- 3.72018e-08
+ ==================>     TALLY 5: TBR CHANNEL TALLY     <===================
+
+ Cell 17
+   Li6
+     (n,Xt)                               0.134928 +/- 0.00024869
+   Li7
+     (n,Xt)                               0.0183724 +/- 2.32872e-05
+ ==================>     TALLY 6: TBR BLANKET TALLY     <===================
+
+ Cell 20
+   Li6
+     (n,Xt)                               1.16387 +/- 0.000729836
+   Li7
+     (n,Xt)                               0.0266356 +/- 9.08963e-05
