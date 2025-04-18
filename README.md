@@ -74,7 +74,7 @@ threads
 nodes
 etc...
 
-### order configs**
+### order configs
 
 first-order, '1': as seen in the literature, with the multiplier at the end of the FLiBe1. Also, with the addition of a reflector at the end of FLiBe2.
 second-order, '2': split FLiBe2 in half.
