@@ -263,7 +263,6 @@ scientific expression: 1 = 1e0, 0.1 = 1e-1, 10 = 1e1
 
 
 
-notes
 
 division of FLiBe2 into halves  
 
@@ -274,6 +273,7 @@ division of FLiBe2 into halves
 
 All reflector implementations are removed from cases 12 and onward. After analysis of the earlier cases was performed, it was clear that the effect from the reflector is negligible.
 This means that cases 12 and some others are removed as there are the same as other cases when the reflector is removed***
+
 
 
 Optimal Design runs (using arc-standard.py): The range for dopant mass can be edited directly in the script. To change the multiplier thicknesses, you just change the argument in the run command. 
