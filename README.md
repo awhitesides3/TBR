@@ -16,40 +16,37 @@ to install the custom API localy.
 
 This repository is built around a custom python api called `arc_2` which includes classes, functions, and data which is helpful in conducting analyses of ARC-class reactors. This API is based off of JBall/arc-nonproliferation which was adpoted from one originally developed by Ethan Peterson for the Fall 2022 edition of MIT's course 22.63 Engineering Principles for Fusion Reactors, taught by Dennis Whyte.
 
+
 ### arc_2
-The following descriptions are taken directly from the README.md in JBall/arc-nonproliferation
 
 
-"
 #### device.py
-The device class inherits from the OpenMC model class, and is designed to allow for the rapid parametric generation of ARC OpenMC models with FLiBe doped with a specified amount of fertile material. This is achieved using the `generate_device()` function. This allows for many models with varying fertile inventories, dopant types, and lithium enrichments to be generated and simulated in a single script.
+This device class pulls from the OpenMC model class and is designed to generate the ARC OpenMC models. The `generate_device()` function achieves this.
 
 #### constants.py
 
-Containts useful constant values which can be easily accessed across scripts. Includes things like neutrons / MJ, and the path to the OpenMC chain file to use.
+"Containts useful constant values which can be easily accessed across scripts. Includes things like neutrons / MJ, and the path to the OpenMC chain file to use."-JBall/arc-nonproliferation
 
 #### materials.py
 
-This file contains definitions for all of the materials used in the OpenMC simulations, along with functions for generating FLiBe materials doped with specific masses of Thorium or Uranium.
+"This file contains definitions for all of the materials used in the OpenMC simulations, along with functions for generating FLiBe materials doped with specific masses of Thorium or Uranium."-JBall/arc-nonproliferation
 
 #### postprocess.py
 
-This file contains useful helper functions which can be applied across simulation type to extract useful information from OpenMC statepoint and depletion results files. This includes functions for computing the time to breed a significant quantity and compute the isotopic purity of fissile material.
+"This file contains useful helper functions which can be applied across simulation type to extract useful information from OpenMC statepoint and depletion results files. This includes functions for computing the time to breed a significant quantity and compute the isotopic purity of fissile material."-JBall/arc-nonproliferation. However, this is not used in the TBR analysis. Post processing is conducted using the scripts 'csv_scripts.py' & 'plot_csv.py', found in the 'post_process' folder under the 'scripts' folder. 
 
 ### data
 
-This directory contains supporting data files, like outputs from stochastic volume calculations, lists of points which specify vacuum vessel and blanket geometries, and OpenMC chain files.
+"This directory contains supporting data files, like outputs from stochastic volume calculations, lists of points which specify vacuum vessel and blanket geometries, and OpenMC chain files."-JBall/arc-nonproliferation
 
 ### openmc_scripts
-The openmc_scripts directory contains all scripts which run OpenMC simulations and analyze the resulting data. The different types of simulations are each in separate directories.
-"-JBall/arc
+"The openmc_scripts directory contains all scripts which run OpenMC simulations and analyze the resulting data. The different types of simulations are each in separate directories."-JBall/arc-nonproliferation.
 
 The purpose of the repo (JBall/arc-nonproliferation), which is the basis of awhitesides3/TBR, is stated below.
-"
+
 ## Accompanying Manuscript
 
-Results generated with this repo were used to prepare the manuscript "Assesing the risk of proliferation via fissile breeding in ARC-class fusion reactors" a preprint of which can be found on the arXiv at the following link: [https://arxiv.org/abs/2404.12451](https://arxiv.org/abs/2404.12451).
-"-JBall/arc-nonproliferation
+"Results generated with this repo were used to prepare the manuscript "Assesing the risk of proliferation via fissile breeding in ARC-class fusion reactors" a preprint of which can be found on the arXiv at the following link: [https://arxiv.org/abs/2404.12451](https://arxiv.org/abs/2404.12451)."-JBall/arc-nonproliferation
 
 ## Important Files
 All of the TBR analysis is performed in the 'scripts' folder. The script 'arc-standard.py' is the main script that was used to runs the openmc simulations. 'backup_arc-standard.py' is an older version that was used to construct the TBR vs enrichment trends that are described in the 'Initial Results' section of the Senior Design Report 'Optimization Of Tritium Breeding Blankets In Arc Fusion Designs' which is a deliverable for the class, NRE-4351 (NRE Capstone), at the Georgia Institute of Technology, taught by Dr. Bojan Petrovic in Spring 2025. The 'arc-standard.py' was used to run the simulations that yield the optimal design case which is presented in the section 'Design Overview' from the report. Additionally, all of the simulation runs are performed in the Instructional Cluster Environment (“ICE”), an educational resource that is used for high computing purposes. Because of this a .sh file is used to runs the cases through queueing system that is available through ICE. The 'slurm_running.sh' file is where all runs should be performed. All of the types of cases have their own folder in the 'scripts' folder. When a run has been performed, the folder containing all information related to the run will be created under the specific case folder.
