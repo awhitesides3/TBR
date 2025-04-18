@@ -105,7 +105,7 @@ must add the folder name at the end of the directory for the specific thicknesse
 structure for folder name: ||#_slry_x_mlt_y_ref_z||
 '#' = case number as listed in this document, x = wppm of dopant, y = mlt thickness, z = ref thickness
 scientific expression: 1 = 1e0, 0.1 = 1e-1, 10 = 1e1
-
+"
 1a,2a,3a,4a: higher accuracy for old cases
 	--> no changes to cmd line statement
 5: beryllium at end of FLiBe1 & lead at end of FLiBe2
@@ -178,7 +178,7 @@ scientific expression: 1 = 1e0, 0.1 = 1e-1, 10 = 1e1
 27: Zr at end of FLiBe1
 	--> ||srun -n 24 python3 arc-standard.py Li4SiO4 0 zirconium 1 zirconium 0 2 1 /home/hice1/awhitesides3/TBR/scripts/mlt_Zr||
 	--> Configuration '1' with a 1cm Zr multiplier, no dopant, and no reflector.
-
+"
 
 notes
 
