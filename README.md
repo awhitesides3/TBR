@@ -264,7 +264,7 @@ scientific expression: 1 = 1e0, 0.1 = 1e-1, 10 = 1e1
 
 
 
-division of FLiBe2 into halves  
+Division of FLiBe2 into halves  
 
 	--> ||python3 arc-standard.py Li4SiO4 0 beryllium 0 lead 0 2 2||
 	--> Configuration '2', bare.
@@ -276,7 +276,8 @@ This means that cases 12 and some others are removed as there are the same as ot
 
 
 
-Optimal Design runs (using arc-standard.py): The range for dopant mass can be edited directly in the script. To change the multiplier thicknesses, you just change the argument in the run command. 
+#### Optimal Design runs (using arc-standard.py): 
+##### The range for dopant mass can be edited directly in the script. To change the multiplier thicknesses, you just change the argument in the run command. 
 
 	--> ||python3 arc-standard.py lead lead 10 lead 0 2 1 0 beryllium 0 /home/hice1/awhitesides3/TBR/scripts/shielding_test_2/optimal_case||
 	--> ||python3 arc-standard.py lead lead 0 lead 0 2 1 0 beryllium 0 /home/hice1/awhitesides3/TBR/scripts/shielding_test_2/bare_case||
