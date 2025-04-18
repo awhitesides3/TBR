@@ -56,9 +56,8 @@ All of the TBR analysis is performed in the 'scripts' folder. The script 'arc-st
 ## Guide For Running Cases
 The following is a description of all of the cases ran, how to run them in the .sh file, and the naming convention.
 
---------------------------------------
-parameters
---------------------------------------
+### parameters
+
 enrichment(fixed)
 dopant
 dopant_mass
@@ -69,24 +68,24 @@ reflector_thickness
 channel_thickness
 order
 output_path
---------------------------------------
-computer parameters/specifications
---------------------------------------
+
+### computer parameters/specifications
+
 threads
 nodes
 etc...
---------------------------------------
-order configs
---------------------------------------
+
+### order configs**
+
 first-order, '1': as seen in the literature, with the multiplier at the end of the FLiBe1. Also, with the addition of a reflector at the end of FLiBe2.
 second-order, '2': split FLiBe2 in half.
---------------------------------------
-cmd line config
---------------------------------------
+
+### cmd line config
+
 ||srun -n 24 python3 arc.py dopant dopant_mass multiplier_material multiplier_thickness reflector_material reflector_thickness channel_thickness order output_path||
---------------------------------------
-old cases
---------------------------------------
+
+### old cases
+
 1) bare
 	--> ||srun -n 24 python3 arc-standard.py Li4SiO4 0 beryllium 0 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/bare||
 	--> Configuration '1', bare.
@@ -99,13 +98,13 @@ old cases
 4) variable FLiBe1 thickness
 	--> ||srun -n 24 python3 arc-standard.py Li4SiO4 0 beryllium 0 lead 0 7 1 /home/hice1/awhitesides3/TBR/scripts/channel||
 	--> Configuration '1', bare with 7cm FLiBe1.
---------------------------------------
-new cases
---------------------------------------
-**must add the folder name at the end of the directory for the specific thicknesses of each region.**
-**structure for folder name: ||#_slry_x_mlt_y_ref_z||**
-**# = case number as listed in this document, x = wppm of dopant, y = mlt thickness, z = ref thickness**
-**scientific expression: 1 = 1e0, 0.1 = 1e-1, 10 = 1e1**
+
+### new cases
+
+must add the folder name at the end of the directory for the specific thicknesses of each region.**
+structure for folder name: ||#_slry_x_mlt_y_ref_z||**
+'#' = case number as listed in this document, x = wppm of dopant, y = mlt thickness, z = ref thickness**
+scientific expression: 1 = 1e0, 0.1 = 1e-1, 10 = 1e1**
 
 1a,2a,3a,4a) higher accuracy for old cases
 	--> no changes to cmd line statement
@@ -182,11 +181,12 @@ new cases
 
 
 notes
-*) division of FLiBe2 into halves
+
+division of FLiBe2 into halves
 	--> ||srun -n 24 python3 arc-standard.py Li4SiO4 0 beryllium 0 lead 0 2 2||
 	--> Configuration '2', bare.
 
-***All reflector implementations are removed from cases 12 and onward. After analysis of the earlier cases was performed, it was clear that the effect from the reflector is negligible.
+All reflector implementations are removed from cases 12 and onward. After analysis of the earlier cases was performed, it was clear that the effect from the reflector is negligible.
 This means that cases 12 and some others are removed as there are the same as other cases when the reflector is removed***
 
 
