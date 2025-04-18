@@ -261,8 +261,7 @@ scientific expression: 1 = 1e0, 0.1 = 1e-1, 10 = 1e1
 	--> ||python3 arc-standard.py Li4SiO4 0 zirconium 1 zirconium 0 2 1 /home/hice1/awhitesides3/TBR/scripts/mlt_Zr||
 	--> Configuration '1' with a 1cm Zr multiplier, no dopant, and no reflector.
 
- 
-"
+
 
 notes
 
