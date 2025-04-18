@@ -82,36 +82,37 @@ second-order, '2': split FLiBe2 in half.
 
 ### cmd line config
 
-||srun -n 24 python3 arc.py dopant dopant_mass multiplier_material multiplier_thickness reflector_material reflector_thickness channel_thickness order output_path||
+||python3 arc.py dopant dopant_mass multiplier_material multiplier_thickness reflector_material reflector_thickness channel_thickness order output_path||
 
 ### old cases
 
 1: bare  
 
-	--> ||srun -n 24 python3 arc-standard.py Li4SiO4 0 beryllium 0 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/bare||
+	--> ||python3 arc-standard.py Li4SiO4 0 beryllium 0 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/bare||
 	--> Configuration '1', bare.
 
  
 2: beryllium at end of FLiBe1  
 
-	--> ||srun -n 24 python3 arc-standard.py Li4SiO4 0 beryllium 1 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/mlt_Be||
+	--> ||python3 arc-standard.py Li4SiO4 0 beryllium 1 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/mlt_Be||
 	--> Configuration '1' with a 1cm beryllium multiplier, no dopant, and no reflector.
 
  
 3: lithium orthosilicate doping  
 
-	--> ||srun -n 24 python3 arc-standard.py Li4SiO4 100 beryllium 0 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Li4SiO4||
+	--> ||python3 arc-standard.py Li4SiO4 100 beryllium 0 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Li4SiO4||
 	--> Configuration '1' doped with 100 wppm Li4SiO4, no multiplier, and no reflector.
 
  
 4: variable FLiBe1 thickness  
 
-	--> ||srun -n 24 python3 arc-standard.py Li4SiO4 0 beryllium 0 lead 0 7 1 /home/hice1/awhitesides3/TBR/scripts/channel||
+	--> ||python3 arc-standard.py Li4SiO4 0 beryllium 0 lead 0 7 1 /home/hice1/awhitesides3/TBR/scripts/channel||
 	--> Configuration '1', bare with 7cm FLiBe1.  
 
 
 ### new cases
 
+all of these runs were performed using 'backup_arc-standard.py'.
 must add the folder name at the end of the directory for the specific thicknesses of each region.  
 structure for folder name: ||#_slry_x_mlt_y_ref_z||
 
@@ -126,139 +127,139 @@ scientific expression: 1 = 1e0, 0.1 = 1e-1, 10 = 1e1
  
 5: beryllium at end of FLiBe1 & lead at end of FLiBe2  
 
-	--> ||srun -n 24 python3 arc-standard.py Li4SiO4 0 beryllium 1 lead 1 2 1 /home/hice1/awhitesides3/TBR/scripts/mlt_Be_ref_Pb||
+	--> ||python3 arc-standard.py Li4SiO4 0 beryllium 1 lead 1 2 1 /home/hice1/awhitesides3/TBR/scripts/mlt_Be_ref_Pb||
 	--> Configuration '1' with a 1cm beryllium multiplier, a 1cm lead reflector, and no dopant.
 
  
 6: lead at end of FLiBe1  
 
-	--> ||srun -n 24 python3 arc-standard.py Li4SiO4 0 lead 1 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/mlt_Pb||
+	--> ||python3 arc-standard.py Li4SiO4 0 lead 1 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/mlt_Pb||
 	--> Configuration '1' with a 1cm lead multiplier, no dopant, and no reflector.
 
  
 7: lead at end of FLiBe1 and lead at end of FLiBe2  
 
-	--> ||srun -n 24 python3 arc-standard.py Li4SiO4 0 lead 1 lead 1 2 1 /home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb||
+	--> ||python3 arc-standard.py Li4SiO4 0 lead 1 lead 1 2 1 /home/hice1/awhitesides3/TBR/scripts/mlt_Pb_ref_Pb||
 	--> Configuration '1' with a 1cm lead multiplier, a 1cm lead reflector, and no dopant.
 
  
 8: lead doping  
 
-	--> ||srun -n 24 python3 arc-standard.py lead 100 beryllium 0 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb||
+	--> ||python3 arc-standard.py lead 100 beryllium 0 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb||
 	--> Configuration '1', doped with 100 wppm lead, no multiplier, and no reflector.
 
  
 9: Li4SiO4 doping with beryllium at end of FLiBe1  
 
-	--> ||srun -n 24 python3 arc-standard.py Li4SiO4 100 beryllium 1 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Li4SiO4_mlt_Be||
+	--> ||python3 arc-standard.py Li4SiO4 100 beryllium 1 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Li4SiO4_mlt_Be||
 	--> Configuration '1' doped with 100 wppm Li4SiO4, a 1cm beryllium multiplier, and no reflector.
 
  
 10: Li4SiO4 doping with beryllium at end of FLiBe1 and lead at the end of FLiBe2 ****holding beryllium multiplier constant at 1cm****  
 
-	--> ||srun -n 24 python3 arc-standard.py Li4SiO4 100 beryllium 1 lead 1 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Li4SiO4_mlt_Be_ref_Pb||
+	--> ||python3 arc-standard.py Li4SiO4 100 beryllium 1 lead 1 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Li4SiO4_mlt_Be_ref_Pb||
 	--> Configuration '1' doped with 100 wppm Li4SiO4, a 1cm beryllium multiplier, and a 1cm lead. reflector.
 
 
 11: lead doping with beryllium at the end of FLiBe1  
 
-	--> ||srun -n 24 python3 arc-standard.py lead 100 beryllium 1 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Be||
+	--> ||python3 arc-standard.py lead 100 beryllium 1 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Be||
 	--> Configuration '1' doped with 100 wppm lead, a 1cm beryllium multiplier, and no reflector.
 
  
 12: lead doping with beryllium at the end of FLiBe1 and lead at the end of FLiBe2  
 
-	--> ||srun -n 24 python3 arc-standard.py lead 100 beryllium 1 lead 1 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Be_ref_Pb||
+	--> ||python3 arc-standard.py lead 100 beryllium 1 lead 1 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Be_ref_Pb||
 	--> Configuration '1' doped with 100 wppm Pb, a 1cm beryllium multiplier, and a 1cm lead.
 
  
 13: Li4SiO4 doping with lead at end of FLiBe1  
 
-	--> ||srun -n 24 python3 arc-standard.py Li4SiO4 100 lead 1 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Li4SiO4_mlt_Pb||
+	--> ||python3 arc-standard.py Li4SiO4 100 lead 1 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Li4SiO4_mlt_Pb||
 	--> Configuration '1' doped with 100 wppm Li4SiO4 and a 1cm lead multiplier
 
  
 14: lead doping with lead at the end of FLiBe1  
 
-	--> ||srun -n 24 python3 arc-standard.py lead 100 lead 1 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Pb||
+	--> ||python3 arc-standard.py lead 100 lead 1 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Pb_mlt_Pb||
 	--> Configuration '1' doped with 100 wppm Pb and a 1cm lead multiplier
 
  
 15: Te doping with Te at the end of FLiBe1 and Te at the end of FLiBe2  
 
-	--> ||srun -n 24 python3 arc-standard.py "tellurium" 100 tellurium 1 tellurium 1 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Te_mlt_Te_ref_Te||
+	--> ||python3 arc-standard.py "tellurium" 100 tellurium 1 tellurium 1 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Te_mlt_Te_ref_Te||
 	--> Configuration '1' doped with 100 wppm Te, a 1cm Te multiplier, and a 1cm Te.
 
  
 16: Li4SiO4 doping with Te at end of FLiBe1 and Te at the end of FLiBe2  
 
-	--> ||srun -n 24 python3 arc-standard.py Li4SiO4 100 tellurium 1 tellurium 1 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Li4SiO4_mlt_Te_ref_Te||
+	--> ||python3 arc-standard.py Li4SiO4 100 tellurium 1 tellurium 1 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Li4SiO4_mlt_Te_ref_Te||
 	--> Configuration '1' doped with 100 wppm Li4SiO4, a 1cm tellurium multiplier, and a 1cm tellurium. reflector.
 
  
 17: Te doping with beryllium at the end of FLiBe1 and Te at the end of FLiBe2  
 
-	--> ||srun -n 24 python3 arc-standard.py tellurium 100 beryllium 1 tellurium 1 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Te_mlt_Be_ref_Te||
+	--> ||python3 arc-standard.py tellurium 100 beryllium 1 tellurium 1 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Te_mlt_Be_ref_Te||
 	--> Configuration '1' doped with 100 wppm Te, a 1cm beryllium multiplier, and a 1cm tellurium.
 
  
 18: tellurium doping with beryllium at the end of FLiBe1  
 
-	--> ||srun -n 24 python3 arc-standard.py tellurium 100 beryllium 1 tellurium 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Te_mlt_Be||
+	--> ||python3 arc-standard.py tellurium 100 beryllium 1 tellurium 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Te_mlt_Be||
 	--> Configuration '1' doped with 100 wppm Te, a 1cm beryllium multiplier, and no reflector.
 
  
 19: Li4SiO4 doping with beryllium at end of FLiBe1 and Te at the end of FLiBe2  
 
-	--> ||srun -n 24 python3 arc-standard.py Li4SiO4 100 beryllium 1 tellurium 1 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Li4SiO4_mlt_Be_ref_Te||
+	--> ||python3 arc-standard.py Li4SiO4 100 beryllium 1 tellurium 1 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Li4SiO4_mlt_Be_ref_Te||
 	--> Configuration '1' doped with 100 wppm Li4SiO4, a 1cm beryllium multiplier, and a 1cm Te reflector.
 
  
 20: tellurium doping  
 
-	--> ||srun -n 24 python3 arc-standard.py tellurium 100 beryllium 0 tellurium 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Te||
+	--> ||python3 arc-standard.py tellurium 100 beryllium 0 tellurium 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Te||
 	--> Configuration '1', doped with 100 wppm Te, no multiplier, and no reflector.
 
  
 21: Te at end of FLiBe1 and Te at end of FLiBe2  
 
-	--> ||srun -n 24 python3 arc-standard.py Li4SiO4 0 tellurium 1 tellurium 1 2 1 /home/hice1/awhitesides3/TBR/scripts/mlt_Te_ref_Te||
+	--> ||python3 arc-standard.py Li4SiO4 0 tellurium 1 tellurium 1 2 1 /home/hice1/awhitesides3/TBR/scripts/mlt_Te_ref_Te||
 	--> Configuration '1' with a 1cm Te multiplier, a 1cm Te reflector, and no dopant.
 
  
 22: Te at end of FLiBe1  
 
-	--> ||srun -n 24 python3 arc-standard.py Li4SiO4 0 tellurium 1 tellurium 0 2 1 /home/hice1/awhitesides3/TBR/scripts/mlt_Te||
+	--> ||python3 arc-standard.py Li4SiO4 0 tellurium 1 tellurium 0 2 1 /home/hice1/awhitesides3/TBR/scripts/mlt_Te||
 	--> Configuration '1' with a 1cm Te multiplier, no dopant, and no reflector.
 
  
 23: beryllium at end of FLiBe1 & Te at end of FLiBe2  
 
-	--> ||srun -n 24 python3 arc-standard.py Li4SiO4 0 beryllium 1 tellurium 1 2 1 /home/hice1/awhitesides3/TBR/scripts/mlt_Be_ref_Te||
+	--> ||python3 arc-standard.py Li4SiO4 0 beryllium 1 tellurium 1 2 1 /home/hice1/awhitesides3/TBR/scripts/mlt_Be_ref_Te||
 	--> Configuration '1' with a 1cm beryllium multiplier, a 1cm Te reflector, and no dopant.
 
 
 24: lead at end of FLiBe2  
 
-	--> ||srun -n 24 python3 arc-standard.py Li4SiO4 0 beryllium 0 lead 1 2 1 /home/hice1/awhitesides3/TBR/scripts/ref_Pb||
+	--> ||python3 arc-standard.py Li4SiO4 0 beryllium 0 lead 1 2 1 /home/hice1/awhitesides3/TBR/scripts/ref_Pb||
 	--> Configuration '1' a 1cm lead reflector, no multiplier, and no dopant.
 
  
 25: beryllium at end of FLiBe2  
 
-	--> ||srun -n 24 python3 arc-standard.py Li4SiO4 0 beryllium 0 beryllium 1 2 1 /home/hice1/awhitesides3/TBR/scripts/ref_Be||
+	--> ||python3 arc-standard.py Li4SiO4 0 beryllium 0 beryllium 1 2 1 /home/hice1/awhitesides3/TBR/scripts/ref_Be||
 	--> Configuration '1' a 1cm beryllium reflector, no multiplier, and no dopant.
 
  
 26: beryllium at end of FLiBe1 & beryllium at end of FLiBe2  
 
-	--> ||srun -n 24 python3 arc-standard.py Li4SiO4 0 beryllium 1 beryllium 1 2 1 /home/hice1/awhitesides3/TBR/scripts/mlt_Be_ref_Be||
+	--> ||python3 arc-standard.py Li4SiO4 0 beryllium 1 beryllium 1 2 1 /home/hice1/awhitesides3/TBR/scripts/mlt_Be_ref_Be||
 	--> Configuration '1' with a 1cm beryllium multiplier, a 1cm beryllium reflector, and no dopant.
 
  
 27: Zr at end of FLiBe1  
 
-	--> ||srun -n 24 python3 arc-standard.py Li4SiO4 0 zirconium 1 zirconium 0 2 1 /home/hice1/awhitesides3/TBR/scripts/mlt_Zr||
+	--> ||python3 arc-standard.py Li4SiO4 0 zirconium 1 zirconium 0 2 1 /home/hice1/awhitesides3/TBR/scripts/mlt_Zr||
 	--> Configuration '1' with a 1cm Zr multiplier, no dopant, and no reflector.
 
  
@@ -268,7 +269,7 @@ notes
 
 division of FLiBe2 into halves  
 
-	--> ||srun -n 24 python3 arc-standard.py Li4SiO4 0 beryllium 0 lead 0 2 2||
+	--> ||python3 arc-standard.py Li4SiO4 0 beryllium 0 lead 0 2 2||
 	--> Configuration '2', bare.
 
 
@@ -277,7 +278,10 @@ All reflector implementations are removed from cases 12 and onward. After analys
 This means that cases 12 and some others are removed as there are the same as other cases when the reflector is removed***
 
 
+Optimal Design runs (using arc-standard.py): The range for dopant mass can be edited directly in the script. To change the multiplier thicknesses, you just change the argument in the run command. 
 
+	--> ||python3 arc-standard.py lead lead 10 lead 0 2 1 0 beryllium 0 /home/hice1/awhitesides3/TBR/scripts/shielding_test_2/optimal_case||
+	--> ||python3 arc-standard.py lead lead 0 lead 0 2 1 0 beryllium 0 /home/hice1/awhitesides3/TBR/scripts/shielding_test_2/bare_case||
 
 
 
