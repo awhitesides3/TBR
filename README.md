@@ -18,6 +18,8 @@ This repository is built around a custom python api called `arc_2` which include
 
 ### arc_2
 The following descriptions are taken directly from the README.md in JBall/arc-nonproliferation
+
+
 "
 #### device.py
 The device class inherits from the OpenMC model class, and is designed to allow for the rapid parametric generation of ARC OpenMC models with FLiBe doped with a specified amount of fertile material. This is achieved using the `generate_device()` function. This allows for many models with varying fertile inventories, dopant types, and lithium enrichments to be generated and simulated in a single script.
