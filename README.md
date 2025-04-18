@@ -86,26 +86,39 @@ second-order, '2': split FLiBe2 in half.
 
 ### old cases
 
-1) bare
+1: bare  
+
 	--> ||srun -n 24 python3 arc-standard.py Li4SiO4 0 beryllium 0 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/bare||
 	--> Configuration '1', bare.
-2) beryllium at end of FLiBe1
+
+ 
+2: beryllium at end of FLiBe1  
+
 	--> ||srun -n 24 python3 arc-standard.py Li4SiO4 0 beryllium 1 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/mlt_Be||
 	--> Configuration '1' with a 1cm beryllium multiplier, no dopant, and no reflector.
-3) lithium orthosilicate doping
+
+ 
+3: lithium orthosilicate doping  
+
 	--> ||srun -n 24 python3 arc-standard.py Li4SiO4 100 beryllium 0 lead 0 2 1 /home/hice1/awhitesides3/TBR/scripts/slry_Li4SiO4||
 	--> Configuration '1' doped with 100 wppm Li4SiO4, no multiplier, and no reflector.
-4) variable FLiBe1 thickness
+
+ 
+4: variable FLiBe1 thickness  
+
 	--> ||srun -n 24 python3 arc-standard.py Li4SiO4 0 beryllium 0 lead 0 7 1 /home/hice1/awhitesides3/TBR/scripts/channel||
-	--> Configuration '1', bare with 7cm FLiBe1.
+	--> Configuration '1', bare with 7cm FLiBe1.  
+
 
 ### new cases
 
-must add the folder name at the end of the directory for the specific thicknesses of each region.
+must add the folder name at the end of the directory for the specific thicknesses of each region.  
 structure for folder name: ||#_slry_x_mlt_y_ref_z||
+
 '#' = case number as listed in this document, x = wppm of dopant, y = mlt thickness, z = ref thickness
 scientific expression: 1 = 1e0, 0.1 = 1e-1, 10 = 1e1
-"
+
+
 1a,2a,3a,4a: higher accuracy for old cases  
 
 	--> no changes to cmd line statement 
